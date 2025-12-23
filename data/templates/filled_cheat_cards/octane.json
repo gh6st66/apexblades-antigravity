@@ -1,0 +1,66 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Octane",
+        "role_type": "Entry Fragger / Chaos",
+        "primary_win_condition": "Rapid rotations / Disruption",
+        "role": "Uses extreme speed and mobility to initiate fights, create chaos, and provide rapid team rotations via Jump Pads.",
+        "lead_when": "When you have a clear entry point and can use your Stim to engage first.",
+        "follow_when": "When teammates need a quick follow‑up after you create space.",
+        "disengage_when": "When you run out of Stim or enemies close the gap.",
+        "positioning": {
+            "preferred_terrain": "Open sightlines, high ground, jump‑pad locations",
+            "fight_distance": "Close‑mid",
+            "commit_vs_hold": "Commit with Stim; hold only if you have an escape path."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Using Stim for burst speed during engagements.",
+                "do_not_rely_on": "Passive does not provide vision or damage."
+            },
+            "tactical": {
+                "primary_use": "escape / reposition",
+                "timing_rule": "reactionary"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "reset",
+                    "escape",
+                    "chaos"
+                ],
+                "do_not_use_when": "Enemies are already low and you have no escape needed.",
+                "abort_conditions": "Ring forces you into a confined space before you can launch."
+            }
+        },
+        "fight_flow": {
+            "start": "Jump in with Stim, scout the area, and create chaos.",
+            "mid_fight": "Use Jump Pad to reposition, keep pressure, and force enemies to react.",
+            "exit_reset": "Ultimate to escape or reset the fight when overwhelmed."
+        },
+        "rotations": {
+            "early_game": "Secure a high‑ground entry and use Jump Pad for quick rotations.",
+            "mid_game": "Rotate constantly, using Stim bursts to stay unpredictable.",
+            "late_game": "Use ultimate to escape final‑ring pushes or to reposition for a last‑second push.",
+            "bad_rotation": "Staying in one spot without using Stim or Jump Pad."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "R‑99",
+                "reason": "High fire rate complements rapid movement."
+            },
+            "ideal_secondary": {
+                "weapon": "Volt",
+                "reason": "Energy weapon for mid‑range when you need to finish quickly."
+            },
+            "avoid_weapon_types": [
+                "Shotguns only"
+            ]
+        },
+        "common_mistakes": [
+            "Overextending without an escape path",
+            "Using Stim without vision",
+            "Relying on ultimate when you could have escaped with Jump Pad"
+        ],
+        "mental_rule": "If you’re unsure – Stim out, reposition, and keep moving."
+    }
+}

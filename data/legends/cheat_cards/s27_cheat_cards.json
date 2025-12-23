@@ -1,0 +1,2122 @@
+{
+    "valkyrie": {
+        "legend": {
+            "name": "Valkyrie",
+            "role_type": "Macro",
+            "primary_win_condition": "Rotations",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Team rotations, ring reads, third-party escapes",
+            "lead_when": "Rotating to zone, calling macro plays, escaping bad fights",
+            "follow_when": "Taking close-range fights, breaching buildings",
+            "disengage_when": "No ult + 2+ squads nearby, or ring is far and you're low"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "open_sightlines"
+            ],
+            "fight_distance": "mid-long",
+            "commit_vs_hold": "Hold height until team commits; only dive if knock confirmed"
+        },
+        "abilities": {
+            "passive": {
+                "name": "VTOL Jets",
+                "leverage_when": "Short repositions, vertical peeks, dodging grenades",
+                "do_not_rely_on": "Extended combat flights (6s fuel, no mid-air refuel)"
+            },
+            "tactical": {
+                "name": "Missile Swarm",
+                "primary_use": "info",
+                "timing_rule": "pre-emptive",
+                "notes": "No self-damage; 25s CD; 125m range; disables Mantle Boost on hit"
+            },
+            "ultimate": {
+                "name": "Skyward Dive",
+                "best_use_cases": [
+                    "rotate",
+                    "reset",
+                    "escape"
+                ],
+                "do_not_use_when": "Ring is close + full team is alive + enemies not pushing",
+                "abort_conditions": "Sniper locks on during spin-up OR enemy hard pushes before launch",
+                "cooldown_seconds": 150
+            }
+        },
+        "fight_flow": {
+            "start": "Take height, poke with marksman, scan with missiles",
+            "mid_fight": "Jets to reposition, short burns for off-angles",
+            "exit_reset": "Skyward Dive if losing OR third-party incoming; rotate to high ground"
+        },
+        "rotations": {
+            "early_game": "Land edge, loot fast, scout ring with jets",
+            "mid_game": "Use ult proactively for ring positioning (before forced)",
+            "late_game": "Hold ult for emergency escape or final ring rotation",
+            "bad_rotation": "Walking through open terrain with ult available"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Alternator SMG (Double Tap)",
+                "reason": "S27 buffed, fast TTK, jet-peeking friendly"
+            },
+            "secondary": {
+                "weapon": "Bocek / G7 Scout",
+                "reason": "Punish from jet angles, no bullet drop issues"
+            },
+            "avoid": [
+                "Shotguns",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Using ult to push instead of escape/rotate",
+            "Jet-peeking with low fuel and getting beamed",
+            "Missiles for damage instead of info/suppression",
+            "Landing in the open after Skyward Dive"
+        ],
+        "rp_loss_behavior": "Walking when ult is available",
+        "mental_rule": "Ult is for leaving, not arriving. Hold height, read zone, extract your team.",
+        "map_overrides": [
+            {
+                "map": "Olympus",
+                "height_rules": "Prioritize Hammond Labs, Estates rooftops, Phase Runner hill",
+                "ult_timing": "Save for ring 3+ transitions; too many indoor POIs early",
+                "danger_zones": [
+                    "Turbine",
+                    "Energy Depot"
+                ]
+            },
+            {
+                "map": "Broken Moon",
+                "height_rules": "Terraformer high ground, Promenades upper levels",
+                "ult_timing": "More aggressive early rotations okay (open terrain punishes walking)",
+                "danger_zones": [
+                    "The Divide",
+                    "Stasis Net Array"
+                ]
+            }
+        ]
+    },
+    "rampart": {
+        "legend": {
+            "name": "Rampart",
+            "role_type": "Anchor",
+            "primary_win_condition": "Zone Control",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Holding space, denying pushes, enabling teammate aggression via speed boost",
+            "lead_when": "Setting up defensive positions, choosing where to anchor",
+            "follow_when": "Team wants to push aggressively (walls take time to deploy)",
+            "disengage_when": "Walls broken + no cover nearby, or ring forces movement"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "indoors",
+                "natural_cover"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold until wall charge is banked; commit only with speed boost active"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Battle Modder",
+                "leverage_when": "Any LMG fight (reload + mag bonuses), late game (800 HP walls at max Evo)",
+                "do_not_rely_on": "Early game wall durability (starts weak, scales with Evo)"
+            },
+            "tactical": {
+                "name": "Amped Cover",
+                "primary_use": "zone",
+                "timing_rule": "pre-emptive",
+                "notes": "Roof added; shield damage charges 100%, wall damage charges 25%; speed boost for vault"
+            },
+            "ultimate": {
+                "name": "Mobile Minigun Sheila",
+                "best_use_cases": [
+                    "wipe",
+                    "zone"
+                ],
+                "do_not_use_when": "Multiple angles exposed, or team is rotating",
+                "abort_conditions": "Flanked OR wall destroyed while mounted"
+            }
+        },
+        "fight_flow": {
+            "start": "Place walls at choke/angle, poke through amped shield to build charge",
+            "mid_fight": "Let damage bank, call out when speed boost is ready",
+            "exit_reset": "Teammates vault for speed boost → sprint to next position"
+        },
+        "rotations": {
+            "early_game": "Identify anchor spots in zone; place walls preemptively",
+            "mid_game": "Bank wall charge during poke, use speed boost for ring transitions",
+            "late_game": "Walls are strongest (800 HP) — hold final positions aggressively",
+            "bad_rotation": "Walking in the open with no walls placed ahead"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Rampage / Spitfire",
+                "reason": "Battle Modder synergy (bigger mags, faster reloads)"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Alternator",
+                "reason": "Close-range cleanup when walls break"
+            },
+            "avoid": [
+                "Snipers",
+                "Shotgun-only loadouts"
+            ]
+        },
+        "common_mistakes": [
+            "Placing walls mid-fight instead of before engagement",
+            "Not communicating speed boost availability",
+            "Mounting Sheila with flanks uncovered",
+            "Abandoning walls before damage is banked"
+        ],
+        "rp_loss_behavior": "Rotating without walls set up ahead",
+        "mental_rule": "Walls first, fight second. Your job is creating space teammates can exploit.",
+        "map_overrides": [
+            {
+                "map": "Olympus",
+                "poi": "Hammond Labs, Estates, Gardens",
+                "height_rules": "Balance rooftop control with indoor wall setups",
+                "ult_timing": "Sheila in Hammond Labs main room, Oasis chokes",
+                "danger_zones": [
+                    "Fight Night",
+                    "Turbine"
+                ]
+            },
+            {
+                "map": "World's Edge",
+                "poi": "Fragment, Lava Siphon",
+                "height_rules": "Control building interiors, use walls on stairs",
+                "ult_timing": "Countdown hallways, Fragment building windows",
+                "danger_zones": [
+                    "Harvester",
+                    "Skyhook open streets"
+                ]
+            }
+        ]
+    },
+    "horizon": {
+        "legend": {
+            "name": "Horizon",
+            "role_type": "Flex",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Creating angles, vertical pressure, enabling team wipes with Black Hole",
+            "lead_when": "Taking vertical fights, initiating with ult combos",
+            "follow_when": "Team has better entry for horizontal pushes",
+            "disengage_when": "Grav Lift on CD + no ult + low ground"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "natural_cover"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit when ult is live and team can follow; hold if lift is down"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Spacewalk",
+                "leverage_when": "Post-lift repositions, dropping from height, aggressive air strafes",
+                "do_not_rely_on": "Tanking shots in the air"
+            },
+            "tactical": {
+                "name": "Gravity Lift",
+                "primary_use": "initiate",
+                "timing_rule": "early",
+                "notes": "Lift speed 375, 1.5s hover, 22s effective CD; Newt Scoot = glide after exit"
+            },
+            "ultimate": {
+                "name": "Black Hole",
+                "best_use_cases": [
+                    "wipe",
+                    "zone",
+                    "initiate"
+                ],
+                "do_not_use_when": "Team isn't ready to capitalize, or enemy has easy break angle",
+                "abort_conditions": "Placed in crossfire with no follow-up damage",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Lift for height, spot enemies, call angles",
+            "mid_fight": "Black Hole → nade stack OR lift-flick peeks for quick damage",
+            "exit_reset": "Lift to high ground, Spacewalk soft-landing to cover"
+        },
+        "rotations": {
+            "early_game": "Aggressive vertical scouting; use lift to check POIs",
+            "mid_game": "Save ult for multi-squad fights or third-party opportunities",
+            "late_game": "Black Hole for final ring denial; lift for escape when trapped",
+            "bad_rotation": "Walking flat terrain with lift on CD and no ult"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Fast TTK for lift peeks, good hipfire"
+            },
+            "secondary": {
+                "weapon": "Bocek / G7 Scout",
+                "reason": "Capitalize on height advantage from lift"
+            },
+            "avoid": [
+                "LMGs",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Wasting Black Hole without team follow-up",
+            "Staying in lift too long and getting beamed",
+            "Using lift aggressively with no escape plan",
+            "Placing Black Hole where easily shot"
+        ],
+        "rp_loss_behavior": "Solo Black Hole with no team follow-up",
+        "mental_rule": "Lift is your escape first, angle second. Black Hole only when team can capitalize.",
+        "map_overrides": [
+            {
+                "map": "Olympus",
+                "poi": "Hammond Labs, Gardens, Estates",
+                "height_rules": "Dominant on any building; leverage lift for rooftop plays",
+                "ult_timing": "Black Hole in Hammond chokes, Estates courtyard",
+                "danger_zones": [
+                    "Turbine",
+                    "Solar Array"
+                ]
+            },
+            {
+                "map": "Broken Moon",
+                "poi": "Terraformer, Promenades",
+                "height_rules": "Lift onto container stacks, Terraformer catwalks",
+                "ult_timing": "Stasis Net transitions, Breaker Wharf pushes",
+                "danger_zones": [
+                    "The Divide"
+                ]
+            }
+        ]
+    },
+    "revenant": {
+        "legend": {
+            "name": "Revenant",
+            "role_type": "Entry",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Opening fights, diving isolated targets, creating chaos",
+            "lead_when": "Dive opportunities are clear, enemy is separated",
+            "follow_when": "Team has better info/setup",
+            "disengage_when": "Pounce is down + team not with you + enemy squad is full"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "natural_cover"
+            ],
+            "fight_distance": "close",
+            "commit_vs_hold": "Commit only on isolated targets; hold if they're grouped"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Assassin / Stalker",
+                "leverage_when": "Flanking via unlimited climbing, silent crouch approaches",
+                "do_not_rely_on": "Out-climbing gunfire"
+            },
+            "tactical": {
+                "name": "Shadow Pounce",
+                "primary_use": "initiate",
+                "timing_rule": "early",
+                "notes": "S27 nerfed max velocity — still strong close-mid, weaker extreme range"
+            },
+            "ultimate": {
+                "name": "Forged Shadows / Death Totem",
+                "best_use_cases": [
+                    "initiate",
+                    "reset"
+                ],
+                "do_not_use_when": "Enemy has clear totem snipe angle, or team is split",
+                "abort_conditions": "Totem is spotted before push completes"
+            }
+        },
+        "fight_flow": {
+            "start": "Climb for angle → Shadow Pounce onto isolated target",
+            "mid_fight": "Immediate weapon dump, confirm knock fast",
+            "exit_reset": "Pounce back to team OR use ult safety"
+        },
+        "rotations": {
+            "early_game": "Aggressive POI clearing; pounce through buildings",
+            "mid_game": "Look for third-party dive opportunities; let team poke, you finish",
+            "late_game": "More conservative — dive only when knock is guaranteed",
+            "bad_rotation": "Pouncing into a 3-stack without team backup"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Prowler PDW",
+                "reason": "S27 hold-to-burst shreds at pounce range"
+            },
+            "secondary": {
+                "weapon": "Alternator / Peacekeeper",
+                "reason": "Fast kill confirmation post-dive"
+            },
+            "avoid": [
+                "Snipers",
+                "LMGs"
+            ]
+        },
+        "common_mistakes": [
+            "Pouncing into full squads instead of isolated players",
+            "Using pounce for generic rotations",
+            "Overcommitting when pounce is on cooldown",
+            "Forgetting you're squishy without ult protection"
+        ],
+        "rp_loss_behavior": "Diving 3-stacks solo",
+        "mental_rule": "Pounce is for isolated kills, not team fights. In, kill, out.",
+        "map_overrides": [
+            {
+                "map": "Olympus",
+                "poi": "Estates, Hammond Labs",
+                "height_rules": "Climb exterior walls for roof entries; pounce through skylights",
+                "ult_timing": "Totem behind cover in Gardens, Oasis",
+                "danger_zones": [
+                    "Turbine",
+                    "Solar Array"
+                ]
+            },
+            {
+                "map": "World's Edge",
+                "poi": "Fragment, Skyhook",
+                "height_rules": "Climb every building; pounce between rooftops",
+                "ult_timing": "Totem in back rooms during Fragment chaos",
+                "danger_zones": [
+                    "Lava Fissure",
+                    "Train Yard"
+                ]
+            }
+        ]
+    },
+    "wraith": {
+        "legend": {
+            "name": "Wraith",
+            "role_type": "Flex",
+            "primary_win_condition": "Rotations",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Safe rotations, team extraction, intel via voices",
+            "lead_when": "Portal rotations, repositioning team",
+            "follow_when": "Entry frags - let aggro legends dive first",
+            "disengage_when": "Voices warn, no phase available, team down"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "edge",
+                "natural_cover"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit with phase available; hold if both abilities on CD"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Voices from the Void",
+                "leverage_when": "Rotating through danger, checking for snipers",
+                "do_not_rely_on": "100% accuracy - sometimes triggers late"
+            },
+            "tactical": {
+                "name": "Into the Void",
+                "primary_use": "escape",
+                "timing_rule": "reactionary",
+                "notes": "2.5s activation; use preemptively, not when already cracked"
+            },
+            "ultimate": {
+                "name": "Dimensional Rift",
+                "best_use_cases": [
+                    "rotate",
+                    "reset",
+                    "escape"
+                ],
+                "do_not_use_when": "Enemies can camp portal exit",
+                "abort_conditions": "Enemy follows immediately - don't lead them to team",
+                "cooldown_seconds": 210
+            }
+        },
+        "fight_flow": {
+            "start": "Portal team to position, phase to scout angles",
+            "mid_fight": "Hold phase for escape, play cover aggressively",
+            "exit_reset": "Phase out → portal team to safety"
+        },
+        "rotations": {
+            "early_game": "Edge landing, portal for quick rotations",
+            "mid_game": "Save portal for ring or third-party escape",
+            "late_game": "Portal is premium - use for final repositions only",
+            "bad_rotation": "Walking open ground with portal available"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-99 / Alternator",
+                "reason": "Fast TTK for portal aggression"
+            },
+            "secondary": {
+                "weapon": "Wingman / G7",
+                "reason": "Poke before portal commit"
+            },
+            "avoid": [
+                "LMGs",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Phasing too late when already one-shot",
+            "Portal into enemy team's lap",
+            "Wasting portal for loot runs",
+            "Ignoring voice warnings"
+        ],
+        "rp_loss_behavior": "Phasing reactively after getting cracked",
+        "mental_rule": "Portal is your team's insurance. Phase is YOUR insurance. Don't waste either."
+    },
+    "pathfinder": {
+        "legend": {
+            "name": "Pathfinder",
+            "role_type": "Flex",
+            "primary_win_condition": "Rotations",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Vertical control, team rotations via zipline, beacon scanning",
+            "lead_when": "Taking height, scouting ahead",
+            "follow_when": "Close-quarters building fights",
+            "disengage_when": "Grapple on CD + low ground + team not with you"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "open_sightlines"
+            ],
+            "fight_distance": "mid-long",
+            "commit_vs_hold": "Commit with grapple available; hold height otherwise"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Insider Knowledge",
+                "leverage_when": "Every beacon scan reduces ult CD",
+                "do_not_rely_on": "Safe beacon access - often contested"
+            },
+            "tactical": {
+                "name": "Grappling Hook",
+                "primary_use": "initiate",
+                "timing_rule": "early",
+                "notes": "10-30s CD based on distance; save for escape in late game"
+            },
+            "ultimate": {
+                "name": "Zipline Gun",
+                "best_use_cases": [
+                    "rotate",
+                    "escape",
+                    "third-party"
+                ],
+                "do_not_use_when": "Enemies watching - ziplines are death traps",
+                "abort_conditions": "Never zipline into a team that's aiming at endpoint",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Grapple to height, poke with marksman",
+            "mid_fight": "Short grapples for repositions, hold angles",
+            "exit_reset": "Zipline team to safety, grapple as personal escape"
+        },
+        "rotations": {
+            "early_game": "Scan beacons, use ziplines for fast loot routes",
+            "mid_game": "Zipline team to ring, grapple to scout",
+            "late_game": "Ziplines become risky - use grapple more",
+            "bad_rotation": "Zipline directly into contested zone"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "G7 Scout / Bocek",
+                "reason": "Capitalize on height advantage"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Close-range if grapple engaged"
+            },
+            "avoid": [
+                "Shotguns only"
+            ]
+        },
+        "common_mistakes": [
+            "Grappling into 3-stack",
+            "Zipline when enemies are watching",
+            "Wasting grapple for loot instead of fights",
+            "Not scanning beacons for ult CD reduction"
+        ],
+        "rp_loss_behavior": "Zipline into a team that's already aiming at you",
+        "mental_rule": "Height wins fights. Grapple is your get-out-of-jail card. Ziplines are team tools, not personal taxis."
+    },
+    "bloodhound": {
+        "legend": {
+            "name": "Bloodhound",
+            "role_type": "Info",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Intel gathering, tracking enemies, enabling team pushes",
+            "lead_when": "Scanning for info, ult hunting mode",
+            "follow_when": "Team needs you alive for scans, not fragging",
+            "disengage_when": "Ult down + no scan + enemies unknown"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "edge",
+                "natural_cover"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit during ult; hold for scans otherwise"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Tracker",
+                "leverage_when": "Reading enemy movements, predicting rotations",
+                "do_not_rely_on": "Old tracks - 90s max, often stale"
+            },
+            "tactical": {
+                "name": "Eye of the Allfather",
+                "primary_use": "info",
+                "timing_rule": "pre-emptive",
+                "notes": "25s CD; reveals through walls for 3s; use before pushing"
+            },
+            "ultimate": {
+                "name": "Beast of the Hunt",
+                "best_use_cases": [
+                    "wipe",
+                    "third-party",
+                    "initiate"
+                ],
+                "do_not_use_when": "No enemies nearby, or saving for placement",
+                "abort_conditions": "Team not ready to follow your aggression",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Scan → call positions → team pushes",
+            "mid_fight": "Ult for speed + constant scans (5s CD during ult)",
+            "exit_reset": "Ult speed to disengage, scan to check if chased"
+        },
+        "rotations": {
+            "early_game": "Track enemies, scan contested POIs",
+            "mid_game": "Scan before entering any POI",
+            "late_game": "Ult conservatively - it's your best third-party tool",
+            "bad_rotation": "Walking blind when scan is available"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent damage during ult"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "Fast downs during Beast of Hunt"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Scanning when not ready to act on info",
+            "Ult solo without team follow-up",
+            "Ignoring tracks in favor of random rotations",
+            "Not communicating scan results"
+        ],
+        "rp_loss_behavior": "Ulting solo into a 3-stack",
+        "mental_rule": "Information is power. Scan before you act. Hunt with your team, not alone."
+    },
+    "lifeline": {
+        "legend": {
+            "name": "Lifeline",
+            "role_type": "Support",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Keeping team alive, revives, health economy",
+            "lead_when": "Never - you're too valuable to die first",
+            "follow_when": "Always - stay alive to revive",
+            "disengage_when": "Team is down and you can't safely revive"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "indoors"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold and support; commit only to finish"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Combat Revive",
+                "leverage_when": "Teammate down behind cover - drone revives while you fight",
+                "do_not_rely_on": "Open-ground revives - enemies will push"
+            },
+            "tactical": {
+                "name": "D.O.C. Heal Drone",
+                "primary_use": "deny",
+                "timing_rule": "mid-fight",
+                "notes": "Use in cover between fights; don't deploy mid-gunfight"
+            },
+            "ultimate": {
+                "name": "Care Package",
+                "best_use_cases": [
+                    "zone",
+                    "reset"
+                ],
+                "do_not_use_when": "Final rings, rotating, enemies nearby",
+                "abort_conditions": "Package reveals position - don't call in contested areas",
+                "cooldown_seconds": 300
+            }
+        },
+        "fight_flow": {
+            "start": "Stay behind team, poke from safety",
+            "mid_fight": "Revive downed teammates, drone between engagements",
+            "exit_reset": "Revive → heal → reposition"
+        },
+        "rotations": {
+            "early_game": "Care package early for gear advantage",
+            "mid_game": "Drone during downtime, position for revive access",
+            "late_game": "Your survival = team survival; play back",
+            "bad_rotation": "Being first into danger"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent mid-range support fire"
+            },
+            "secondary": {
+                "weapon": "Alternator / Mozambique",
+                "reason": "Self-defense when reviving"
+            },
+            "avoid": [
+                "Shotguns",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Reviving in the open",
+            "Dying first in fights",
+            "Care package in final ring",
+            "Playing too aggressively"
+        ],
+        "rp_loss_behavior": "Dying before you can revive your team",
+        "mental_rule": "Dead Lifeline = dead team. Your job is staying alive and keeping others alive."
+    },
+    "gibraltar": {
+        "legend": {
+            "name": "Gibraltar",
+            "role_type": "Anchor",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Team protection, bubble fights, area denial with ult",
+            "lead_when": "Bubble pushes, revives under fire",
+            "follow_when": "Team rotating - you're too slow to be first",
+            "disengage_when": "No bubble, no ult, outnumbered"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "zone_center"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit with bubble; hold otherwise"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Gun Shield + Fortified",
+                "leverage_when": "1v1 gunfights, absorbing initial damage",
+                "do_not_rely_on": "Gun shield vs snipers - one tap breaks it"
+            },
+            "tactical": {
+                "name": "Dome of Protection",
+                "primary_use": "zone",
+                "timing_rule": "reactionary",
+                "notes": "12s duration; use for revives, reloads, resets"
+            },
+            "ultimate": {
+                "name": "Defensive Bombardment",
+                "best_use_cases": [
+                    "zone",
+                    "wipe",
+                    "third-party"
+                ],
+                "do_not_use_when": "Fighting indoors or close quarters",
+                "abort_conditions": "Team is in the blast zone",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Absorb damage with gun shield, call bubble location",
+            "mid_fight": "Bubble dance - in/out for heals and peeks",
+            "exit_reset": "Bubble → revive → ult to cover escape"
+        },
+        "rotations": {
+            "early_game": "Slow but safe - bubble if caught out",
+            "mid_game": "Position early in zone, bubble holds",
+            "late_game": "Bubble is god-tier for final ring",
+            "bad_rotation": "Running in open without bubble ready"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Flatline / R-301",
+                "reason": "Consistent damage behind gun shield"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "Bubble fight dominance"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Bubble too early or too late",
+            "Ult on your own team",
+            "ADS peeking with broken gun shield",
+            "Playing too aggressive for big hitbox"
+        ],
+        "rp_loss_behavior": "Getting caught in open without bubble",
+        "mental_rule": "You are the shield. Bubble saves teams. Don't throw your life for frags."
+    },
+    "bangalore": {
+        "legend": {
+            "name": "Bangalore",
+            "role_type": "Flex",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Team cover, disengages, zoning with ult",
+            "lead_when": "Smoke rotations, pushing with cover",
+            "follow_when": "Let recon lead - you provide cover",
+            "disengage_when": "No smokes, ult down, team cracked"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "edge",
+                "open_sightlines"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with smokes ready; hold for repositions"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Double Time",
+                "leverage_when": "Getting shot = speed boost for escape",
+                "do_not_rely_on": "Always being shot - still need cover"
+            },
+            "tactical": {
+                "name": "Smoke Launcher",
+                "primary_use": "deny",
+                "timing_rule": "reactionary",
+                "notes": "2 charges; use for escape, revives, or pushing"
+            },
+            "ultimate": {
+                "name": "Rolling Thunder",
+                "best_use_cases": [
+                    "zone",
+                    "escape",
+                    "third-party"
+                ],
+                "do_not_use_when": "Team is pushing through it",
+                "abort_conditions": "Friendlies caught in stun zone",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Smoke angles, take poke shots",
+            "mid_fight": "Smoke cracked teammates, use passive for repositions",
+            "exit_reset": "Smoke wall → ult → run"
+        },
+        "rotations": {
+            "early_game": "Smoke rotations through open ground",
+            "mid_game": "Save smokes for emergencies",
+            "late_game": "Ult for zone denial, smokes for resets",
+            "bad_rotation": "Smoking your own team's sightlines"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent mid-range with 2x"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Through smoke push/defense"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Smoking your team instead of enemies",
+            "Ult too close to team",
+            "Wasting smokes on non-threats",
+            "Not using passive speed for escapes"
+        ],
+        "rp_loss_behavior": "Smoking your own team's angles mid-fight",
+        "mental_rule": "Smoke is for problems, not paranoia. Ult zones enemies out, not your team in."
+    },
+    "caustic": {
+        "legend": {
+            "name": "Caustic",
+            "role_type": "Anchor",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Area denial, building lockdown, endgame dominance",
+            "lead_when": "Never - you're slow and big",
+            "follow_when": "Team secures buildings for you to trap",
+            "disengage_when": "In the open without traps placed"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "indoors",
+                "zone_center"
+            ],
+            "fight_distance": "close",
+            "commit_vs_hold": "Hold buildings; commit only with gas advantage"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Nox Vision",
+                "leverage_when": "Fighting in your own gas",
+                "do_not_rely_on": "Seeing through enemy gas (doesn't work)"
+            },
+            "tactical": {
+                "name": "Nox Gas Trap",
+                "primary_use": "zone",
+                "timing_rule": "pre-emptive",
+                "notes": "6 max; trap doors, corners, revives"
+            },
+            "ultimate": {
+                "name": "Nox Gas Grenade",
+                "best_use_cases": [
+                    "zone",
+                    "wipe",
+                    "third-party"
+                ],
+                "do_not_use_when": "Open areas - gas dissipates",
+                "abort_conditions": "Enemies can easily escape the radius",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Pre-trap building, wait for enemies",
+            "mid_fight": "Fight in gas, vision + damage advantage",
+            "exit_reset": "Ult to block pursuit, trap escape routes"
+        },
+        "rotations": {
+            "early_game": "Find a building, trap it, hold",
+            "mid_game": "Move to ring early, re-trap new position",
+            "late_game": "Final ring insider = almost guaranteed win",
+            "bad_rotation": "Open field fighting"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Flatline / Spitfire",
+                "reason": "Sustained damage to trapped enemies"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "One-shot in gas"
+            },
+            "avoid": [
+                "Snipers",
+                "Bocek"
+            ]
+        },
+        "common_mistakes": [
+            "Fighting outside of gas",
+            "Trapping too late",
+            "Ult in open areas",
+            "Rotating without new position secured"
+        ],
+        "rp_loss_behavior": "Taking open-field fights with no traps",
+        "mental_rule": "Gas is your terrain advantage. If you're not in gas, you're at a disadvantage."
+    },
+    "mirage": {
+        "legend": {
+            "name": "Mirage",
+            "role_type": "Flex",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Confusion, 1v1 wins, clutch revives",
+            "lead_when": "Bamboozling for team intel",
+            "follow_when": "Team initiates - you clean up confused enemies",
+            "disengage_when": "Decoys not working, enemies are tracking you"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "indoors"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit with ult; hold otherwise"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Now You See Me",
+                "leverage_when": "Invisible revive in smoke/chaos",
+                "do_not_rely_on": "Revive invisibility vs aware enemies"
+            },
+            "tactical": {
+                "name": "Psyche Out",
+                "primary_use": "info",
+                "timing_rule": "pre-emptive",
+                "notes": "15s CD; send before peeking to draw fire"
+            },
+            "ultimate": {
+                "name": "Life of the Party",
+                "best_use_cases": [
+                    "wipe",
+                    "escape",
+                    "initiate"
+                ],
+                "do_not_use_when": "Wide open - decoys obviously fake",
+                "abort_conditions": "Enemy has Bloodhound/Seer - they see real you",
+                "cooldown_seconds": 60
+            }
+        },
+        "fight_flow": {
+            "start": "Decoy to draw fire, locate enemy",
+            "mid_fight": "Ult for confusion, secure 1v1s",
+            "exit_reset": "Ult → invisible crawl/revive"
+        },
+        "rotations": {
+            "early_game": "Decoy ahead while looting",
+            "mid_game": "Decoy for intel on POIs",
+            "late_game": "Ult for repositions and confusion",
+            "bad_rotation": "Sending decoys that obviously run into walls"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-99 / Alternator",
+                "reason": "Fast 1v1 TTK during confusion"
+            },
+            "secondary": {
+                "weapon": "Wingman / Peacekeeper",
+                "reason": "High damage single shots"
+            },
+            "avoid": [
+                "LMGs",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Obvious decoy pathing",
+            "Ulting in the open",
+            "Not using invisible revive",
+            "Playing too predictably"
+        ],
+        "rp_loss_behavior": "Sending decoys into walls and getting tracked anyway",
+        "mental_rule": "Confusion wins fights. Make them shoot at nothing, then punish the reload."
+    },
+    "octane": {
+        "legend": {
+            "name": "Octane",
+            "role_type": "Entry",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Fast rotations, first in, creating chaos",
+            "lead_when": "Opening fights, pad pushes",
+            "follow_when": "Team is holding position",
+            "disengage_when": "Low HP from stim, team not following"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "edge"
+            ],
+            "fight_distance": "close",
+            "commit_vs_hold": "Commit with pad; hold if you need health"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Swift Mend",
+                "leverage_when": "Downtime regen, save heals for teammates",
+                "do_not_rely_on": "Combat healing - too slow"
+            },
+            "tactical": {
+                "name": "Stim",
+                "primary_use": "initiate",
+                "timing_rule": "early",
+                "notes": "30% speed, costs 20 HP; don't stim at low health"
+            },
+            "ultimate": {
+                "name": "Launch Pad",
+                "best_use_cases": [
+                    "initiate",
+                    "escape",
+                    "rotate"
+                ],
+                "do_not_use_when": "Enemies watching landing zone",
+                "abort_conditions": "Team not ready to follow pad push",
+                "cooldown_seconds": 90
+            }
+        },
+        "fight_flow": {
+            "start": "Pad in → stim → land on isolated target",
+            "mid_fight": "Stim strafe, be unpredictable",
+            "exit_reset": "Pad out, passive regen"
+        },
+        "rotations": {
+            "early_game": "Fast loot, pad to next POI",
+            "mid_game": "Pad for rotations, save for third-parties",
+            "late_game": "Pad becomes risky - less predictable landings",
+            "bad_rotation": "Pad into a team that's already aiming"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-99 / Alternator",
+                "reason": "Fast TTK for stim rushes"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "High damage on pad landing"
+            },
+            "avoid": [
+                "Snipers",
+                "LMGs"
+            ]
+        },
+        "common_mistakes": [
+            "Stimming at 1 HP",
+            "Pad pushing alone",
+            "Speed addiction - slow down sometimes",
+            "Not waiting for team before pad push"
+        ],
+        "rp_loss_behavior": "Pad pushing into 3-stack while team is looting",
+        "mental_rule": "Speed is for creating opportunities, not for solo hero plays."
+    },
+    "wattson": {
+        "legend": {
+            "name": "Wattson",
+            "role_type": "Anchor",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Building lockdown, nade denial, endgame fortress",
+            "lead_when": "Never - you set up, you don't push",
+            "follow_when": "Team secures position for you to fortify",
+            "disengage_when": "Position compromised, no fences set"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "indoors",
+                "zone_center"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold always; commit only when fences secure retreat"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Spark of Genius",
+                "leverage_when": "Ultimate Accelerants give full ult",
+                "do_not_rely_on": "Passive shield regen - too slow"
+            },
+            "tactical": {
+                "name": "Perimeter Security",
+                "primary_use": "zone",
+                "timing_rule": "pre-emptive",
+                "notes": "12 nodes max; fence doors, chokes, flanks"
+            },
+            "ultimate": {
+                "name": "Interception Pylon",
+                "best_use_cases": [
+                    "zone",
+                    "reset"
+                ],
+                "do_not_use_when": "About to rotate - it doesn't move",
+                "abort_conditions": "Pylon exposed to enemy fire",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Set fences, pylon behind cover",
+            "mid_fight": "Fight from fenced position, pylon blocks nades",
+            "exit_reset": "Fence retreat paths, pylon for reset"
+        },
+        "rotations": {
+            "early_game": "Loot ultimate accelerants, find position early",
+            "mid_game": "Rotate early to new position, re-fence",
+            "late_game": "Pylon + fences = nearly unbreakable hold",
+            "bad_rotation": "Running in open with no fences up"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent from fenced positions"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper",
+                "reason": "Punish fence runners"
+            },
+            "avoid": [
+                "Shotgun-only"
+            ]
+        },
+        "common_mistakes": [
+            "Fencing after enemies already inside",
+            "Pylon in the open",
+            "Rotating too late",
+            "Not carrying ultimate accelerants"
+        ],
+        "rp_loss_behavior": "Getting pushed before fences are up",
+        "mental_rule": "Your fortress takes time to build. Get there early or don't go at all."
+    },
+    "crypto": {
+        "legend": {
+            "name": "Crypto",
+            "role_type": "Info",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Intel, EMP initiation, banner recovery",
+            "lead_when": "EMP initiation",
+            "follow_when": "Drone scouting ahead of team",
+            "disengage_when": "Drone destroyed, no intel, team pushing without you"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "edge",
+                "natural_cover"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit after EMP; hold while droning"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Neurolink",
+                "leverage_when": "Drone pings share with team",
+                "do_not_rely_on": "Passive intel - need active drone control"
+            },
+            "tactical": {
+                "name": "Surveillance Drone",
+                "primary_use": "info",
+                "timing_rule": "pre-emptive",
+                "notes": "Use before pushes; don't drone mid-fight"
+            },
+            "ultimate": {
+                "name": "Drone EMP",
+                "best_use_cases": [
+                    "initiate",
+                    "third-party",
+                    "wipe"
+                ],
+                "do_not_use_when": "Drone position gives it away early",
+                "abort_conditions": "Team not ready to push post-EMP",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Drone scout → EMP → team pushes cracked enemies",
+            "mid_fight": "Gun out, fight with team - no droning",
+            "exit_reset": "Drone to check pursuit, banner grab if needed"
+        },
+        "rotations": {
+            "early_game": "Drone banners for squad count",
+            "mid_game": "EMP for third-party initiations",
+            "late_game": "EMP timing is everything",
+            "bad_rotation": "Droning while team is fighting"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Reliable after EMP push"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Fast cleanup on cracked enemies"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Droning mid-fight",
+            "EMP without team ready",
+            "Getting caught in own EMP",
+            "Forgetting to check banners for squad count"
+        ],
+        "rp_loss_behavior": "Droning while your team dies",
+        "mental_rule": "EMP starts fights. Guns finish them. Put the drone away when shooting."
+    },
+    "loba": {
+        "legend": {
+            "name": "Loba",
+            "role_type": "Support",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Loot economy, team gear, repositions",
+            "lead_when": "Bracelet scout ahead",
+            "follow_when": "Team needs loot - you provide",
+            "disengage_when": "Bracelet on CD, exposed position"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "edge"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold for loot value; commit with bracelet available"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Eye for Quality",
+                "leverage_when": "Seeing purple/gold through walls",
+                "do_not_rely_on": "Red items always being available"
+            },
+            "tactical": {
+                "name": "Burglar's Best Friend",
+                "primary_use": "escape",
+                "timing_rule": "reactionary",
+                "notes": "30s CD; visible trail - use for escape, not aggression"
+            },
+            "ultimate": {
+                "name": "Black Market Boutique",
+                "best_use_cases": [
+                    "reset",
+                    "zone"
+                ],
+                "do_not_use_when": "Enemies nearby - they steal your loot",
+                "abort_conditions": "Position gives away your location",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Bracelet to high ground, poke",
+            "mid_fight": "Bracelet for repositions, not escapes yet",
+            "exit_reset": "Bracelet out, shop for heals/ammo"
+        },
+        "rotations": {
+            "early_game": "Shop every POI for fast gear",
+            "mid_game": "Shop for ammo/meds during downtime",
+            "late_game": "Bracelet is escape only; save it",
+            "bad_rotation": "Bracelet into enemies instead of away"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent mid-range"
+            },
+            "secondary": {
+                "weapon": "Wingman / Bocek",
+                "reason": "Poke from bracelet positions"
+            },
+            "avoid": [
+                "Shotgun-only"
+            ]
+        },
+        "common_mistakes": [
+            "Bracelet into enemies",
+            "Shopping near enemy team",
+            "Visible bracelet escape",
+            "Not sharing shop with team"
+        ],
+        "rp_loss_behavior": "Bracelet into a trap instead of away from danger",
+        "mental_rule": "Shop keeps your team loaded. Bracelet keeps YOU alive. Don't waste either."
+    },
+    "fuse": {
+        "legend": {
+            "name": "Fuse",
+            "role_type": "Flex",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Grenade spam, area denial, flushing cover",
+            "lead_when": "Grenade initiation, ult zoning",
+            "follow_when": "Team needs sustained damage, not aggro entry",
+            "disengage_when": "No nades, no ult, enemies closing distance"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "open_sightlines"
+            ],
+            "fight_distance": "mid-long",
+            "commit_vs_hold": "Hold for nade spam; commit only when enemies flushed"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Grenadier",
+                "leverage_when": "Extra nade slot, faster throws, longer range",
+                "do_not_rely_on": "Arc star sticks at max range"
+            },
+            "tactical": {
+                "name": "Knuckle Cluster",
+                "primary_use": "damage",
+                "timing_rule": "early",
+                "notes": "2 charges; flush cover, block doorways, stack damage"
+            },
+            "ultimate": {
+                "name": "The Motherlode",
+                "best_use_cases": [
+                    "zone",
+                    "third-party",
+                    "initiate"
+                ],
+                "do_not_use_when": "Indoors or tight spaces",
+                "abort_conditions": "Enemies already outside the ring area",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Nade spam → knuckle cluster → highlight damaged targets",
+            "mid_fight": "Constant cluster pressure, nade every opportunity",
+            "exit_reset": "Ult to zone pursuit, nade doorways"
+        },
+        "rotations": {
+            "early_game": "Hoard grenades - you use them better",
+            "mid_game": "Ult for third-party engagements",
+            "late_game": "Ult denies final ring space",
+            "bad_rotation": "Out of grenades"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "30-30 / G7",
+                "reason": "Poke while nades do work"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Cleanup flushed enemies"
+            },
+            "avoid": [
+                "Shotguns"
+            ]
+        },
+        "common_mistakes": [
+            "Running out of grenades",
+            "Ult indoors",
+            "Knuckle cluster at max range misses",
+            "Not carrying max nades"
+        ],
+        "rp_loss_behavior": "No grenades left when you need them",
+        "mental_rule": "Explosives everywhere. If they're behind cover, they're taking damage anyway."
+    },
+    "seer": {
+        "legend": {
+            "name": "Seer",
+            "role_type": "Info",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Precise intel, interrupt heals, track enemies through fights",
+            "lead_when": "Heart sensor confirms location",
+            "follow_when": "Team pushes - your info enables them",
+            "disengage_when": "No ult, no tactical, blind fighting"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "edge"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with info; hold to scan first"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Heart Seeker",
+                "leverage_when": "ADS to detect enemies within 75m",
+                "do_not_rely_on": "Finding crouching/slow enemies"
+            },
+            "tactical": {
+                "name": "Focus of Attention",
+                "primary_use": "info",
+                "timing_rule": "mid-fight",
+                "notes": "Interrupts heals/revives; 8s reveal; narrow tunnel"
+            },
+            "ultimate": {
+                "name": "Exhibit",
+                "best_use_cases": [
+                    "zone",
+                    "wipe",
+                    "third-party"
+                ],
+                "do_not_use_when": "Enemies can easily leave dome",
+                "abort_conditions": "Dome placed where enemies won't fight",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Passive → tactical confirm → call push",
+            "mid_fight": "Interrupt heals with tactical, constant info",
+            "exit_reset": "Ult to see pursuit, passive to track"
+        },
+        "rotations": {
+            "early_game": "Heart sensor while looting",
+            "mid_game": "Ult for contested POI fights",
+            "late_game": "Ult in final ring = total awareness",
+            "bad_rotation": "Pushing without using passive first"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent while tracking"
+            },
+            "secondary": {
+                "weapon": "Wingman / Peacekeeper",
+                "reason": "Punish interrupted heals"
+            },
+            "avoid": [
+                "LMGs"
+            ]
+        },
+        "common_mistakes": [
+            "Tactical on wrong location",
+            "Not using passive ADS",
+            "Ult in bad spots",
+            "Forgetting interrupt cancels heals"
+        ],
+        "rp_loss_behavior": "Pushing blind when you have wallhacks",
+        "mental_rule": "You see everything. There's no excuse for getting surprised."
+    },
+    "ash": {
+        "legend": {
+            "name": "Ash",
+            "role_type": "Entry",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Aggressive portals, death box tracking, snare enemies",
+            "lead_when": "Phase breach pushes",
+            "follow_when": "Team isn't ready for instant aggression",
+            "disengage_when": "Ult down, snare down, team not following"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "natural_cover"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit with ult; hold without it"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Marked for Death",
+                "leverage_when": "Map shows death boxes, interact to find attackers",
+                "do_not_rely_on": "Old death boxes - info goes stale"
+            },
+            "tactical": {
+                "name": "Arc Snare",
+                "primary_use": "damage",
+                "timing_rule": "early",
+                "notes": "Tether + damage; use to catch runners or start fights"
+            },
+            "ultimate": {
+                "name": "Phase Breach",
+                "best_use_cases": [
+                    "initiate",
+                    "third-party",
+                    "escape"
+                ],
+                "do_not_use_when": "Team isn't immediately behind you",
+                "abort_conditions": "Enemies waiting on other side - you're one-way",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Snare → phase breach → instant pressure",
+            "mid_fight": "Snare fleeing enemies, aggressive pushes",
+            "exit_reset": "Phase breach to cover - one-way is risky for reset"
+        },
+        "rotations": {
+            "early_game": "Check map for death boxes, third-party",
+            "mid_game": "Phase breach for quick rotations",
+            "late_game": "Phase breach = instant final fight entry",
+            "bad_rotation": "Phase breach with team not following"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-99 / Alternator",
+                "reason": "Fast TTK on phase breach entry"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "One-shot on snared enemies"
+            },
+            "avoid": [
+                "Snipers",
+                "LMGs"
+            ]
+        },
+        "common_mistakes": [
+            "Phase breach solo",
+            "Snare on full health enemies far away",
+            "Not checking death boxes for intel",
+            "Forgetting portal is one-way"
+        ],
+        "rp_loss_behavior": "Phase breaching into a 3-stack alone",
+        "mental_rule": "Phase Breach is a one-way ticket. Make sure your team has tickets too."
+    },
+    "mad_maggie": {
+        "legend": {
+            "name": "Mad Maggie",
+            "role_type": "Entry",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Aggressive pushing, flushing cover, shotgun rushing",
+            "lead_when": "Breaching buildings, pushing with ball",
+            "follow_when": "Team needs poke, not aggression",
+            "disengage_when": "Drill down, ball down, team not following"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "indoors",
+                "natural_cover"
+            ],
+            "fight_distance": "close",
+            "commit_vs_hold": "Commit with ball; hold if cooldowns down"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Warlord's Ire",
+                "leverage_when": "Shotgun speed boost, highlight damaged enemies",
+                "do_not_rely_on": "Highlight through smokes"
+            },
+            "tactical": {
+                "name": "Riot Drill",
+                "primary_use": "damage",
+                "timing_rule": "pre-emptive",
+                "notes": "Drill through walls/doors; flush cover"
+            },
+            "ultimate": {
+                "name": "Wrecking Ball",
+                "best_use_cases": [
+                    "initiate",
+                    "escape",
+                    "zone"
+                ],
+                "do_not_use_when": "Enemies in the open - ball less effective",
+                "abort_conditions": "Ball bouncing away from target",
+                "cooldown_seconds": 90
+            }
+        },
+        "fight_flow": {
+            "start": "Ball → drill cover → shotgun rush",
+            "mid_fight": "Drill walls, speed boost with shotgun",
+            "exit_reset": "Ball for speed, drill to delay pursuit"
+        },
+        "rotations": {
+            "early_game": "Aggressive POI clear with drill",
+            "mid_game": "Ball for fast rotations",
+            "late_game": "Ball into final ring for instant chaos",
+            "bad_rotation": "No shotgun = no passive value"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Peacekeeper / Mastiff",
+                "reason": "Passive speed boost, playstyle core"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "When shotgun isn't ideal"
+            },
+            "avoid": [
+                "Snipers",
+                "LMGs",
+                "No shotgun loadouts"
+            ]
+        },
+        "common_mistakes": [
+            "Not running a shotgun",
+            "Drill on wrong surface",
+            "Ball into bad position",
+            "Playing too far from fights"
+        ],
+        "rp_loss_behavior": "Pushing without a shotgun equipped",
+        "mental_rule": "You are the breach. Shotgun in hand, ball rolling, drill burning. Go."
+    },
+    "newcastle": {
+        "legend": {
+            "name": "Newcastle",
+            "role_type": "Support",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Mobile protection, revive cover, team shields",
+            "lead_when": "Shield pushing into cover",
+            "follow_when": "Team rotates - you protect the move",
+            "disengage_when": "Shield broken, ult down, team scattered"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "zone_center"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold with shields; commit to revive/protect"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Retrieve the Wounded",
+                "leverage_when": "Dragging downed teammates to safety",
+                "do_not_rely_on": "Revive completing in enemy sightlines"
+            },
+            "tactical": {
+                "name": "Mobile Shield",
+                "primary_use": "zone",
+                "timing_rule": "reactionary",
+                "notes": "Controllable shield wall; throw and direct"
+            },
+            "ultimate": {
+                "name": "Castle Wall",
+                "best_use_cases": [
+                    "reset",
+                    "zone",
+                    "escape"
+                ],
+                "do_not_use_when": "Enemies already inside radius",
+                "abort_conditions": "Wall placed in wrong direction",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Shield out, team pokes from behind",
+            "mid_fight": "Revive under shield, reposition wall",
+            "exit_reset": "Ult for cover, drag/revive downed teammates"
+        },
+        "rotations": {
+            "early_game": "Mobile shield for safe rotations",
+            "mid_game": "Ult for ring positioning",
+            "late_game": "Castle Wall = final ring fortress",
+            "bad_rotation": "Rotating without shield ready"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent from behind shield"
+            },
+            "secondary": {
+                "weapon": "Alternator / Peacekeeper",
+                "reason": "Close defense when pushed"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Shield in wrong direction",
+            "Ult facing wrong way",
+            "Not dragging downed teammates",
+            "Playing too far from team"
+        ],
+        "rp_loss_behavior": "Teammate dies when you could have shielded them",
+        "mental_rule": "You are the team's armor. Position yourself between enemies and allies."
+    },
+    "vantage": {
+        "legend": {
+            "name": "Vantage",
+            "role_type": "Info",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Long-range damage, target highlighting, rotations via Echo",
+            "lead_when": "Sniping from distance",
+            "follow_when": "Close range fights - sniper isn't ideal",
+            "disengage_when": "Echo down, no sniper ammo, enemies closing gap"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "height",
+                "open_sightlines"
+            ],
+            "fight_distance": "long",
+            "commit_vs_hold": "Hold for sniper value; commit only when enemies cracked"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Spotter's Lens",
+                "leverage_when": "ADS any scope shows enemy info + team ping",
+                "do_not_rely_on": "Info at close range"
+            },
+            "tactical": {
+                "name": "Echo Relocation",
+                "primary_use": "escape",
+                "timing_rule": "reactionary",
+                "notes": "Launch to Echo's position; reposition or escape"
+            },
+            "ultimate": {
+                "name": "Sniper's Mark",
+                "best_use_cases": [
+                    "initiate",
+                    "wipe",
+                    "third-party"
+                ],
+                "do_not_use_when": "Close range - switch weapons",
+                "abort_conditions": "Enemies behind full cover",
+                "cooldown_seconds": 40
+            }
+        },
+        "fight_flow": {
+            "start": "Mark targets with ult, team follows up",
+            "mid_fight": "Sniper shots on marked enemies",
+            "exit_reset": "Echo to height or cover"
+        },
+        "rotations": {
+            "early_game": "Echo scout, sniper from distance",
+            "mid_game": "Third-party from sightlines",
+            "late_game": "Sniper less effective in tight rings",
+            "bad_rotation": "Getting caught in close range without Echo"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Sniper's Mark (ult)",
+                "reason": "Built-in sniper, save weapon slot"
+            },
+            "secondary": {
+                "weapon": "R-301 / Alternator",
+                "reason": "Close/mid backup"
+            },
+            "avoid": [
+                "Shotgun-only",
+                "Double sniper"
+            ]
+        },
+        "common_mistakes": [
+            "Echo in bad position",
+            "Sniping when team is pushing",
+            "No close-range backup",
+            "Exposing for sniper shots"
+        ],
+        "rp_loss_behavior": "Sniping while team dies in close combat",
+        "mental_rule": "Your ult is your primary. Mark first, shoot second. Echo is your escape."
+    },
+    "catalyst": {
+        "legend": {
+            "name": "Catalyst",
+            "role_type": "Anchor",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Building lockdown, door reinforcement, wall denial",
+            "lead_when": "Never - set up defensive positions",
+            "follow_when": "Team secures position for you to reinforce",
+            "disengage_when": "Position overrun, no ferrofluid left"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "indoors",
+                "natural_cover"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold always; commit only behind wall"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Barricade",
+                "leverage_when": "Reinforce doors against kick/punch/breach",
+                "do_not_rely_on": "Grenades - they still break reinforced doors"
+            },
+            "tactical": {
+                "name": "Piercing Spikes",
+                "primary_use": "zone",
+                "timing_rule": "pre-emptive",
+                "notes": "Ferrofluid on floor; slows + damages + blinds"
+            },
+            "ultimate": {
+                "name": "Dark Veil",
+                "best_use_cases": [
+                    "zone",
+                    "escape",
+                    "reset"
+                ],
+                "do_not_use_when": "Enemies already past wall position",
+                "abort_conditions": "Wall placed where team needs to shoot through",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Reinforced doors, spikes on entries, wall to split",
+            "mid_fight": "Fight behind wall, spikes on pushers",
+            "exit_reset": "Wall to block pursuit, spikes on chase paths"
+        },
+        "rotations": {
+            "early_game": "Find building, reinforce, hold",
+            "mid_game": "Rotate early to new position",
+            "late_game": "Wall + spikes = near-impenetrable",
+            "bad_rotation": "Open field with no walls"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent from defensive positions"
+            },
+            "secondary": {
+                "weapon": "Peacekeeper",
+                "reason": "Punish wall pushers"
+            },
+            "avoid": [
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Wall blocking your team's shots",
+            "Spikes in wrong spots",
+            "Not reinforcing doors",
+            "Fighting in the open"
+        ],
+        "rp_loss_behavior": "Wall placed blocking your own team",
+        "mental_rule": "Control the space. Wall splits fights. Spikes punish aggression."
+    },
+    "ballistic": {
+        "legend": {
+            "name": "Ballistic",
+            "role_type": "Flex",
+            "primary_win_condition": "KP Conversion",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Weapon versatility, team reload support, third weapon",
+            "lead_when": "Sling initiation on isolated targets",
+            "follow_when": "Team needs sustained damage support",
+            "disengage_when": "Ult down, sling down, out of ammo"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "edge"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with ult active; hold otherwise"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Sling",
+                "leverage_when": "Third weapon slot, quick swap in ult",
+                "do_not_rely_on": "Sling weapon without attachments"
+            },
+            "tactical": {
+                "name": "Whistler",
+                "primary_use": "deny",
+                "timing_rule": "early",
+                "notes": "Enemy gun overheats if firing; use on aggressive pushers"
+            },
+            "ultimate": {
+                "name": "Tempest",
+                "best_use_cases": [
+                    "wipe",
+                    "third-party",
+                    "initiate"
+                ],
+                "do_not_use_when": "Team not ready to capitalize",
+                "abort_conditions": "Running in without ammo",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Whistler on pusher → ult → three weapons",
+            "mid_fight": "Infinite ammo, faster reloads, weapon spam",
+            "exit_reset": "Ult over, swap to sling for escape weapon"
+        },
+        "rotations": {
+            "early_game": "Loot third weapon for sling",
+            "mid_game": "Ult for major engagements",
+            "late_game": "Ult timing is everything",
+            "bad_rotation": "No ammo for all three weapons"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Reliable core weapon"
+            },
+            "secondary": {
+                "weapon": "Alternator / Peacekeeper",
+                "reason": "Swap options"
+            },
+            "avoid": [
+                "Care package only"
+            ]
+        },
+        "common_mistakes": [
+            "Forgetting sling weapon",
+            "Whistler missing",
+            "Ult with no ammo",
+            "Not swapping weapons fast enough"
+        ],
+        "rp_loss_behavior": "Ult ends and you're out of ammo for all three guns",
+        "mental_rule": "Three guns, infinite ammo during ult. Be the one-man army."
+    },
+    "conduit": {
+        "legend": {
+            "name": "Conduit",
+            "role_type": "Support",
+            "primary_win_condition": "Placement",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Team shields, emergency protection, keeping team topped off",
+            "lead_when": "Never - you're support, stay alive",
+            "follow_when": "Always - your shields keep pushers alive",
+            "disengage_when": "No tactical charge, team overextended"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "edge"
+            ],
+            "fight_distance": "mid",
+            "commit_vs_hold": "Hold for shield value; commit to save cracked teammate"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Savior's Speed",
+                "leverage_when": "Running toward hurt teammates gives speed boost",
+                "do_not_rely_on": "Always being close enough to teammates"
+            },
+            "tactical": {
+                "name": "Radiant Transfer",
+                "primary_use": "deny",
+                "timing_rule": "reactionary",
+                "notes": "Regenerates ally shields temporarily; use on cracked teammate"
+            },
+            "ultimate": {
+                "name": "Energy Barricade",
+                "best_use_cases": [
+                    "zone",
+                    "reset",
+                    "escape"
+                ],
+                "do_not_use_when": "Wide open areas - shields get destroyed",
+                "abort_conditions": "Shields placed in crossfire",
+                "cooldown_seconds": 120
+            }
+        },
+        "fight_flow": {
+            "start": "Position behind team, prep tactical",
+            "mid_fight": "Shield cracked teammates, ult for protection",
+            "exit_reset": "Ult shields for retreat cover"
+        },
+        "rotations": {
+            "early_game": "Loot for shield cells to charge tactical",
+            "mid_game": "Stay with team, shield on demand",
+            "late_game": "Ult for final positioning",
+            "bad_rotation": "Ahead of team instead of behind"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "R-301 / Flatline",
+                "reason": "Consistent support fire"
+            },
+            "secondary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Self-defense when targeted"
+            },
+            "avoid": [
+                "Shotguns",
+                "Snipers"
+            ]
+        },
+        "common_mistakes": [
+            "Shielding at wrong time",
+            "Playing too far from team",
+            "Ult in wrong spot",
+            "Dying before you can support"
+        ],
+        "rp_loss_behavior": "Team dies cracked while your tactical is ready",
+        "mental_rule": "Your shields win fights. Stay alive, keep teammates shielded."
+    },
+    "alter": {
+        "legend": {
+            "name": "Alter",
+            "role_type": "Flex",
+            "primary_win_condition": "Rotations",
+            "season_version": "S27_Amped"
+        },
+        "role": {
+            "responsibility": "Void rotations, team extraction, death box looting",
+            "lead_when": "Portal rotations, resetting team position",
+            "follow_when": "Entry frags - let aggro legends go first",
+            "disengage_when": "No tactical, no ult, portals gone"
+        },
+        "positioning": {
+            "preferred_terrain": [
+                "natural_cover",
+                "edge"
+            ],
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Commit with portal ready; hold if cooldowns down"
+        },
+        "abilities": {
+            "passive": {
+                "name": "Gift from the Rift",
+                "leverage_when": "Loot one item from any death box remotely",
+                "do_not_rely_on": "Getting specific item you need"
+            },
+            "tactical": {
+                "name": "Void Passage",
+                "primary_use": "escape",
+                "timing_rule": "reactionary",
+                "notes": "Two-way portal through walls; team can use both ways"
+            },
+            "ultimate": {
+                "name": "Void Nexus",
+                "best_use_cases": [
+                    "reset",
+                    "escape",
+                    "rotate"
+                ],
+                "do_not_use_when": "Enemies camping placement location",
+                "abort_conditions": "Team not aware of recall timer",
+                "cooldown_seconds": 180
+            }
+        },
+        "fight_flow": {
+            "start": "Portal team to position",
+            "mid_fight": "Tactical for quick repositions/escapes",
+            "exit_reset": "Ult beacon for team recall"
+        },
+        "rotations": {
+            "early_game": "Passive loot death boxes from distance",
+            "mid_game": "Ult as reset point for risky pushes",
+            "late_game": "Portal for final ring positioning",
+            "bad_rotation": "Ult in exposed location"
+        },
+        "weapons": {
+            "primary": {
+                "weapon": "Alternator / R-99",
+                "reason": "Fast TTK for portal aggression"
+            },
+            "secondary": {
+                "weapon": "G7 / Bocek",
+                "reason": "Poke before portal commit"
+            },
+            "avoid": [
+                "LMGs"
+            ]
+        },
+        "common_mistakes": [
+            "Ult in bad spot",
+            "Portal into enemy team",
+            "Not communicating portal locations",
+            "Forgetting passive loot"
+        ],
+        "rp_loss_behavior": "Ult placed where enemies camp you on return",
+        "mental_rule": "Portals are for escaping problems, not creating them. Ult is your team's insurance policy."
+    }
+}

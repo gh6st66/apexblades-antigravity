@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX | Velocity Dashboard</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff4b50;
+            --primary-glow: rgba(255, 75, 80, 0.4);
+            --bg: #0a0a0c;
+            --card-bg: rgba(25, 25, 28, 0.7);
+            /* Adjusted for better visibility */
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+            --glass-blur: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 0% 0%, rgba(255, 75, 80, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(255, 75, 80, 0.1) 0%, transparent 40%);
+        }
+
+        /* Animated Background Elements */
+        .bg-glow {
+            position: fixed;
+            width: 40vw;
+            height: 40vw;
+            background: var(--primary);
+            filter: blur(150px);
+            opacity: 0.05;
+            z-index: -1;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* Layout */
+        .app-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .app-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Glassmorphism Utility */
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Navbar */
+        nav {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 400px;
+        }
+
+        .search-wrapper i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--card-border);
+            padding: 12px 12px 12px 45px;
+            border-radius: 12px;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        /* Sidebar / Profile Section */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .profile-card {
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+        }
+
+        .avatar-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            padding: 5px;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .rank-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #7209b7, #3a0ca3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-item {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content / Movement Library */
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .movement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .move-card {
+            padding: 1.5rem;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .move-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 75, 80, 0.3);
+        }
+
+        .move-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .difficulty {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .diff-easy {
+            color: #4ade80;
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .diff-medium {
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .diff-hard {
+            color: #f87171;
+            background: rgba(248, 113, 113, 0.1);
+        }
+
+        .move-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .move-card p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .tag-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-glow" style="top: -10%; left: -10%;"></div>
+    <div class="bg-glow" style="bottom: -10%; right: -10%;"></div>
+
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="glass">
+            <div class="logo">
+                <i data-lucide="zap" fill="currentColor"></i>
+                VELOCITY
+            </div>
+            <div class="search-wrapper">
+                <i data-lucide="search"></i>
+                <input type="text" id="moveSearch" class="search-input"
+                    placeholder="Search movement techniques (e.g. 'Tap Strafe')...">
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <button class="glass" style="padding: 10px; border-radius: 12px; color: white; cursor: pointer;"><i
+                        data-lucide="bell"></i></button>
+                <button class="glass" style="padding: 10px; border-radius: 12px; color: white; cursor: pointer;"><i
+                        data-lucide="settings"></i></button>
+            </div>
+        </nav>
+
+        <!-- Sidebar Profile -->
+        <aside class="sidebar">
+            <div class="profile-card glass fade-in">
+                <div class="rank-badge">Apex Predator</div>
+                <div class="avatar-container">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+                        alt="Profile">
+                </div>
+                <h2 style="font-family: Orbitron; letter-spacing: 1px;">ACE_WRAITH</h2>
+                <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 5px;">Wraith Main | Movement
+                    Specialist</p>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">42.5k</span>
+                        <span class="stat-label">Total Kills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">4.2</span>
+                        <span class="stat-label">K/D Ratio</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">1,240</span>
+                        <span class="stat-label">Wins</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">Top 0.1%</span>
+                        <span class="stat-label">Rank Pos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass fade-in" style="padding: 1.5rem; animation-delay: 0.1s;">
+                <h3 style="font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="trending-up" size="18" color="#ff4b50"></i> Recent Mastery
+                </h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div
+                        style="background: rgba(255,255,255,0.03); padding: 10px; border-radius: 8px; font-size: 0.85rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span>Superglide</span>
+                            <span style="color: var(--primary)">95%</span>
+                        </div>
+                        <div
+                            style="height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden;">
+                            <div style="width: 95%; height: 100%; background: var(--primary);"></div>
+                        </div>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.03); padding: 10px; border-radius: 8px; font-size: 0.85rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span>Mantle Jump</span>
+                            <span style="color: var(--primary)">62%</span>
+                        </div>
+                        <div
+                            style="height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden;">
+                            <div style="width: 62%; height: 100%; background: var(--primary);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header fade-in" style="animation-delay: 0.2s;">
+                <div>
+                    <h1 style="font-size: 2rem; font-family: Orbitron;">TECHNIQUE LIBRARY</h1>
+                    <p style="color: var(--text-dim);">Master the art of momentum and spatial dominance.</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button class="glass"
+                        style="padding: 8px 16px; color: white; border-radius: 8px; cursor: pointer; font-size: 0.9rem;">All</button>
+                    <button class="glass"
+                        style="padding: 8px 16px; color: var(--text-dim); border-radius: 8px; cursor: pointer; font-size: 0.9rem;">Zipline</button>
+                    <button class="glass"
+                        style="padding: 8px 16px; color: var(--text-dim); border-radius: 8px; cursor: pointer; font-size: 0.9rem;">Ground</button>
+                </div>
+            </div>
+
+            <div class="movement-grid" id="movementGrid">
+                <!-- Cards will be injected by JS -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Movement Data
+        const techniques = [
+            {
+                title: "Tap Strafing",
+                difficulty: "medium",
+                description: "A technique that allows players to perform sharp turns in mid-air while maintaining full momentum using scroll wheel inputs.",
+                tags: ["Air", "Lurch"],
+                id: 1
+            },
+            {
+                title: "Superglide",
+                difficulty: "hard",
+                description: "Frame-perfect input at the end of a mantle that launches the legend forward at extreme velocities.",
+                tags: ["Climb", "Speed"],
+                id: 2
+            },
+            {
+                title: "Wall Bounce",
+                difficulty: "easy",
+                description: "Jump off a vertical surface to redirect momentum and gain height. Essential for evasive maneuvers.",
+                tags: ["Wall", "Jump"],
+                id: 3
+            },
+            {
+                title: "Mantle Jump",
+                difficulty: "hard",
+                description: "Combining a mantle cancel with a super-jump off a zipline, usually found in elevator shafts.",
+                tags: ["Zipline", "Vertical"],
+                id: 4
+            },
+            {
+                title: "Neo Strafing",
+                difficulty: "hard",
+                description: "A complex sequence of air-strafes and lurching that makes your hit-box extremely difficult to track.",
+                tags: ["Combat", "Air"],
+                id: 5
+            },
+            {
+                title: "Bunny Hopping",
+                difficulty: "easy",
+                description: "Stringing jumps together while crouching to maintain momentum while healing or moving.",
+                tags: ["Ground", "Momentum"],
+                id: 6
+            },
+            {
+                title: "Elite Jump",
+                difficulty: "medium",
+                description: "A specialized zipline interact that provides maximum height for vertical repositioning.",
+                tags: ["Zipline", "Height"],
+                id: 7
+            },
+            {
+                title: "Falselide",
+                difficulty: "medium",
+                description: "Initiating a slide animation without the prerequisite sprint distance for immediate low-profile movement.",
+                tags: ["Ground", "Tech"],
+                id: 8
+            }
+        ];
+
+        const grid = document.getElementById('movementGrid');
+        const searchInput = document.getElementById('moveSearch');
+
+        function renderCards(data) {
+            grid.innerHTML = '';
+            data.forEach((tech, index) => {
+                const card = document.createElement('div');
+                card.className = 'move-card glass fade-in';
+                card.style.animationDelay = `${0.1 * index}s`;
+
+                card.innerHTML = `
+                    <div class="move-header">
+                        <span class="difficulty diff-${tech.difficulty}">${tech.difficulty}</span>
+                        <i data-lucide="play-circle" size="20" style="color: var(--primary)"></i>
+                    </div>
+                    <div>
+                        <h3>${tech.title}</h3>
+                        <p>${tech.description}</p>
+                    </div>
+                    <div class="tag-group">
+                        ${tech.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        // Search Logic
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const filtered = techniques.filter(t =>
+                t.title.toLowerCase().includes(term) ||
+                t.description.toLowerCase().includes(term) ||
+                t.tags.some(tag => tag.toLowerCase().includes(term))
+            );
+            renderCards(filtered);
+        });
+
+        // Initial Render
+        renderCards(techniques);
+
+        // Hover Effect Animation logic for mouse position
+        document.querySelectorAll('.move-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+
+</html>

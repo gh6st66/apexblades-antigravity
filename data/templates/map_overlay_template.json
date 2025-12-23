@@ -1,0 +1,40 @@
+{
+    "template_name": "map_overlay",
+    "fields": {
+        "map": "<Map Name>",
+        "poi": "<POI>",
+        "objective": "<what winning looks like>",
+        "priority_terrain": {
+            "primary": "<terrain>",
+            "secondary": "<terrain>",
+            "never": "<terrain>"
+        },
+        "rotation_rules": {
+            "early": "<description>",
+            "mid": "<description>",
+            "late": "<description>",
+            "forced_exit": "<trigger>"
+        },
+        "fight_rules": {
+            "when_to_take": "<description>",
+            "when_to_skip": "<description>",
+            "max_duration_seconds": "<number>"
+        },
+        "ult_adjustments": {
+            "best_angles": "<description>",
+            "mandatory": "<condition>",
+            "bait": "<condition>",
+            "abort": "<condition>"
+        },
+        "third_party_danger": {
+            "entry_directions": "<description>",
+            "audio_cues": "<description>",
+            "collapse_estimate_seconds": "<number>"
+        },
+        "common_throws": [
+            "<throw 1>",
+            "<throw 2>"
+        ],
+        "one_map_rule": "<single overriding sentence>"
+    }
+}

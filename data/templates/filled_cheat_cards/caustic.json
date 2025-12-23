@@ -1,0 +1,67 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Caustic",
+        "role_type": "Anchor / Area Denial",
+        "primary_win_condition": "Zone control / Area denial",
+        "role": "Denies enemy movement with gas traps and controls interior spaces; excels at holding positions and resetting fights.",
+        "lead_when": "When you can secure a building or choke point and deploy Nox Gas traps.",
+        "follow_when": "When teammates need safe rotation through your gas coverage.",
+        "disengage_when": "When you are forced out of gas or enemies breach without cover.",
+        "positioning": {
+            "preferred_terrain": "Indoors, zone center, choke points",
+            "fight_distance": "Close",
+            "commit_vs_hold": "Hold buildings; commit only when gas advantage exists."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Fighting inside your own Nox gas for vision advantage.",
+                "do_not_rely_on": "Passive does not work in enemy gas."
+            },
+            "tactical": {
+                "primary_use": "area denial",
+                "timing_rule": "pre‑emptive"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "zone",
+                    "wipe",
+                    "third‑party"
+                ],
+                "do_not_use_when": "In open fields where gas dissipates quickly.",
+                "abort_conditions": "Ring forces you into open area before gas can be effective."
+            }
+        },
+        "fight_flow": {
+            "start": "Pre‑trap building, wait for enemies to enter.",
+            "mid_fight": "Fight inside gas, maintain vision and damage advantage; refresh traps.",
+            "exit_reset": "Ult to block pursuit and trap escape routes."
+        },
+        "rotations": {
+            "early_game": "Secure interior building, lay initial traps.",
+            "mid_game": "Rotate to new choke points, keep gas coverage.",
+            "late_game": "Use ultimate to deny final‑ring pushes and reset.",
+            "bad_rotation": "Rotating without a secondary position secured and trapped."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "Flatline",
+                "reason": "Reliable mid‑range damage while holding gas."
+            },
+            "ideal_secondary": {
+                "weapon": "R‑99",
+                "reason": "Close‑range finishers when enemies breach."
+            },
+            "avoid_weapon_types": [
+                "Snipers",
+                "Bocek"
+            ]
+        },
+        "common_mistakes": [
+            "Fighting outside of gas coverage",
+            "Trapping too late after the push has started",
+            "Using Nox Gas Grenade in open areas where it dissipates quickly"
+        ],
+        "mental_rule": "If you lack gas advantage → fall back and re‑trap."
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "calculatorName": "ACE Lite",
+  "pillars": [
+    {
+      "id": "checkVision",
+      "label": "VISION",
+      "description": "Wallhacks, Scans, Digital Threats",
+      "value": 20
+    },
+    {
+      "id": "checkRotation",
+      "label": "ROTATION",
+      "description": "Whole team movement (Valk, Octane, Ash)",
+      "value": 20
+    },
+    {
+      "id": "checkReset",
+      "label": "RESET",
+      "description": "Defensive utility, Rezzes, Shields",
+      "value": 20
+    },
+    {
+      "id": "checkInitiation",
+      "label": "INITIATION",
+      "description": "Opening advantage (EMP, Fuse, Grenades)",
+      "value": 20
+    },
+    {
+      "id": "checkComfort",
+      "label": "COMFORT",
+      "description": "Everyone playing their Main Legend",
+      "value": 20
+    }
+  ],
+  "wildcardFactors": [
+    {
+      "id": "checkTripleStack",
+      "label": "TRIPLE STACK",
+      "description": "+10: 3 of same class/type",
+      "value": 10
+    },
+    {
+      "id": "checkKillSquad",
+      "label": "KILL SQUAD",
+      "description": "+20: 3x Aggressive/Entry Legends",
+      "value": 20
+    }
+  ],
+  "ratingSystem": [
+    {
+      "minScore": 100,
+      "rank": "S-TIER",
+      "verdict": "Perfect synergy. No excuses—this is the God Squad."
+    },
+    {
+      "minScore": 80,
+      "rank": "A-TIER",
+      "verdict": "Strong meta presence. Execute cleanly and victory is yours."
+    },
+    {
+      "minScore": 60,
+      "rank": "B-TIER",
+      "verdict": "Decent utility. Play for your strengths and watch the missing gap."
+    },
+    {
+      "minScore": 40,
+      "rank": "C-TIER",
+      "verdict": "Sub-optimal. You'll need superior gunskill to overcome these gaps."
+    },
+    {
+      "minScore": 0,
+      "rank": "F-TIER",
+      "verdict": "High-risk composition. Are you trolling or just incredibly confident?"
+    }
+  ]
+}

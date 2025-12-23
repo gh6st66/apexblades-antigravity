@@ -2,29 +2,29 @@
   "mapRotation": {
     "battle_royale": {
       "current": {
-        "start": 1766485800,
-        "end": 1766491200,
-        "readableDate_start": "2025-12-23 10:30:00",
-        "readableDate_end": "2025-12-23 12:00:00",
+        "start": 1766496600,
+        "end": 1766502000,
+        "readableDate_start": "2025-12-23 13:30:00",
+        "readableDate_end": "2025-12-23 15:00:00",
+        "map": "Broken Moon",
+        "code": "broken_moon_rotation",
+        "DurationInSecs": 5400,
+        "DurationInMinutes": 90,
+        "asset": "https://apexlegendsstatus.com/assets/maps/Broken_Moon.png",
+        "remainingSecs": 2090,
+        "remainingMins": 35,
+        "remainingTimer": "00:34:50"
+      },
+      "next": {
+        "start": 1766502000,
+        "end": 1766507400,
+        "readableDate_start": "2025-12-23 15:00:00",
+        "readableDate_end": "2025-12-23 16:30:00",
         "map": "World's Edge",
         "code": "worlds_edge_rotation",
         "DurationInSecs": 5400,
         "DurationInMinutes": 90,
-        "asset": "https://apexlegendsstatus.com/assets/maps/Worlds_Edge.png",
-        "remainingSecs": 5370,
-        "remainingMins": 90,
-        "remainingTimer": "01:29:30"
-      },
-      "next": {
-        "start": 1766491200,
-        "end": 1766496600,
-        "readableDate_start": "2025-12-23 12:00:00",
-        "readableDate_end": "2025-12-23 13:30:00",
-        "map": "Olympus",
-        "code": "olympus_rotation",
-        "DurationInSecs": 5400,
-        "DurationInMinutes": 90,
-        "asset": "https://apexlegendsstatus.com/assets/maps/Olympus.png"
+        "asset": "https://apexlegendsstatus.com/assets/maps/Worlds_Edge.png"
       }
     },
     "ranked": {
@@ -38,9 +38,9 @@
         "DurationInSecs": 86400,
         "DurationInMinutes": 1440,
         "asset": "https://apexlegendsstatus.com/assets/maps/Olympus.png",
-        "remainingSecs": 26970,
-        "remainingMins": 450,
-        "remainingTimer": "07:29:30"
+        "remainingSecs": 12890,
+        "remainingMins": 215,
+        "remainingTimer": "03:34:50"
       },
       "next": {
         "start": 1766512800,
@@ -56,33 +56,33 @@
     },
     "ltm": {
       "current": {
-        "start": 1766485800,
-        "end": 1766486700,
-        "readableDate_start": "2025-12-23 10:30:00",
-        "readableDate_end": "2025-12-23 10:45:00",
-        "map": "Estates",
-        "code": "freedm_gungame_estates",
+        "start": 1766499300,
+        "end": 1766500200,
+        "readableDate_start": "2025-12-23 14:15:00",
+        "readableDate_end": "2025-12-23 14:30:00",
+        "map": "Skulltown",
+        "code": "freedm_gungame_skulltown",
         "DurationInSecs": 900,
         "DurationInMinutes": 15,
         "isActive": true,
         "eventName": "Gun Run",
-        "asset": "https://apexlegendsstatus.com/assets/maps/Arena_Autumn_Estates.png",
-        "remainingSecs": 870,
-        "remainingMins": 15,
-        "remainingTimer": "00:14:30"
+        "asset": "https://apexlegendsstatus.com/assets/maps/Arena_Skulltown.png",
+        "remainingSecs": 290,
+        "remainingMins": 5,
+        "remainingTimer": "00:04:50"
       },
       "next": {
-        "start": 1766486700,
-        "end": 1766487600,
-        "readableDate_start": "2025-12-23 10:45:00",
-        "readableDate_end": "2025-12-23 11:00:00",
-        "map": "Thunderdome",
-        "code": "freedm_tdm_thunderdome",
+        "start": 1766500200,
+        "end": 1766501100,
+        "readableDate_start": "2025-12-23 14:30:00",
+        "readableDate_end": "2025-12-23 14:45:00",
+        "map": "Fragment",
+        "code": "freedm_tdm_fragment",
         "DurationInSecs": 900,
         "DurationInMinutes": 15,
         "isActive": true,
         "eventName": "TDM",
-        "asset": "https://apexlegendsstatus.com/assets/maps/Thunderdome.png"
+        "asset": "https://apexlegendsstatus.com/assets/maps/Worlds_Edge.png"
       }
     }
   },
@@ -90,30 +90,30 @@
     "RP": {
       "PC": {
         "foundRank": 750,
-        "val": 16942,
-        "uid": "1009275557178",
-        "updateTimestamp": 1766484033,
-        "totalMastersAndPreds": 1413
+        "val": 16992,
+        "uid": "1001028330264",
+        "updateTimestamp": 1766498435,
+        "totalMastersAndPreds": 1444
       },
       "PS4": {
-        "foundRank": 751,
-        "val": 16291,
-        "uid": "8116546909662607638",
-        "updateTimestamp": 1766484057,
-        "totalMastersAndPreds": 919
+        "foundRank": 749,
+        "val": 16316,
+        "uid": "8293816035640821878",
+        "updateTimestamp": 1766498445,
+        "totalMastersAndPreds": 942
       },
       "X1": {
         "foundRank": -1,
         "val": 16000,
         "uid": "-1",
-        "updateTimestamp": 1766484057,
-        "totalMastersAndPreds": 433
+        "updateTimestamp": 1766498445,
+        "totalMastersAndPreds": 447
       },
       "SWITCH": {
         "foundRank": -1,
         "val": 16000,
         "uid": "-1",
-        "updateTimestamp": 1766484057,
+        "updateTimestamp": 1766498445,
         "totalMastersAndPreds": 14
       }
     }

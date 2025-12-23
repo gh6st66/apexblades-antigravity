@@ -1,0 +1,104 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "<Name>",
+        "role_type": "Entry / Anchor / Flex / Support / Info / Macro",
+        "primary_win_condition": "KP conversion / Placement / Zone control / Rotations",
+        "role": "What the legend is responsible for (no ability list)",
+        "lead_when": "<When to lead>",
+        "follow_when": "<When to follow>",
+        "disengage_when": "<When to disengage>",
+        "positioning": {
+            "preferred_terrain": "height / indoors / edge / zone",
+            "fight_distance": "close / mid / long",
+            "commit_vs_hold": "<commit/hold guidance>"
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "<when to use>",
+                "do_not_rely_on": "<limitations>"
+            },
+            "tactical": {
+                "primary_use": "initiate / deny / escape / info",
+                "timing_rule": "early / mid-fight / reactionary"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "rotate",
+                    "reset",
+                    "wipe",
+                    "zone"
+                ],
+                "do_not_use_when": "<conditions>",
+                "abort_conditions": "<abort triggers>"
+            }
+        },
+        "fight_flow": {
+            "start": "<description>",
+            "mid_fight": "<description>",
+            "exit_reset": "<description>"
+        },
+        "rotations": {
+            "early_game": "<description>",
+            "mid_game": "<description>",
+            "late_game": "<description>",
+            "bad_rotation": "<description>"
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "<weapon>",
+                "reason": "<reason>"
+            },
+            "ideal_secondary": {
+                "weapon": "<weapon>",
+                "reason": "<reason>"
+            },
+            "avoid_weapon_types": [
+                "<type>"
+            ]
+        },
+        "common_mistakes": [
+            "<mistake 1>",
+            "<mistake 2>",
+            "<mistake 3>"
+        ],
+        "mental_rule": "<one sentence governing all decisions>"
+    },
+    "optional_map_overlay": {
+        "map": "<Map Name>",
+        "poi": "<POI>",
+        "objective": "<what winning looks like>",
+        "priority_terrain": {
+            "primary": "<terrain>",
+            "secondary": "<terrain>",
+            "never": "<terrain>"
+        },
+        "rotation_rules": {
+            "early": "<description>",
+            "mid": "<description>",
+            "late": "<description>",
+            "forced_exit": "<trigger>"
+        },
+        "fight_rules": {
+            "when_to_take": "<description>",
+            "when_to_skip": "<description>",
+            "max_duration_seconds": "<number>"
+        },
+        "ult_adjustments": {
+            "best_angles": "<description>",
+            "mandatory": "<condition>",
+            "bait": "<condition>",
+            "abort": "<condition>"
+        },
+        "third_party_danger": {
+            "entry_directions": "<description>",
+            "audio_cues": "<description>",
+            "collapse_estimate_seconds": "<number>"
+        },
+        "common_throws": [
+            "<throw 1>",
+            "<throw 2>"
+        ],
+        "one_map_rule": "<single overriding sentence>"
+    }
+}

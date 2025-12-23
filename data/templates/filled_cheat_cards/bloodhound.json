@@ -1,0 +1,66 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Bloodhound",
+        "role_type": "Entry / Flex",
+        "primary_win_condition": "Information / Aggressive control",
+        "role": "Provides scans to reveal enemies and converts info into kills; aggressive entry.",
+        "lead_when": "When you have scans ready and can force fights.",
+        "follow_when": "When teammates need intel before committing.",
+        "disengage_when": "When scans are on cooldown and you lack vision.",
+        "positioning": {
+            "preferred_terrain": "natural cover, mid‑height structures",
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with scans; hold otherwise."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Tracking enemies after scans.",
+                "do_not_rely_on": "Passive for close‑range fights."
+            },
+            "tactical": {
+                "primary_use": "info / initiate",
+                "timing_rule": "early"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "wipe",
+                    "reset",
+                    "zone"
+                ],
+                "do_not_use_when": "Enemies already low on health and you lack follow‑up.",
+                "abort_conditions": "Ring forces you into tight space before you can activate."
+            }
+        },
+        "fight_flow": {
+            "start": "Scan early, force enemy positioning.",
+            "mid_fight": "Use tactical to close gaps, maintain vision.",
+            "exit_reset": "Ult to reset or finish low‑health foes."
+        },
+        "rotations": {
+            "early_game": "Scout ahead, mark enemies.",
+            "mid_game": "Rotate with vision advantage.",
+            "late_game": "Use ult for final ring control.",
+            "bad_rotation": "Rotating without scans, getting caught blind."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "R-301",
+                "reason": "Consistent mid-range damage with vision."
+            },
+            "ideal_secondary": {
+                "weapon": "R‑99",
+                "reason": "Close‑range finishers when you close in."
+            },
+            "avoid_weapon_types": [
+                "Shotguns only"
+            ]
+        },
+        "common_mistakes": [
+            "Using scans too early and wasting them",
+            "Overcommitting without vision",
+            "Ignoring ring pull until late"
+        ],
+        "mental_rule": "If you lack info → scan first."
+    }
+}

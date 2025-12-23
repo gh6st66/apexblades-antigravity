@@ -1,0 +1,8 @@
+{
+    "html.validate.scripts": false,
+    "html.validate.styles": false,
+    "files.exclude": {
+        "data/meta/*.html": false
+    },
+    "html.customData": []
+}

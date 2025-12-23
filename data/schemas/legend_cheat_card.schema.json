@@ -1,0 +1,366 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://apexlegends.tech/schemas/legend_cheat_card.schema.json",
+    "title": "Legend Cheat Card",
+    "description": "A single-screen ranked cheat card for Apex Legends, optimized for quick decision-making with poor comms and third-party pressure.",
+    "type": "object",
+    "required": [
+        "legend",
+        "role",
+        "positioning",
+        "abilities",
+        "fight_flow",
+        "rotations",
+        "weapons",
+        "common_mistakes",
+        "mental_rule"
+    ],
+    "properties": {
+        "legend": {
+            "type": "object",
+            "required": [
+                "name",
+                "role_type",
+                "primary_win_condition"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Legend display name"
+                },
+                "role_type": {
+                    "type": "string",
+                    "enum": [
+                        "Entry",
+                        "Anchor",
+                        "Flex",
+                        "Support",
+                        "Info",
+                        "Macro"
+                    ],
+                    "description": "Primary role archetype in ranked"
+                },
+                "primary_win_condition": {
+                    "type": "string",
+                    "enum": [
+                        "KP Conversion",
+                        "Placement",
+                        "Zone Control",
+                        "Rotations",
+                        "Team Enabler"
+                    ],
+                    "description": "How this legend wins RP"
+                },
+                "season_version": {
+                    "type": "string",
+                    "description": "Season/patch this card applies to (e.g., S27_Amped)"
+                }
+            }
+        },
+        "role": {
+            "type": "object",
+            "required": [
+                "responsibility",
+                "lead_when",
+                "follow_when",
+                "disengage_when"
+            ],
+            "properties": {
+                "responsibility": {
+                    "type": "string",
+                    "description": "What this legend is RESPONSIBLE for, not what they CAN do"
+                },
+                "lead_when": {
+                    "type": "string",
+                    "description": "Situations where you should take point"
+                },
+                "follow_when": {
+                    "type": "string",
+                    "description": "Situations where you should support teammates"
+                },
+                "disengage_when": {
+                    "type": "string",
+                    "description": "Hard triggers for backing out"
+                }
+            }
+        },
+        "positioning": {
+            "type": "object",
+            "required": [
+                "preferred_terrain",
+                "fight_distance",
+                "commit_vs_hold"
+            ],
+            "properties": {
+                "preferred_terrain": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "height",
+                            "indoors",
+                            "edge",
+                            "zone_center",
+                            "natural_cover",
+                            "open_sightlines"
+                        ]
+                    },
+                    "description": "Best terrain types for this legend"
+                },
+                "fight_distance": {
+                    "type": "string",
+                    "enum": [
+                        "close",
+                        "mid",
+                        "long",
+                        "close-mid",
+                        "mid-long",
+                        "flexible"
+                    ],
+                    "description": "Optimal engagement range"
+                },
+                "commit_vs_hold": {
+                    "type": "string",
+                    "description": "Decision framework for when to push vs hold position"
+                }
+            }
+        },
+        "abilities": {
+            "type": "object",
+            "required": [
+                "passive",
+                "tactical",
+                "ultimate"
+            ],
+            "properties": {
+                "passive": {
+                    "type": "object",
+                    "required": [
+                        "leverage_when",
+                        "do_not_rely_on"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "leverage_when": {
+                            "type": "string",
+                            "description": "When to actively use this passive"
+                        },
+                        "do_not_rely_on": {
+                            "type": "string",
+                            "description": "Common over-reliance mistakes"
+                        }
+                    }
+                },
+                "tactical": {
+                    "type": "object",
+                    "required": [
+                        "primary_use",
+                        "timing_rule"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "primary_use": {
+                            "type": "string",
+                            "enum": [
+                                "initiate",
+                                "deny",
+                                "escape",
+                                "info",
+                                "damage",
+                                "zone"
+                            ],
+                            "description": "Main purpose of tactical"
+                        },
+                        "timing_rule": {
+                            "type": "string",
+                            "enum": [
+                                "early",
+                                "mid-fight",
+                                "reactionary",
+                                "pre-emptive",
+                                "cooldown-dependent"
+                            ],
+                            "description": "When to use relative to fight timeline"
+                        },
+                        "notes": {
+                            "type": "string",
+                            "description": "Key usage note"
+                        }
+                    }
+                },
+                "ultimate": {
+                    "type": "object",
+                    "required": [
+                        "best_use_cases",
+                        "do_not_use_when",
+                        "abort_conditions"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "best_use_cases": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "rotate",
+                                    "reset",
+                                    "wipe",
+                                    "zone",
+                                    "escape",
+                                    "initiate",
+                                    "third-party"
+                                ]
+                            },
+                            "description": "Best scenarios for ult usage"
+                        },
+                        "do_not_use_when": {
+                            "type": "string",
+                            "description": "When to hold ult"
+                        },
+                        "abort_conditions": {
+                            "type": "string",
+                            "description": "If X happens, cancel or reposition"
+                        },
+                        "cooldown_seconds": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "fight_flow": {
+            "type": "object",
+            "required": [
+                "start",
+                "mid_fight",
+                "exit_reset"
+            ],
+            "properties": {
+                "start": {
+                    "type": "string",
+                    "description": "How fights should begin for this legend"
+                },
+                "mid_fight": {
+                    "type": "string",
+                    "description": "What you do during the fight"
+                },
+                "exit_reset": {
+                    "type": "string",
+                    "description": "How you disengage or reset"
+                }
+            }
+        },
+        "rotations": {
+            "type": "object",
+            "required": [
+                "early_game",
+                "mid_game",
+                "late_game",
+                "bad_rotation"
+            ],
+            "properties": {
+                "early_game": {
+                    "type": "string"
+                },
+                "mid_game": {
+                    "type": "string"
+                },
+                "late_game": {
+                    "type": "string"
+                },
+                "bad_rotation": {
+                    "type": "string",
+                    "description": "What a throw rotation looks like for this legend"
+                }
+            }
+        },
+        "weapons": {
+            "type": "object",
+            "required": [
+                "primary",
+                "secondary"
+            ],
+            "properties": {
+                "primary": {
+                    "type": "object",
+                    "properties": {
+                        "weapon": {
+                            "type": "string"
+                        },
+                        "reason": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "secondary": {
+                    "type": "object",
+                    "properties": {
+                        "weapon": {
+                            "type": "string"
+                        },
+                        "reason": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "avoid": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Weapon types that don't synergize"
+                }
+            }
+        },
+        "common_mistakes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 2,
+            "maxItems": 4,
+            "description": "Legend-specific throw habits"
+        },
+        "rp_loss_behavior": {
+            "type": "string",
+            "description": "One specific behavior that consistently loses RP"
+        },
+        "mental_rule": {
+            "type": "string",
+            "description": "One sentence that governs all decisions"
+        },
+        "map_overrides": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "map": {
+                        "type": "string"
+                    },
+                    "poi": {
+                        "type": "string"
+                    },
+                    "height_rules": {
+                        "type": "string"
+                    },
+                    "ult_timing": {
+                        "type": "string"
+                    },
+                    "danger_zones": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "description": "Optional map/POI-specific adjustments"
+        }
+    }
+}

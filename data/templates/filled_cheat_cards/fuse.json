@@ -1,0 +1,66 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Fuse",
+        "role_type": "Area Denial / Suppression",
+        "primary_win_condition": "Grenade utility / Zone control",
+        "role": "Uses tactical and ultimate explosives to flush enemies from cover and dominate mid‑range engagements.",
+        "lead_when": "When you have a clear line of sight to set up a grenade barrage.",
+        "follow_when": "When teammates need a safe entry after your explosives clear the area.",
+        "disengage_when": "When your grenades are on cooldown and enemies close in.",
+        "positioning": {
+            "preferred_terrain": "Open sightlines, medium‑range corridors",
+            "fight_distance": "Mid",
+            "commit_vs_hold": "Commit with grenade setups; hold if no clear target."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Using grenade damage to chip opponents before engagements.",
+                "do_not_rely_on": "Passive does not provide vision."
+            },
+            "tactical": {
+                "primary_use": "area denial",
+                "timing_rule": "pre‑emptive"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "zone",
+                    "wipe",
+                    "reset"
+                ],
+                "do_not_use_when": "Enemies are already low health and will be finished by teammates.",
+                "abort_conditions": "Ring forces you into close quarters before you can fire."
+            }
+        },
+        "fight_flow": {
+            "start": "Throw grenade cluster to force enemies out of cover.",
+            "mid_fight": "Follow up with tactical grenade and maintain pressure.",
+            "exit_reset": "Ult to block pursuers and reset the fight."
+        },
+        "rotations": {
+            "early_game": "Secure a position with clear grenade lines.",
+            "mid_game": "Rotate to new sightlines, keep grenades ready.",
+            "late_game": "Use ultimate to deny final‑ring pushes.",
+            "bad_rotation": "Rotating without grenade coverage leaves you vulnerable."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "30‑30 Repeater",
+                "reason": "Consistent mid‑range damage while setting up explosives."
+            },
+            "ideal_secondary": {
+                "weapon": "R‑99",
+                "reason": "Close‑range finishers after grenades clear cover."
+            },
+            "avoid_weapon_types": [
+                "Shotguns"
+            ]
+        },
+        "common_mistakes": [
+            "Throwing grenades too early without vision",
+            "Using ultimate when enemies are already low",
+            "Rotating without a grenade line of sight"
+        ],
+        "mental_rule": "If you lack a clear grenade line → fall back and reposition."
+    }
+}

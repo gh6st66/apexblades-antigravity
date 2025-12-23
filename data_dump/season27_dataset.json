@@ -1,0 +1,663 @@
+{
+    "season_info": {
+        "season_number": 27,
+        "season_name": "Amped",
+        "season_code": "S27",
+        "season_version": "S27_Amped_Launch",
+        "release_date_utc": "2025-11-04T18:00:00Z",
+        "official_patch_notes_url": "https://www.ea.com/games/apex-legends/apex-legends/news/amped-patch-notes",
+        "br_map_pool": [
+            "Olympus",
+            "Broken Moon",
+            "World's Edge"
+        ],
+        "notes": "Season 27 Amped introduces major reworks for Valkyrie, Rampart, Horizon, global Mantle Boost, Trident 2.0, Ranked KP tweaks, and Olympus Rising map overhaul."
+    },
+    "legends": [
+        {
+            "name": "Valkyrie",
+            "season_version": "S27_Amped_Launch",
+            "tactical": {
+                "name": "Missile Swarm",
+                "description": "Fire a cluster of mini‑rockets that damage and disorient enemies; on hit they now briefly reveal enemies and suppress movement passives.",
+                "cooldown": 25,
+                "mechanics": "Fires a grid of rockets at a targeted area. No self‑damage or self‑stun. On hit applies ~1.5 s full‑body scan and temporarily disables movement passives like Mantle Boost. Vertical clearance restriction removed; max range increased to ~125 m.",
+                "tech": [
+                    "Can be fired while skydiving (except from dropship).",
+                    "Applies EMP‑style movement‑passive cooldown on hit.",
+                    "Combines with Skyward Dive for immediate post‑launch scans."
+                ]
+            },
+            "passive": {
+                "name": "VTOL Jets",
+                "description": "Jetpack with directional control and fuel management. In S27 it refuels much faster, flies faster, but has reduced total fuel (6 s) and no mid‑air refuel until landing."
+            },
+            "ultimate": {
+                "name": "Skyward Dive",
+                "description": "Prepare for launch, then boost Valkyrie and nearby teammates into a redeploy skydive.",
+                "cooldown": 150
+            },
+            "movement_profile": {
+                "class": "Recon",
+                "unique_movement_passives": [
+                    "VTOL Jets for sustained aerial movement",
+                    "Global Mantle Boost for momentum bursts after mantling",
+                    "Improved airborne control during Skyward Dive"
+                ],
+                "base_speed_type": "standard_non_fortified",
+                "notes": "Jets now emphasize longer burns for travel speed; horizontal and vertical speeds significantly increased."
+            },
+            "hitbox_category": "standard_non_fortified",
+            "interactions": [
+                "Missile Swarm scan applies movement‑passive cooldowns",
+                "EMP effects drain VTOL fuel",
+                "Skyward Dive can fire tactical while skydiving (except from dropship)"
+            ],
+            "known_tech": [
+                "Jetpack strafe‑peeking with short burns",
+                "Skyward Dive tap‑cancel for quick reposition",
+                "Mantle Boost into jetpack for extra burst"
+            ],
+            "patch_history": [
+                {
+                    "season": "S27_Amped_Launch",
+                    "summary": "Major jetpack and tactical rework, buffs to ultimate and skydive usability.",
+                    "details": {
+                        "vtol_jets": {
+                            "recharge_delay_before": 8.0,
+                            "recharge_delay_after": 2.5,
+                            "recharge_time_before": 10.9,
+                            "recharge_time_after": 3.0,
+                            "fuel_total_before": 8.0,
+                            "fuel_total_after": 6.0,
+                            "horizontal_speed": "significantly_increased",
+                            "vertical_speed": "increased_with_extra_vertical_when_flying_straight_up",
+                            "fuel_regen_condition": "no_refuel_until_ground_contact"
+                        },
+                        "missile_swarm": {
+                            "self_damage": "removed",
+                            "self_stun": "removed",
+                            "scan_on_hit_seconds": 1.5,
+                            "movement_passive_cooldown_on_hit": true,
+                            "cooldown_before": 30,
+                            "cooldown_after": 25,
+                            "max_range_before": 100,
+                            "max_range_after": 125,
+                            "vertical_clearance_restriction": "removed"
+                        },
+                        "skyward_dive": {
+                            "launch_height_change_percent": 15,
+                            "cooldown_before": 180,
+                            "cooldown_after": 150,
+                            "takeoff_delay_before": 2.0,
+                            "takeoff_delay_after": 1.5,
+                            "slow_rise_before": 1.83,
+                            "slow_rise_after": 1.33,
+                            "self_cancel_cooldown_penalty": "removed",
+                            "damage_cooldown_penalty_before": 54,
+                            "damage_cooldown_penalty_after": 30
+                        },
+                        "skydive": {
+                            "tactical_usable_while_skydiving": true,
+                            "exception": "cannot_use_from_dropship",
+                            "landing_behavior": "reduced_slow_fall_near_ground"
+                        }
+                    }
+                }
+            ],
+            "recommended_loadouts": [
+                {
+                    "context": "Ranked Olympus / Broken Moon rotations",
+                    "weapons": [
+                        "Alternator SMG (Gold or Double Tap)",
+                        "Bocek Compound Bow or G7 Scout"
+                    ],
+                    "notes": "Leverage Alternator’s S27 buff and Double Tap for close/mid fights; pair with a marksman/bow to punish from Valkyrie jet angles."
+                }
+            ]
+        },
+        {
+            "name": "Rampart",
+            "season_version": "S27_Amped_Launch",
+            "tactical": {
+                "name": "Amped Cover",
+                "description": "Deploy a crouch‑height wall that becomes a shielded cover with a roof. Damage dealt through the shield or wall stores charge that can be consumed for a sprint speed boost.",
+                "cooldown": "TBD",
+                "mechanics": "Wall gains a roof and can store up to 300 damage. When fully charged, crossing the wall grants a sprint‑only speed boost up to 15 s. Damage to wall counts as 0.25 x, damage through shield counts as 1.0 x. Walls scale health with Rampart’s Evo level.",
+                "tech": [
+                    "Place walls early to block damage and bank speed boost",
+                    "Destroyed walls auto‑grant boost to nearby teammates",
+                    "Use walls to counter‑peek sniper angles"
+                ]
+            },
+            "passive": {
+                "name": "Battle Modder",
+                "description": "Upgraded Modded Loader. LMG/minigun mag and reload bonuses remain, and Amped Cover walls gain permanent health per Evo level."
+            },
+            "ultimate": {
+                "name": "Mobile Minigun ‘Sheila’",
+                "description": "Deploy or carry a powerful minigun for lane control and burst suppression.",
+                "cooldown": "TBD"
+            },
+            "movement_profile": {
+                "class": "Controller",
+                "unique_movement_passives": [
+                    "Ring Consoles reveal next ring location",
+                    "Mantle Boost off own walls for micro‑movement"
+                ],
+                "base_speed_type": "standard_non_fortified",
+                "notes": "Movement remains standard; survivability driven by wall health scaling and speed‑boost mechanic."
+            },
+            "hitbox_category": "standard_non_fortified",
+            "interactions": [
+                "Frag grenade damage multiplier increased to 2.0, Arc Star normalized to 1.0",
+                "Walls scale with Evo level (up to ~800 HP wall, 225 shield HP)",
+                "Locked and Loaded upgrade grants infinite ammo and faster reloads while behind intact Amped Cover"
+            ],
+            "known_tech": [
+                "Wall charge + speed boost for team‑wide re‑peeks",
+                "Mantle Boost combo with walls for hard‑to‑track strafes"
+            ],
+            "patch_history": [
+                {
+                    "season": "S27_Amped_Launch",
+                    "summary": "Full kit refresh focusing on wall durability, offensive tempo, and speed‑boost utility.",
+                    "details": {
+                        "amped_cover": {
+                            "roof_added": true,
+                            "wall_charge_max_damage": 300,
+                            "max_speed_boost_duration_seconds": 15,
+                            "speed_boost_applies_while_sprinting_only": true,
+                            "damage_to_wall_charge_ratio": 0.25,
+                            "damage_through_shield_charge_ratio": 1.0,
+                            "wall_health_base": 120,
+                            "wall_health_per_evo": 200,
+                            "wall_health_at_max_evo": 800,
+                            "shield_health_base": 175,
+                            "shield_health_per_evo": 25,
+                            "shield_health_at_max_evo": 225,
+                            "frag_damage_multiplier_before": 1.0,
+                            "frag_damage_multiplier_after": 2.0,
+                            "arc_star_damage_multiplier_before": 1.5,
+                            "arc_star_damage_multiplier_after": 1.0
+                        },
+                        "upgrades": {
+                            "level_2": [
+                                "Combat Reserve (new) – larger ammo stacks, extra grenade slots, red Weapon Supply Bins",
+                                "Locked and Loaded (new) – infinite ammo & faster reload behind intact Amped Cover"
+                            ],
+                            "level_3": [
+                                "Rebuild Module (new) – Amped Cover slowly regenerates health/shield when undamaged"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "recommended_loadouts": [
+                {
+                    "context": "Ranked Olympus choke control / late‑ring holds",
+                    "weapons": [
+                        "Rampage LMG or Spitfire",
+                        "Peacekeeper or Alternator SMG"
+                    ],
+                    "notes": "Lean into LMG synergies from Battle Modder. Use walls to anchor space around Olympus POIs while shotguns/SMGs clean up pushes."
+                }
+            ]
+        },
+        {
+            "name": "Horizon",
+            "season_version": "S27_Amped_Launch",
+            "tactical": {
+                "name": "Gravity Lift",
+                "description": "Create a vertical lift that boosts players upward and allows aerial repositioning, now with faster lift speed, longer hover time, and much shorter effective cooldown.",
+                "cooldown": 20,
+                "mechanics": "Lift speed increased to 375 (from 300). Hover time at top extended to 1.5 s (from 0.5 s). Base cooldown reduced by 5 s and start‑delay reduced to 2 s, making real cooldown ~22 s.",
+                "tech": [
+                    "Use Gravity Lift defensively more often thanks to shorter cooldown",
+                    "Mantle Boost interactions on exit for explosive vertical/horizontal re‑peeks",
+                    "Pair with Newt Scoot upgrade to glide after exiting for longer horizontal rotations"
+                ]
+            },
+            "passive": {
+                "name": "Spacewalk",
+                "description": "Improved air‑control and reduced landing impact after drops or Gravity Lift usage, allowing faster re‑centering in fights."
+            },
+            "ultimate": {
+                "name": "Black Hole",
+                "description": "Deploy Newt to create a micro‑black‑hole that pulls enemies and projectiles towards its centre.",
+                "cooldown": 180
+            },
+            "movement_profile": {
+                "class": "Skirmisher",
+                "unique_movement_passives": [
+                    "Spacewalk for superior air‑strafing",
+                    "Mantle Boost synergy for explosive vertical/horizontal re‑peeks",
+                    "Skirmisher perk to see and inspect care packages"
+                ],
+                "base_speed_type": "standard_non_fortified",
+                "notes": "Buffed Gravity Lift and ultimate uptime push Horizon back toward high‑mobility anchor play, especially strong in vertical POIs on Olympus."
+            },
+            "hitbox_category": "standard_non_fortified",
+            "interactions": [
+                "Black Hole health increased to 225 (from 175)",
+                "Shorter Gravity Lift cooldown allows more frequent vertical checks over cover"
+            ],
+            "known_tech": [
+                "Lift‑flick peeking (brief lift, peek, drop) benefits from increased lift speed",
+                "Lift into Mantle Boost on terrain edges to chain unexpected angles"
+            ],
+            "patch_history": [
+                {
+                    "season": "S27_Amped_Launch",
+                    "summary": "Mobility and uptime buffs to make Horizon more attractive without fully restoring pre‑nerf power.",
+                    "details": {
+                        "gravity_lift": {
+                            "lift_speed_before": 300,
+                            "lift_speed_after": 375,
+                            "hover_time_before": 0.5,
+                            "hover_time_after": 1.5,
+                            "cooldown_before": 25,
+                            "cooldown_after": 20,
+                            "cooldown_start_delay_before": 10,
+                            "cooldown_start_delay_after": 2,
+                            "effective_cooldown_before": 35,
+                            "effective_cooldown_after": 22
+                        },
+                        "black_hole": {
+                            "cooldown_before": 210,
+                            "cooldown_after": 180,
+                            "health_before": 175,
+                            "health_after": 225
+                        },
+                        "upgrades": {
+                            "level_2": [
+                                "Gravity Boots – crouch in air to fall quickly",
+                                "Newt Scoot – jump after exiting Gravity Lift to glide"
+                            ],
+                            "level_3": [
+                                "Knock Expert – gain tactical charge on knocks"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "recommended_loadouts": [
+                {
+                    "context": "Ranked + competitive Olympus vertical fights",
+                    "weapons": [
+                        "Alternator SMG or R‑99",
+                        "Bocek Compound Bow or G7 Scout"
+                    ],
+                    "notes": "Use lift to take top control then farm mid‑range beams. Alternator’s S27 buffs fit Horizon’s short‑exposure peeks; Bocek takes advantage of altitude from Gravity Lift."
+                }
+            ]
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Alternator SMG",
+            "category": "SMG",
+            "season_version": "S27_Amped_Launch",
+            "ammo_type": "Light",
+            "is_care_package_weapon": false,
+            "is_gold_rotation_weapon": true,
+            "damage_profile": {
+                "body_damage": 19,
+                "head_damage": "TBD",
+                "leg_damage": "TBD",
+                "notes": "Base body damage increased from 18 to 19 in S27."
+            },
+            "recoil_profile": {
+                "pattern": "TBD",
+                "notes": "No specific recoil change in S27; treat as unchanged from S26 pending firing‑range validation."
+            },
+            "projectile": {
+                "type": "projectile",
+                "projectile_speed": "TBD",
+                "projectile_size": "unchanged",
+                "notes": "No explicit projectile changes in Amped patch notes."
+            },
+            "attachments": {
+                "magazines": [
+                    "White",
+                    "Blue",
+                    "Purple",
+                    "Gold"
+                ],
+                "magazine_sizes": {
+                    "base": "TBD",
+                    "white": "TBD",
+                    "blue": 26,
+                    "purple": 30,
+                    "gold": 30
+                },
+                "laser_sights": [
+                    "White",
+                    "Blue",
+                    "Purple",
+                    "Gold",
+                    "Gold Laser Sight"
+                ],
+                "hopups": [
+                    "Double Tap Trigger (Locked Hop‑Up; 375 points to unlock)"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Default Auto",
+                    "fire_mode": "full_auto",
+                    "body_damage": 19,
+                    "fire_rate_rpm": "TBD",
+                    "ttk_versus_100hp_ms": "TBD"
+                },
+                {
+                    "name": "Double Tap Trigger",
+                    "fire_mode": "dual_burst",
+                    "body_damage_per_bullet": 15,
+                    "fire_rate_rpm": "TBD_lower_than_default",
+                    "notes": "Fires one bullet from each barrel simultaneously per trigger pull."
+                }
+            ],
+            "patch_history": [
+                {
+                    "season": "S27_Amped_Launch",
+                    "summary": "Damage buff, mag size rebalance, and Double Tap integration.",
+                    "details": {
+                        "damage": {
+                            "body_before": 18,
+                            "body_after": 19
+                        },
+                        "magazine": {
+                            "blue_before": 27,
+                            "blue_after": 26,
+                            "purple_before": 29,
+                            "purple_after": 30,
+                            "gold_before": 29,
+                            "gold_after": 30
+                        },
+                        "double_tap_trigger": {
+                            "added": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bocek Compound Bow",
+            "category": "Marksman",
+            "season_version": "S27_Amped_Launch",
+            "ammo_type": "Arrows",
+            "damage_profile": {
+                "body_damage": "TBD",
+                "head_damage": "TBD",
+                "leg_damage": "TBD",
+                "notes": "Damage unchanged; only scope compatibility updated."
+            },
+            "attachments": {
+                "optic": [
+                    "2x‑4x AOG (new)"
+                ],
+                "hopups": []
+            },
+            "patch_history": [
+                {
+                    "season": "S27_Amped_Launch",
+                    "summary": "Added 2x‑4x AOG as compatible optic.",
+                    "details": {}
+                }
+            ]
+        }
+        // Additional weapons omitted for brevity – fill in similarly with TBD where data missing.
+    ],
+    "maps": {
+        "battle_royale": [
+            {
+                "name": "Olympus Rising",
+                "base_map": "Olympus",
+                "season_version": "S27_Amped_Launch",
+                "pois": [
+                    {
+                        "id": "somers_university",
+                        "replaces": "Orbital Cannon",
+                        "notes": "Large POI with educational/industrial theming; Elysium repositioned nearby."
+                    },
+                    {
+                        "id": "gravity_engine",
+                        "replaces": "Energy Depot",
+                        "notes": "High‑mobility hub with new rotations to Turbine and other POIs."
+                    },
+                    {
+                        "id": "stabilizer",
+                        "replaces": "Docks",
+                        "notes": "New POI replacing older Docks structure; more cover and internal fights."
+                    },
+                    {
+                        "id": "dockyard",
+                        "replaces": "none",
+                        "notes": "Brand new industrial POI adding density to previously open areas."
+                    }
+                ],
+                "rotation_windows": {
+                    "pubs": "TBD",
+                    "ranked": "TBD"
+                },
+                "loot_profile": {
+                    "floor_loot_density": "TBD",
+                    "special_loot_features": [
+                        "Phase Driver loot cooldown increased to 90 s",
+                        "Trident distribution updated for Tridents 2.0"
+                    ]
+                }
+            }
+        ]
+    },
+    "ranked": {
+        "season_version": "S27_Amped_Launch",
+        "entry_costs_rp": {
+            "bronze": 10,
+            "silver": "TBD",
+            "gold": 38,
+            "platinum": 48,
+            "diamond": "TBD",
+            "master": "TBD",
+            "apex_predator": "TBD"
+        },
+        "kill_points_curve": {
+            "baseline_from_s26_showdown": {
+                "place_1": 20,
+                "place_2": 18,
+                "place_3": 16,
+                "place_4": 14,
+                "place_5": 12,
+                "place_6": 10,
+                "place_7": 10,
+                "place_8": 10,
+                "place_9": 8,
+                "place_10": 8,
+                "place_11_to_15": 6,
+                "place_16_to_20": 4
+            },
+            "s27_adjustments": "TBD – exact new per‑placement KP values need in‑game verification."
+        },
+        "placement_points": {
+            "place_1": "TBD",
+            "place_2": 100,
+            "place_3": 75,
+            "place_4": "TBD",
+            "place_5": "TBD",
+            "place_6": 40,
+            "place_7_to_20": "TBD"
+        },
+        "kill_cap": "TBD",
+        "assist_window_seconds": "TBD",
+        "drop_zones": {
+            "enabled": true,
+            "description": "Each Ranked match assigns squads to specific POIs before drop; map preview shows assigned Drop Zone; no Hot Zone."
+        },
+        "heat_shields": {
+            "ranked": "disabled",
+            "core_br": "disabled"
+        },
+        "rewards": {
+            "ladder_champion_dive_trail_completions_required": 2,
+            "aura_system": "Seasonal Auras cosmetic only (active S27)"
+        }
+    },
+    "movement": {
+        "core_tech": [
+            {
+                "id": "mantle_boost",
+                "name": "Mantle Boost",
+                "category": "core",
+                "season_version": "S27_Amped_Launch",
+                "definition": "A timed input at the end of a mantle that grants a 1‑frame forward acceleration burst.",
+                "inputs": {
+                    "generic": "Press bound Mantle Boost key/button during final ~0.15 s of a mantle."
+                },
+                "timing_window_seconds": 0.15,
+                "cooldown": "None",
+                "legend_variations": "Applies equally to all legends; synergises strongly with legends that already chain movement tech (Pathfinder, Horizon, Octane, Valkyrie).",
+                "status": "Implemented"
+            },
+            {
+                "id": "trident_glide",
+                "name": "Trident Jump & Glide",
+                "category": "vehicle_movement",
+                "season_version": "S27_Amped_Launch",
+                "definition": "Tridents can now jump and glide, allowing aerial routes with hover‑like behavior.",
+                "inputs": {
+                    "jump": "Press Jump while Trident is on ground to perform a small hop.",
+                    "glide": "Hold Jump while airborne to glide; steer and boost while gliding."
+                },
+                "effects": [
+                    "Slow altitude loss while gliding.",
+                    "Full steering control in air.",
+                    "Can use Boost meter while gliding."
+                ],
+                "status": "Implemented"
+            }
+        ]
+    },
+    "meta": {
+        "legends": {
+            "pick_rates_any_mode": {
+                "source": "ApexLegendsStatus (global stats)",
+                "data": [
+                    {
+                        "legend": "Valkyrie",
+                        "pick_rate_percent": 11.1
+                    },
+                    {
+                        "legend": "Revenant",
+                        "pick_rate_percent": 8.9
+                    },
+                    {
+                        "legend": "Bangalore",
+                        "pick_rate_percent": 8.6
+                    },
+                    {
+                        "legend": "Mad Maggie",
+                        "pick_rate_percent": 7.0
+                    },
+                    {
+                        "legend": "Wraith",
+                        "pick_rate_percent": 6.4
+                    },
+                    {
+                        "legend": "Lifeline",
+                        "pick_rate_percent": 6.4
+                    },
+                    {
+                        "legend": "Pathfinder",
+                        "pick_rate_percent": 6.4
+                    },
+                    {
+                        "legend": "Ash",
+                        "pick_rate_percent": 6.4
+                    },
+                    {
+                        "legend": "Sparrow",
+                        "pick_rate_percent": 5.7
+                    },
+                    {
+                        "legend": "Horizon",
+                        "pick_rate_percent": 4.8
+                    }
+                ]
+            },
+            "tiering_summary": {
+                "s_tier": [
+                    "Valkyrie",
+                    "Horizon",
+                    "Rampart",
+                    "Bangalore",
+                    "Sparrow"
+                ],
+                "a_tier": [
+                    "Mad Maggie",
+                    "Ash",
+                    "Lifeline",
+                    "Pathfinder",
+                    "Caustic",
+                    "Alter"
+                ],
+                "underperformers": [
+                    "Seer",
+                    "Octane",
+                    "Mirage",
+                    "Crypto"
+                ],
+                "notes": "Aggregated from multiple S27 tier lists and pro analysis."
+            },
+            "meta_trends": [
+                "Valkyrie’s rework + Olympus Rising emphasizes aerial control and macro rotations; Valk is often default pick in high‑tier lobbies.",
+                "Horizon’s buffs restore her as a premier vertical‑control legend, especially powerful on Olympus.",
+                "Rampart is no longer a meme pick; Amped Cover speed boosts enable bunker‑to‑breach patterns.",
+                "Sparrow remains strong but is no longer uniquely dominant; recon ecosystem more balanced."
+            ]
+        },
+        "weapons": {
+            "headline_meta": [
+                "Alternator jumps into S‑tier thanks to +1 body damage, strong mag sizes, Double Tap hop‑up, and synergy with Gold Laser Sight.",
+                "Bocek is heavily favored on Olympus Rising due to long sightlines and 2x‑4x AOG access.",
+                "Marksman and sniper dominance reduced by projectile size and headshot multiplier nerfs.",
+                "LMGs step back after reverse hipfire removal, giving SMGs and pistols more room."
+            ],
+            "s_tier_weapons": [
+                "Alternator SMG",
+                "Bocek Compound Bow",
+                "R‑99 (stats TBD)",
+                "CAR (Care Package)",
+                "Peacekeeper (borderline S/A after nerfs)"
+            ],
+            "notable_nerfs": [
+                "Marksman weapons (30‑30, G7, Bocek) via headshot and projectile changes.",
+                "Charge Rifle nerfs.",
+                "Peacekeeper damage/choke/clip adjustments.",
+                "LMG reverse hipfire removal."
+            ]
+        },
+        "maps_and_ranked": {
+            "olympus_rising_impact": [
+                "More cover and mid‑map density reduce third‑party angles and oppressive high‑ground holds.",
+                "Reworked Hammond/Rift/Turbine flows encourage safer but more complex rotations.",
+                "Olympus verticality synergises strongly with Valkyrie, Horizon, Pathfinder, and Rampart walls."
+            ],
+            "ranked_playstyle": [
+                "Drop Zones standardise early loot and reduce extreme RNG; early game focuses on efficient POI clearing.",
+                "Heat Shields removed from Ranked and Core BR, forcing teams to respect ring timings and commit to rotations.",
+                "Reduced Ladder Champion Dive Trail requirement lowers long‑term grind, encouraging experimentation each season."
+            ]
+        },
+        "data_quality_notes": {
+            "unknowns_marked_as": "TBD",
+            "needs_verification": [
+                "Exact S27 Kill Point values per placement and kill cap/assist timer.",
+                "Full placement RP table for Ranked.",
+                "Detailed damage, DPS, recoil, and projectile stats for all weapons not explicitly numeric in patch notes.",
+                "Precise Mantle Boost velocity values and per‑legend momentum variations.",
+                "Full map rotation schedule (pubs, ranked, mixtape) for all phases of S27."
+            ]
+        }
+    }
+}

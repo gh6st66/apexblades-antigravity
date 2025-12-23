@@ -1,0 +1,66 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Gibraltar",
+        "role_type": "Anchor / Support",
+        "primary_win_condition": "Zone control / End‑game fortress",
+        "role": "Provides dome shield for safe rotations and ultimate for final‑ring control.",
+        "lead_when": "When you can place dome to secure a position before ring pull.",
+        "follow_when": "When teammates need protection to push or rotate.",
+        "disengage_when": "When dome is on cooldown and enemies have high ground.",
+        "positioning": {
+            "preferred_terrain": "indoors, natural cover, fortified spots",
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with dome; hold when dome down."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Passive armor for survivability.",
+                "do_not_rely_on": "Passive for aggressive entry."
+            },
+            "tactical": {
+                "primary_use": "shield / zone",
+                "timing_rule": "reactionary"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "reset",
+                    "zone",
+                    "escape"
+                ],
+                "do_not_use_when": "Enemies already have dome advantage.",
+                "abort_conditions": "Ring forces you into open before you can fire."
+            }
+        },
+        "fight_flow": {
+            "start": "Place dome, scout, set up safe entry.",
+            "mid_fight": "Maintain shield, use gunfire, coordinate with team.",
+            "exit_reset": "Ult to escape or reset ring pull."
+        },
+        "rotations": {
+            "early_game": "Secure a fortified spot with dome.",
+            "mid_game": "Rotate early using dome as safe cover.",
+            "late_game": "Ult to block pursuers and control final ring.",
+            "bad_rotation": "Rotating without dome leaves you exposed."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "Flatline",
+                "reason": "High damage from cover."
+            },
+            "ideal_secondary": {
+                "weapon": "R‑99",
+                "reason": "Close‑range finishers when you land."
+            },
+            "avoid_weapon_types": [
+                "Shotguns only"
+            ]
+        },
+        "common_mistakes": [
+            "Using dome too late",
+            "Ult when already boxed",
+            "Ignoring ring pull until forced"
+        ],
+        "mental_rule": "If you lack safe cover → dome first."
+    }
+}

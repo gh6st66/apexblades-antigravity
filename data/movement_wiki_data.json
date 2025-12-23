@@ -1,0 +1,50 @@
+{
+  "sidebarLinks": [
+    {
+      "text": "Home",
+      "href": "/wiki/"
+    },
+    {
+      "text": "FAQ & Help",
+      "href": "/wiki/FAQ"
+    },
+    {
+      "text": "Catalog",
+      "href": "/wiki/catalog"
+    },
+    {
+      "text": "Articles",
+      "href": "/wiki/articles"
+    },
+    {
+      "text": "Superglide Trainer",
+      "href": "/superglidetrainer/"
+    },
+    {
+      "text": "Contribute",
+      "href": "https://discord.com/invite/7RshRDZ"
+    },
+    {
+      "text": "Support Us :)",
+      "href": "https://ko-fi.com/apexmovementwiki"
+    }
+  ],
+  "featuredArticles": [
+    {
+      "title": "MnK Movement binds",
+      "href": "/wiki/articles/Setup & Hardware>MnK Movement binds"
+    },
+    {
+      "title": "Apex Myths",
+      "href": "/wiki/articles/General Apex Guides>Apex Myths"
+    },
+    {
+      "title": "Apex Resources and Websites you should know",
+      "href": "/wiki/articles/General Apex Guides>Apex Resources and Websites you should know"
+    },
+    {
+      "title": "Universal tips for practicing movement",
+      "href": "/wiki/articles/Movement Guides>Universal tips for practicing movement"
+    }
+  ]
+}

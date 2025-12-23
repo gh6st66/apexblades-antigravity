@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apex Composition Evaluator (ACE) Lite - Rate your Apex Legends squad composition with a premium, cyberpunk interface.">
+    <meta name="keywords" content="Apex Legends, ACE Calculator, Squad Composition, Ranked, Gaming Tool">
+    <title>ACE Lite | Apex Composition Evaluator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --panel-bg: rgba(26, 26, 26, 0.7);
+            --accent-red: #ff3e3e;
+            --accent-red-glow: rgba(255, 62, 62, 0.4);
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --card-bg: rgba(40, 40, 40, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(218, 41, 42, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(218, 41, 42, 0.1) 0%, transparent 40%);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 650px;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+            margin: 20px;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 0;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--accent-red);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Mode Toggle */
+        .mode-toggle {
+            display: flex;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 6px;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .toggle-btn {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            padding: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .toggle-btn.active {
+            background: var(--accent-red);
+            color: white;
+            box-shadow: 0 4px 15px var(--accent-red-glow);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--glass-border);
+        }
+
+        /* Checklist Items */
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            background: var(--card-bg);
+            margin-bottom: 12px;
+            padding: 16px 20px;
+            border-radius: 16px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .checklist-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--glass-border);
+            transform: translateY(-2px);
+        }
+
+        .checklist-item input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--glass-border);
+            border-radius: 6px;
+            margin-right: 18px;
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+        }
+
+        .checklist-item input[type="checkbox"]::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em var(--accent-red);
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        .checklist-item input[type="checkbox"]:checked {
+            border-color: var(--accent-red);
+            background: rgba(255, 62, 62, 0.1);
+        }
+
+        .checklist-item input[type="checkbox"]:checked::before {
+            transform: scale(1);
+        }
+
+        .checklist-label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .checklist-desc {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            margin-left: auto;
+            text-align: right;
+            max-width: 180px;
+            line-height: 1.2;
+        }
+
+        /* Score Display */
+        .score-panel {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.2));
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .score-value {
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            letter-spacing: -2px;
+        }
+
+        .score-rank {
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .score-verdict {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn-action {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-action:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+                border-radius: 0;
+                margin: 0;
+                min-height: 100vh;
+            }
+
+            .checklist-desc {
+                display: none;
+            }
+
+            .score-value {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ACE LITE</h1>
+        <div class="subtitle">Apex Composition Evaluator</div>
+
+        <div class="mode-toggle">
+            <button class="toggle-btn active" id="btnRanked" onclick="setMode('ranked')">Ranked</button>
+            <button class="toggle-btn" id="btnWildcard" onclick="setMode('wildcard')">Wildcard</button>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Core Pillars</div>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="checkVision" class="score-input">
+                <span class="checklist-label">VISION</span>
+                <span class="checklist-desc">Wallhacks, Scans, Digital Threats</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="checkRotation" class="score-input">
+                <span class="checklist-label">ROTATION</span>
+                <span class="checklist-desc">Whole team movement (Valk, Octane, Ash)</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="checkReset" class="score-input">
+                <span class="checklist-label">RESET</span>
+                <span class="checklist-desc">Defensive utility, Rezzes, Shields</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="checkInitiation" class="score-input">
+                <span class="checklist-label">INITIATION</span>
+                <span class="checklist-desc">Opening advantage (EMP, Fuse, Grenades)</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="checkComfort" class="score-input" checked>
+                <span class="checklist-label">COMFORT</span>
+                <span class="checklist-desc">Everyone playing their Main Legend</span>
+            </label>
+        </div>
+
+        <div class="section" id="wildCardSection" style="display: none;">
+            <div class="section-title">Wildcard Factors</div>
+            <label class="checklist-item">
+                <input type="checkbox" id="checkTripleStack" class="score-input">
+                <span class="checklist-label">TRIPLE STACK</span>
+                <span class="checklist-desc">+10: 3 of same class/type</span>
+            </label>
+            <label class="checklist-item">
+                <input type="checkbox" id="checkKillSquad" class="score-input">
+                <span class="checklist-label">KILL SQUAD</span>
+                <span class="checklist-desc">+20: 3x Aggressive/Entry Legends</span>
+            </label>
+        </div>
+
+        <div class="score-panel">
+            <div class="score-value" id="scoreValue">20</div>
+            <div class="score-rank" id="scoreRank">F-TIER</div>
+            <div class="score-verdict" id="scoreVerdict">Toggle the pillars above to evaluate your squad composition.
+            </div>
+
+            <div class="action-btns">
+                <button class="btn-action" onclick="copyResult()">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy Result
+                </button>
+                <button class="btn-action" onclick="resetAll()">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 4v6h-6"></path>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll('.score-input');
+        const scoreDisplay = document.getElementById('scoreValue');
+        const rankDisplay = document.getElementById('scoreRank');
+        const verdictDisplay = document.getElementById('scoreVerdict');
+        const wildCardSection = document.getElementById('wildCardSection');
+        let currentMode = 'ranked';
+
+        function setMode(mode) {
+            currentMode = mode;
+            document.getElementById('btnRanked').classList.toggle('active', mode === 'ranked');
+            document.getElementById('btnWildcard').classList.toggle('active', mode === 'wildcard');
+
+            if (mode === 'wildcard') {
+                wildCardSection.style.display = 'block';
+            } else {
+                wildCardSection.style.display = 'none';
+                document.getElementById('checkTripleStack').checked = false;
+                document.getElementById('checkKillSquad').checked = false;
+            }
+            calculateScore();
+        }
+
+        function calculateScore() {
+            let score = 0;
+
+            if (document.getElementById('checkVision').checked) score += 20;
+            if (document.getElementById('checkRotation').checked) score += 20;
+            if (document.getElementById('checkReset').checked) score += 20;
+            if (document.getElementById('checkInitiation').checked) score += 20;
+            if (document.getElementById('checkComfort').checked) score += 20;
+
+            if (currentMode === 'wildcard') {
+                if (document.getElementById('checkTripleStack').checked) score += 10;
+                if (document.getElementById('checkKillSquad').checked) score += 20;
+            }
+
+            if (score > 100) score = 100;
+            updateDisplay(score);
+        }
+
+        function updateDisplay(score) {
+            scoreDisplay.textContent = score;
+            let rank = '';
+            let verdict = '';
+            let color = '#ffffff';
+
+            if (score >= 100) {
+                rank = 'S-TIER';
+                verdict = "Perfect synergy. No excuses—this is the God Squad.";
+                color = '#ffcc00';
+            } else if (score >= 80) {
+                rank = 'A-TIER';
+                verdict = "Strong meta presence. Execute cleanly and victory is yours.";
+                color = '#ff3e3e';
+            } else if (score >= 60) {
+                rank = 'B-TIER';
+                verdict = "Decent utility. Play for your strengths and watch the missing gap.";
+                color = '#4ade80';
+            } else if (score >= 40) {
+                rank = 'C-TIER';
+                verdict = "Sub-optimal. You'll need superior gunskill to overcome these gaps.";
+                color = '#fbbf24';
+            } else {
+                rank = 'F-TIER';
+                verdict = "High-risk composition. Are you trolling or just incredibly confident?";
+                color = '#71717a';
+            }
+
+            rankDisplay.textContent = rank;
+            rankDisplay.style.color = color;
+            verdictDisplay.textContent = verdict;
+
+            // Pulse effect on change
+            scoreDisplay.style.transform = 'scale(1.1)';
+            setTimeout(() => scoreDisplay.style.transform = 'scale(1)', 150);
+        }
+
+        function copyResult() {
+            const score = scoreDisplay.textContent;
+            const rank = rankDisplay.textContent;
+            const text = `Apex ACE Score: ${score} (${rank})\nEvaluate your squad at ApexLegends.tech`;
+
+            const btn = event.currentTarget;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Copied!';
+                btn.style.borderColor = '#4ade80';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.borderColor = 'var(--glass-border)';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function resetAll() {
+            inputs.forEach(input => {
+                if (input.id === 'checkComfort') {
+                    input.checked = true;
+                } else {
+                    input.checked = false;
+                }
+            });
+            calculateScore();
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('change', calculateScore);
+        });
+
+        calculateScore();
+    </script>
+
+</body>
+
+</html>

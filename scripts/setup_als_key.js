@@ -35,7 +35,7 @@ async function validateKey(apiKey) {
                         } else {
                             resolve(true);
                         }
-                    } catch (e) {
+                    } catch {
                         resolve(true); // If it's 200 but not JSON, we assume it might be working or a different endpoint structure, but bridge usually returns JSON.
                     }
                 } else {

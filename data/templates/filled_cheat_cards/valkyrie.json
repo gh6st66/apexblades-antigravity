@@ -1,0 +1,66 @@
+{
+    "template_name": "cheat_card",
+    "fields": {
+        "legend": "Valkyrie",
+        "role_type": "Entry / Anchor",
+        "primary_win_condition": "Rotation / Zone control",
+        "role": "Provides vertical scouting and resets via Skyward Dive; anchors height control.",
+        "lead_when": "When you have altitude advantage and can initiate with Skyward Dive.",
+        "follow_when": "When teammates need height for rotation or safe disengage.",
+        "disengage_when": "When rings pull you into tight spaces or you lack cover.",
+        "positioning": {
+            "preferred_terrain": "rooftops, high ground, natural cover",
+            "fight_distance": "mid",
+            "commit_vs_hold": "Commit with ult; otherwise hold and wait for rotation."
+        },
+        "core_ability_usage": {
+            "passive": {
+                "leverage_when": "Scanning while rotating for intel.",
+                "do_not_rely_on": "Passive for close‑range fights."
+            },
+            "tactical": {
+                "primary_use": "info / escape",
+                "timing_rule": "reactionary"
+            },
+            "ultimate": {
+                "best_use_cases": [
+                    "rotate",
+                    "reset",
+                    "zone"
+                ],
+                "do_not_use_when": "Enemies already have high ground advantage.",
+                "abort_conditions": "Ring forces you into enclosed area before you can dive."
+            }
+        },
+        "fight_flow": {
+            "start": "Enter from height, scan, and set up Skyward Dive.",
+            "mid_fight": "Use jetpack for repositioning, keep vision on enemies.",
+            "exit_reset": "Ult to escape or reset ring pull."
+        },
+        "rotations": {
+            "early_game": "Secure rooftops, scout enemy positions.",
+            "mid_game": "Rotate early to new high ground, avoid being boxed.",
+            "late_game": "Use Skyward Dive to escape end‑game chaos.",
+            "bad_rotation": "Staying low without an exit plan."
+        },
+        "weapons": {
+            "ideal_primary": {
+                "weapon": "Flatline / R‑301",
+                "reason": "Reliable mid‑range damage from height."
+            },
+            "ideal_secondary": {
+                "weapon": "R‑99",
+                "reason": "Close‑range finishers when you land."
+            },
+            "avoid_weapon_types": [
+                "Shotguns only"
+            ]
+        },
+        "common_mistakes": [
+            "Hovering in open air too long",
+            "Using ult after you’re already boxed",
+            "Ignoring ring pull until too late"
+        ],
+        "mental_rule": "If unsure → ult out. Preserve height advantage."
+    }
+}
