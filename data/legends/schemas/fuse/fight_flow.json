@@ -1,0 +1,14 @@
+{
+    "legend_id": "fuse",
+    "fight_flow": {
+        "entry_role": "Initiator (Poke)",
+        "mid_fight_role": "Suppression",
+        "exit_role": "Zoner",
+        "preferred_fight_duration_seconds": 30,
+        "flow": {
+            "start": "Nade spam → knuckle cluster → highlight damaged targets",
+            "mid_fight": "Constant cluster pressure, nade every opportunity to flush cover",
+            "exit_reset": "Ult to zone pursuit, nade doorways"
+        }
+    }
+}

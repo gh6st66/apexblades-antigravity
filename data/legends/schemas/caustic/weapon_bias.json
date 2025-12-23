@@ -1,0 +1,17 @@
+{
+    "legend_id": "caustic",
+    "weapon_bias": {
+        "primary_range": "Close-Mid",
+        "secondary_range": "Close",
+        "preferred_weapons": [
+            "Flatline",
+            "Spitfire",
+            "Peacekeeper",
+            "Mastiff"
+        ],
+        "avoid_weapon_types": [
+            "Snipers",
+            "Bocek"
+        ]
+    }
+}

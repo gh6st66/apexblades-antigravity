@@ -1,0 +1,27 @@
+{
+    "legend_id": "alter",
+    "abilities": {
+        "passive": {
+            "name": "Gift from the Rift",
+            "intent": "Remote resource collection and scouting",
+            "leverage_when": "Looting one item from distant death boxes",
+            "misuse_warning": "Relying on it for specific high-tier items (one item limit)"
+        },
+        "tactical": {
+            "name": "Void Passage",
+            "intent": "Micro-rotations and unconventional entry/exit",
+            "timing_rule": "Reactionary / Creative",
+            "misuse_warning": "Portaling directly into an enemy stack without info"
+        },
+        "ultimate": {
+            "name": "Void Nexus",
+            "intent": "Global team reset and extraction insurance",
+            "best_use_cases": [
+                "Reset",
+                "Escape",
+                "Rotate"
+            ],
+            "misuse_warning": "Placing in exposed locations where enemies can camp your return"
+        }
+    }
+}

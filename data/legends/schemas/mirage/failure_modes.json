@@ -1,0 +1,10 @@
+{
+    "legend_id": "mirage",
+    "common_failures": [
+        "Sending decoys in obvious, non-human pathing (running into walls)",
+        "Using Life of the Party in wide open areas where it's easily tracked",
+        "Not utilizing the invisible revive passive in chaotic situations",
+        "Playing too predictably after initial decoys are revealed",
+        "Revealing real position during ult by shooting too early (RP loss behavior)"
+    ]
+}

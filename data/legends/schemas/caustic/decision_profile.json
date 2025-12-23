@@ -1,0 +1,10 @@
+{
+    "legend_id": "caustic",
+    "decision_profile": {
+        "fight_preference": "Defensive / Selective",
+        "rotation_priority": "Low",
+        "reset_capability": "Excellent",
+        "solo_survivability": "Low",
+        "random_friendly": false
+    }
+}

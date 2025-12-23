@@ -1,0 +1,16 @@
+{
+    "legend_id": "gibraltar",
+    "positioning": {
+        "preferred_terrain": [
+            "Natural cover",
+            "Zone center",
+            "Indoors (for safety)"
+        ],
+        "avoid_terrain": [
+            "Open fields without cover",
+            "Edge fighting far from zone"
+        ],
+        "range_preference": "Close-Mid",
+        "commit_vs_hold": "Commit with bubble; hold otherwise"
+    }
+}

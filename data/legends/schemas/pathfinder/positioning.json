@@ -1,0 +1,16 @@
+{
+    "legend_id": "pathfinder",
+    "positioning": {
+        "preferred_terrain": [
+            "Extreme height",
+            "Rooftops",
+            "Open sightlines"
+        ],
+        "avoid_terrain": [
+            "Indoors with low ceilings",
+            "Open low ground with no grapple points"
+        ],
+        "range_preference": "Mid-Long",
+        "commit_vs_hold": "Commit with grapple available; hold height and poke otherwise"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "legend_id": "octane",
+    "fight_flow": {
+        "entry_role": "Primary Entry",
+        "mid_fight_role": "Distraction / Flanker",
+        "exit_role": "Primary Escape",
+        "preferred_fight_duration_seconds": 20,
+        "flow": {
+            "start": "Pad in → stim → land on isolated target for quick knock",
+            "mid_fight": "Stim strafe to be unpredictable; avoid trading health for nothing",
+            "exit_reset": "Pad out to safety, use passive regen"
+        }
+    }
+}

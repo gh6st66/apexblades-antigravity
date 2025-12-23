@@ -1,0 +1,14 @@
+{
+    "legend_id": "valkyrie",
+    "fight_flow": {
+        "entry_role": "Late",
+        "mid_fight_role": "Anchor / Support",
+        "exit_role": "Primary",
+        "preferred_fight_duration_seconds": 25,
+        "flow": {
+            "start": "Take height, poke with marksman, scan with missiles",
+            "mid_fight": "Jets to reposition, short burns for off-angles",
+            "exit_reset": "Skyward Dive if losing OR third-party incoming; rotate to high ground"
+        }
+    }
+}

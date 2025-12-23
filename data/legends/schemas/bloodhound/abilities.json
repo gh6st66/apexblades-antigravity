@@ -1,0 +1,27 @@
+{
+    "legend_id": "bloodhound",
+    "abilities": {
+        "passive": {
+            "name": "Tracker",
+            "intent": "Scouting and rotation prediction",
+            "leverage_when": "Reading enemy movements, predicting rotations",
+            "misuse_warning": "Relying on old tracks (>90s)"
+        },
+        "tactical": {
+            "name": "Eye of the Allfather",
+            "intent": "Information gathering and pre-push intel",
+            "timing_rule": "Pre-emptive / Reactionary",
+            "misuse_warning": "Scanning when not ready to act on info"
+        },
+        "ultimate": {
+            "name": "Beast of the Hunt",
+            "intent": "Fight dominance and KP conversion",
+            "best_use_cases": [
+                "Wipe",
+                "Third-party",
+                "Initiate"
+            ],
+            "misuse_warning": "Ulting solo without team follow-up / Saving too long"
+        }
+    }
+}

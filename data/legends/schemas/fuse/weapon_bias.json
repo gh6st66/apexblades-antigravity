@@ -1,0 +1,16 @@
+{
+    "legend_id": "fuse",
+    "weapon_bias": {
+        "primary_range": "Long",
+        "secondary_range": "Close-Mid",
+        "preferred_weapons": [
+            "30-30 Repeater",
+            "G7 Scout",
+            "Alternator SMG",
+            "R-99"
+        ],
+        "avoid_weapon_types": [
+            "Shotguns"
+        ]
+    }
+}

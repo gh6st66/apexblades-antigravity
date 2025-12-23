@@ -1,0 +1,27 @@
+{
+    "legend_id": "horizon",
+    "abilities": {
+        "passive": {
+            "name": "Spacewalk",
+            "intent": "Fluid movement and rapid repositions",
+            "leverage_when": "Dropping from height, aggressive air strafing, post-lift glides",
+            "misuse_warning": "Tanking shots mid-air"
+        },
+        "tactical": {
+            "name": "Gravity Lift",
+            "intent": "Team vertical mobility and high-ground acquisition",
+            "timing_rule": "Early / Aggressive",
+            "misuse_warning": "Staying in lift too long while exposed; using with no escape plan"
+        },
+        "ultimate": {
+            "name": "Black Hole",
+            "intent": "Crowd control and fight initiation",
+            "best_use_cases": [
+                "Wipe",
+                "Zone",
+                "Initiate"
+            ],
+            "misuse_warning": "Wasting without team follow-up or in easily destructible spots"
+        }
+    }
+}

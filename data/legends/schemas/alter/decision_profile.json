@@ -1,0 +1,10 @@
+{
+    "legend_id": "alter",
+    "decision_profile": {
+        "fight_preference": "Selective",
+        "rotation_priority": "High",
+        "reset_capability": "Excellent",
+        "solo_survivability": "Medium",
+        "random_friendly": true
+    }
+}

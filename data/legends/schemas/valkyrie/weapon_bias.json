@@ -1,0 +1,16 @@
+{
+    "legend_id": "valkyrie",
+    "weapon_bias": {
+        "primary_range": "Mid",
+        "secondary_range": "Close-Mid",
+        "preferred_weapons": [
+            "Alternator SMG (Double Tap)",
+            "Bocek",
+            "G7 Scout"
+        ],
+        "avoid_weapon_types": [
+            "Snipers",
+            "Heavy Shotguns"
+        ]
+    }
+}

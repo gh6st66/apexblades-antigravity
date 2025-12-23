@@ -1,0 +1,10 @@
+{
+    "legend_id": "mirage",
+    "decision_profile": {
+        "fight_preference": "Selective / Opportunistic",
+        "rotation_priority": "Medium",
+        "reset_capability": "Excellent",
+        "solo_survivability": "Medium",
+        "random_friendly": true
+    }
+}

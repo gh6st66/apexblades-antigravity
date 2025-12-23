@@ -1,0 +1,10 @@
+{
+    "legend_id": "horizon",
+    "common_failures": [
+        "Wasting Black Hole without team follow-up (RP loss behavior)",
+        "Staying in the Gravity Lift too long and getting beamed by multiple enemies",
+        "Using the lift aggressively with no escape plan if the push fails",
+        "Placing Black Hole in locations where it's easily shot and destroyed before impact",
+        "Missing nade stacks on ult-captured enemies"
+    ]
+}

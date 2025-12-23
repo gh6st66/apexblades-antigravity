@@ -1,0 +1,10 @@
+{
+    "legend_id": "pathfinder",
+    "display_name": "Pathfinder",
+    "class": "Skirmisher",
+    "primary_role": "Flex / Rotation",
+    "secondary_role": "Vertical Specialist",
+    "difficulty": "Hard",
+    "ranked_viability": "Very High",
+    "identity_summary": "Provides unmatched vertical mobility and rapid team rotations via ziplines; excels at taking and holding dominant high-ground positions."
+}

@@ -1,0 +1,10 @@
+{
+    "legend_id": "horizon",
+    "display_name": "Horizon",
+    "class": "Skirmisher",
+    "primary_role": "Height Control / Initiation",
+    "secondary_role": "Flex / AOE Damage",
+    "difficulty": "Medium",
+    "ranked_viability": "Very High",
+    "identity_summary": "Dominates vertical space and initiates high-impact team wipes with Black Hole and Gravity Lift utility."
+}

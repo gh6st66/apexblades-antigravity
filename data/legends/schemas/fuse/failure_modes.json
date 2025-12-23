@@ -1,0 +1,10 @@
+{
+    "legend_id": "fuse",
+    "common_failures": [
+        "Running out of grenades (RP loss behavior)",
+        "Using The Motherlode indoors where it is ineffective",
+        "Missing knuckle clusters at extreme ranges",
+        "Not carrying enough grenades for sustained pressure",
+        "Failing to highlight enemies with ult due to poor placement"
+    ]
+}

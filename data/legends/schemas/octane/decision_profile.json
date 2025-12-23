@@ -1,0 +1,10 @@
+{
+    "legend_id": "octane",
+    "decision_profile": {
+        "fight_preference": "Very Aggressive",
+        "rotation_priority": "High",
+        "reset_capability": "Fair",
+        "solo_survivability": "High",
+        "random_friendly": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "legend_id": "gibraltar",
+    "common_failures": [
+        "Bubble too early or too late (wasted defense or dead teammates)",
+        "Ult on your own team (stops your own push)",
+        "ADS peeking with broken gun shield",
+        "Playing too aggressive for your big hitbox",
+        "Getting caught in open without bubble (RP loss behavior)"
+    ]
+}

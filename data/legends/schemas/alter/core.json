@@ -1,0 +1,10 @@
+{
+    "legend_id": "alter",
+    "display_name": "Alter",
+    "class": "Skirmisher",
+    "primary_role": "Void Rotations / Flex",
+    "secondary_role": "Team Extraction",
+    "difficulty": "Hard",
+    "ranked_viability": "Medium-High",
+    "identity_summary": "Manipulates the void to provide unique macro and micro team rotations; provides a global reset point via Void Nexus."
+}

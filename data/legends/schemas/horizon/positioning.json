@@ -1,0 +1,16 @@
+{
+    "legend_id": "horizon",
+    "positioning": {
+        "preferred_terrain": [
+            "High ground",
+            "Rooftops",
+            "Natural cover"
+        ],
+        "avoid_terrain": [
+            "Wide low ground",
+            "Tight buildings without vertical exits"
+        ],
+        "range_preference": "Close-Mid",
+        "commit_vs_hold": "Commit when ult is live and team can follow; hold if lift is on cooldown"
+    }
+}

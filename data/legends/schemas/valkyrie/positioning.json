@@ -1,0 +1,16 @@
+{
+    "legend_id": "valkyrie",
+    "positioning": {
+        "preferred_terrain": [
+            "High ground",
+            "Rooftops",
+            "Open sightlines"
+        ],
+        "avoid_terrain": [
+            "Tight interiors",
+            "Open low ground"
+        ],
+        "range_preference": "Mid-Long",
+        "commit_vs_hold": "Hold height until team commits; only dive if knock confirmed"
+    }
+}

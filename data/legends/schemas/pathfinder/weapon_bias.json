@@ -1,0 +1,16 @@
+{
+    "legend_id": "pathfinder",
+    "weapon_bias": {
+        "primary_range": "Mid-Long",
+        "secondary_range": "Close-Mid",
+        "preferred_weapons": [
+            "G7 Scout",
+            "Bocek",
+            "Alternator",
+            "R-99"
+        ],
+        "avoid_weapon_types": [
+            "Shotguns only (need range)"
+        ]
+    }
+}

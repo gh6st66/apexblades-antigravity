@@ -1,0 +1,27 @@
+{
+    "legend_id": "fuse",
+    "abilities": {
+        "passive": {
+            "name": "Grenadier",
+            "intent": "Superior grenade utility and capacity",
+            "leverage_when": "Hoarding grenades, high-precision long-range throws",
+            "misuse_warning": "Relying on arc star sticks at extreme ranges"
+        },
+        "tactical": {
+            "name": "Knuckle Cluster",
+            "intent": "Cover flushing and sustained pressure",
+            "timing_rule": "Early / Constant",
+            "misuse_warning": "Missing clusters due to travel time at max range"
+        },
+        "ultimate": {
+            "name": "The Motherlode",
+            "intent": "Area denial and target highlighting",
+            "best_use_cases": [
+                "Zone",
+                "Third-party",
+                "Initiate"
+            ],
+            "misuse_warning": "Ulting indoors or in extremely tight spaces"
+        }
+    }
+}

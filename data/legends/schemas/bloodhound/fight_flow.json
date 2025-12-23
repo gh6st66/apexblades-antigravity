@@ -1,0 +1,14 @@
+{
+    "legend_id": "bloodhound",
+    "fight_flow": {
+        "entry_role": "Lead (Information) / Mid (Damage)",
+        "mid_fight_role": "Aggressor",
+        "exit_role": "Chaser / Scout",
+        "preferred_fight_duration_seconds": 30,
+        "flow": {
+            "start": "Scan → call positions → team pushes",
+            "mid_fight": "Ult for speed + constant scans (5s CD during ult)",
+            "exit_reset": "Ult speed to disengage, scan to check if chased"
+        }
+    }
+}

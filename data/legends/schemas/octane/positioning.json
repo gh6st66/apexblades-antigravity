@@ -1,0 +1,16 @@
+{
+    "legend_id": "octane",
+    "positioning": {
+        "preferred_terrain": [
+            "Height",
+            "Edge of engagement",
+            "Covered approach paths"
+        ],
+        "avoid_terrain": [
+            "Open fields without pad access",
+            "Tight rooms without exit"
+        ],
+        "range_preference": "Close",
+        "commit_vs_hold": "Commit with pad; hold if health is low or team isn't ready"
+    }
+}

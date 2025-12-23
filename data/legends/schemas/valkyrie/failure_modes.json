@@ -1,0 +1,11 @@
+{
+    "legend_id": "valkyrie",
+    "common_failures": [
+        "Late ultimate usage (panic ulting when already critical)",
+        "Using ult to push instead of escape/rotate",
+        "Jet-peeking with low fuel and getting beamed",
+        "Missiles for damage instead of info/suppression",
+        "Landing in the open after Skyward Dive",
+        "Walking when ult is available (RP loss behavior)"
+    ]
+}

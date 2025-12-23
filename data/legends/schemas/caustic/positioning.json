@@ -1,0 +1,16 @@
+{
+    "legend_id": "caustic",
+    "positioning": {
+        "preferred_terrain": [
+            "Indoors",
+            "Zone center",
+            "Choke points"
+        ],
+        "avoid_terrain": [
+            "Open fields",
+            "Low ground with no cover"
+        ],
+        "range_preference": "Close",
+        "commit_vs_hold": "Hold buildings; commit only with gas advantage"
+    }
+}

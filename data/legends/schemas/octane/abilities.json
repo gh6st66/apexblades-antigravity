@@ -1,0 +1,27 @@
+{
+    "legend_id": "octane",
+    "abilities": {
+        "passive": {
+            "name": "Swift Mend",
+            "intent": "Health sustain and resource management",
+            "leverage_when": "Downtime regeneration, saving health items for team",
+            "misuse_warning": "Relying on it during active combat (too slow)"
+        },
+        "tactical": {
+            "name": "Stim",
+            "intent": "Combat speed and gap closing",
+            "timing_rule": "Early / Aggressive",
+            "misuse_warning": "Stimming at critical health (costs 20 HP)"
+        },
+        "ultimate": {
+            "name": "Launch Pad",
+            "intent": "Team mobility and initiation/escape",
+            "best_use_cases": [
+                "Initiate",
+                "Escape",
+                "Rotate"
+            ],
+            "misuse_warning": "Padding into teams already aiming at landing zone"
+        }
+    }
+}

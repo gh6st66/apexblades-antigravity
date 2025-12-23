@@ -1,0 +1,10 @@
+{
+    "legend_id": "wraith",
+    "decision_profile": {
+        "fight_preference": "Selective",
+        "rotation_priority": "High",
+        "reset_capability": "Good",
+        "solo_survivability": "High",
+        "random_friendly": true
+    }
+}

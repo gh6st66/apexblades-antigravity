@@ -1,0 +1,10 @@
+{
+    "legend_id": "pathfinder",
+    "common_failures": [
+        "Grappling into a 3-stack enemy squad alone",
+        "Setting up ziplines while being actively watched by enemies (zipline into a trap) (RP loss behavior)",
+        "Wasting the grapple for faster looting instead of saving it for combat repositioning",
+        "Not scanning Survey Beacons to rotate ultimate and get info",
+        "Teammates getting beamed while using a predictable zipline"
+    ]
+}

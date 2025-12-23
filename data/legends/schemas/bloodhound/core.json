@@ -1,0 +1,10 @@
+{
+    "legend_id": "bloodhound",
+    "display_name": "Bloodhound",
+    "class": "Recon",
+    "primary_role": "Intel / Tracking",
+    "secondary_role": "Fight Initiation",
+    "difficulty": "Easy",
+    "ranked_viability": "High",
+    "identity_summary": "Provides constant situational awareness and enables aggressive team pushes via info advantage."
+}

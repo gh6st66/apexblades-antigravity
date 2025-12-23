@@ -1,0 +1,10 @@
+{
+    "legend_id": "wraith",
+    "common_failures": [
+        "Phasing reactively after getting cracked (2.5s wind-up is too long) (RP loss behavior)",
+        "Portaling team directly into an enemy squad's crossfire",
+        "Wasting the portal for offensive pushes without a clear advantage",
+        "Ignoring voice warnings from the passive",
+        "Using phase defensively when a safe retreat path isn't established"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "legend_id": "pathfinder",
+    "decision_profile": {
+        "fight_preference": "Aggressive / Opportunistic",
+        "rotation_priority": "High",
+        "reset_capability": "Fair",
+        "solo_survivability": "High",
+        "random_friendly": true
+    }
+}

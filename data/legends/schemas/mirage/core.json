@@ -1,0 +1,10 @@
+{
+    "legend_id": "mirage",
+    "display_name": "Mirage",
+    "class": "Support",
+    "primary_role": "Confusion / Entry",
+    "secondary_role": "Clutch Support (Revive)",
+    "difficulty": "Easy-Medium",
+    "ranked_viability": "Medium",
+    "identity_summary": "Specializes in deceptive combat and stealthy resets; uses decoys to expose enemy positions and invisible revives to stabilize the team."
+}

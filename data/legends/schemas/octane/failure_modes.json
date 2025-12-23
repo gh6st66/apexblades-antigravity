@@ -1,0 +1,10 @@
+{
+    "legend_id": "octane",
+    "common_failures": [
+        "Stimming at 1 HP or critical health unnecessarily",
+        "Pad pushing solo without team coordination (RP loss behavior)",
+        "Speed addiction - rushing into situations without assessing threats",
+        "Not waiting for team before initiating a pad push",
+        "Padding into a team that is already aimed at the landing zone"
+    ]
+}

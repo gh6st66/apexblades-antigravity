@@ -1,0 +1,16 @@
+{
+    "legend_id": "gibraltar",
+    "weapon_bias": {
+        "primary_range": "Mid",
+        "secondary_range": "Close (Bubble fights)",
+        "preferred_weapons": [
+            "Flatline",
+            "R-301",
+            "Peacekeeper",
+            "Mastiff"
+        ],
+        "avoid_weapon_types": [
+            "Snipers"
+        ]
+    }
+}

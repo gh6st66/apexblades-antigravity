@@ -1,0 +1,10 @@
+{
+    "legend_id": "octane",
+    "display_name": "Octane",
+    "class": "Skirmisher",
+    "primary_role": "Entry Fragger / Chaos",
+    "secondary_role": "Rapid Rotation",
+    "difficulty": "Easy",
+    "ranked_viability": "Medium-High",
+    "identity_summary": "Uses extreme speed and mobility to initiate fights, create chaos, and provide rapid team rotations via Jump Pads."
+}

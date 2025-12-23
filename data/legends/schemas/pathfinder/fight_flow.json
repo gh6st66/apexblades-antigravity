@@ -1,0 +1,14 @@
+{
+    "legend_id": "pathfinder",
+    "fight_flow": {
+        "entry_role": "Primary Flanker / Vertical Entry",
+        "mid_fight_role": "Skirmisher / Pressure Support",
+        "exit_role": "Primary Escape",
+        "preferred_fight_duration_seconds": 25,
+        "flow": {
+            "start": "Grapple to dominant height or off-angle → poke with marksman to create advantage",
+            "mid_fight": "Use short grapples for rapid repositions; maintain height advantage",
+            "exit_reset": "Zipline team to a safe distance/height; use grapple for personal extraction"
+        }
+    }
+}

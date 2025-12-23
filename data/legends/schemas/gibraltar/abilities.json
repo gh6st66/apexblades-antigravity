@@ -1,0 +1,27 @@
+{
+    "legend_id": "gibraltar",
+    "abilities": {
+        "passive": {
+            "name": "Gun Shield + Fortified",
+            "intent": "Frontline tanking and 1v1 advantage",
+            "leverage_when": "1v1 gunfights, absorbing initial damage",
+            "misuse_warning": "Relying on it against snipers (breaks in one tap)"
+        },
+        "tactical": {
+            "name": "Dome of Protection",
+            "intent": "Critical team reset and space creation",
+            "timing_rule": "Reactionary",
+            "misuse_warning": "Using too early/late; or in open without exit plan"
+        },
+        "ultimate": {
+            "name": "Defensive Bombardment",
+            "intent": "Area denial and zoning",
+            "best_use_cases": [
+                "Zone",
+                "Wipe",
+                "Third-party"
+            ],
+            "misuse_warning": "Fighting indoors; Ulting own team"
+        }
+    }
+}

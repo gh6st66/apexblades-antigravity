@@ -1,0 +1,27 @@
+{
+    "legend_id": "pathfinder",
+    "abilities": {
+        "passive": {
+            "name": "Insider Knowledge",
+            "intent": "Ultimate cooldown management and rotation info",
+            "leverage_when": "Scanning Survey Beacons to reduce ultimate cooldown",
+            "misuse_warning": "Attempting beacon scans in unsafe, contested areas without backup"
+        },
+        "tactical": {
+            "name": "Grappling Hook",
+            "intent": "Unrivaled personal mobility and repositioning",
+            "timing_rule": "Aggressive / Reactive",
+            "misuse_warning": "Grappling into a 3-stack alone; wasting grapple for loot when enemies are near"
+        },
+        "ultimate": {
+            "name": "Zipline Gun",
+            "intent": "Rapid team rotation and high-ground access",
+            "best_use_cases": [
+                "Rotate",
+                "Escape",
+                "Third-party"
+            ],
+            "misuse_warning": "Ziplining directly into a team that is already aiming at the endpoint"
+        }
+    }
+}

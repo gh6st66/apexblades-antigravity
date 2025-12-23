@@ -1,0 +1,14 @@
+{
+    "legend_id": "alter",
+    "fight_flow": {
+        "entry_role": "Flex / Second-In",
+        "mid_fight_role": "Tactical Flanker",
+        "exit_role": "Primary Extraction",
+        "preferred_fight_duration_seconds": 30,
+        "flow": {
+            "start": "Portal team to an unconventional angle or floor",
+            "mid_fight": "Use tactical for quick horizontal/vertical repositions or mid-fight escapes",
+            "exit_reset": "Activate Void Nexus for a full team recall to a safe distance"
+        }
+    }
+}

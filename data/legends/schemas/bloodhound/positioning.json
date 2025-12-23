@@ -1,0 +1,16 @@
+{
+    "legend_id": "bloodhound",
+    "positioning": {
+        "preferred_terrain": [
+            "Edge of zone",
+            "Natural cover",
+            "High ground"
+        ],
+        "avoid_terrain": [
+            "Open fields without cover",
+            "Center-zone chaos"
+        ],
+        "range_preference": "Mid",
+        "commit_vs_hold": "Commit during ult; hold for scans otherwise"
+    }
+}

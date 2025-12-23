@@ -1,0 +1,17 @@
+{
+    "legend_id": "wraith",
+    "weapon_bias": {
+        "primary_range": "Close-Mid",
+        "secondary_range": "Close",
+        "preferred_weapons": [
+            "R-99",
+            "Alternator",
+            "Wingman",
+            "G7 Scout"
+        ],
+        "avoid_weapon_types": [
+            "LMGs",
+            "Snipers"
+        ]
+    }
+}

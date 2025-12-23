@@ -1,0 +1,16 @@
+{
+    "legend_id": "wraith",
+    "positioning": {
+        "preferred_terrain": [
+            "Edge of zone",
+            "Natural cover",
+            "Segmented buildings"
+        ],
+        "avoid_terrain": [
+            "Extreme high ground with no exit",
+            "Open low ground with no phasing utility"
+        ],
+        "range_preference": "Close-Mid",
+        "commit_vs_hold": "Commit with phase available; hold if abilities are on cooldown"
+    }
+}

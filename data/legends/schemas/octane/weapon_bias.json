@@ -1,0 +1,17 @@
+{
+    "legend_id": "octane",
+    "weapon_bias": {
+        "primary_range": "Close",
+        "secondary_range": "Close-Mid",
+        "preferred_weapons": [
+            "R-99",
+            "Alternator",
+            "Peacekeeper",
+            "Mastiff"
+        ],
+        "avoid_weapon_types": [
+            "Snipers",
+            "LMGs"
+        ]
+    }
+}

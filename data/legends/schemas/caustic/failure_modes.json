@@ -1,0 +1,10 @@
+{
+    "legend_id": "caustic",
+    "common_failures": [
+        "Fighting outside of gas coverage",
+        "Trapping too late (after the push has started)",
+        "Using Nox Gas Grenade in open areas where it dissipates easily",
+        "Rotating without a secondary position secured and trapped",
+        "Taking open-field fights with no traps available (RP loss behavior)"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "legend_id": "fuse",
+    "positioning": {
+        "preferred_terrain": [
+            "Height",
+            "Open sightlines",
+            "Covered poke spots"
+        ],
+        "avoid_terrain": [
+            "Close-quarters rooms without traps",
+            "Deep low ground"
+        ],
+        "range_preference": "Mid-Long",
+        "commit_vs_hold": "Hold for nade spam; commit only when enemies are flushed/weakened"
+    }
+}

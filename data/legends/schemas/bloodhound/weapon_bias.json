@@ -1,0 +1,16 @@
+{
+    "legend_id": "bloodhound",
+    "weapon_bias": {
+        "primary_range": "Mid",
+        "secondary_range": "Close",
+        "preferred_weapons": [
+            "R-301",
+            "Flatline",
+            "Peacekeeper",
+            "Mastiff"
+        ],
+        "avoid_weapon_types": [
+            "Snipers"
+        ]
+    }
+}

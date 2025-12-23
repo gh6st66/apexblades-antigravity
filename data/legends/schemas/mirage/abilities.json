@@ -1,0 +1,27 @@
+{
+    "legend_id": "mirage",
+    "abilities": {
+        "passive": {
+            "name": "Now You See Me",
+            "intent": "Stealthy resets and revives",
+            "leverage_when": "Invisible revive in smoke or mid-chaos",
+            "misuse_warning": "Relying on it against highly aware enemies (audio still plays)"
+        },
+        "tactical": {
+            "name": "Psyche Out",
+            "intent": "Information gathering and fire drawing",
+            "timing_rule": "Pre-emptive / Constant",
+            "misuse_warning": "Sending decoys with obvious, non-human pathing"
+        },
+        "ultimate": {
+            "name": "Life of the Party",
+            "intent": "Combat confusion and escape",
+            "best_use_cases": [
+                "Wipe",
+                "Escape",
+                "Initiate"
+            ],
+            "misuse_warning": "Ulting in wide open spaces where decoys are obviously fake"
+        }
+    }
+}

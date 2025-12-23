@@ -1,0 +1,14 @@
+{
+    "legend_id": "gibraltar",
+    "fight_flow": {
+        "entry_role": "Anchor / Frontline Tank",
+        "mid_fight_role": "Protection / Reset",
+        "exit_role": "Cover Provider",
+        "preferred_fight_duration_seconds": 35,
+        "flow": {
+            "start": "Absorb damage with gun shield, call bubble location",
+            "mid_fight": "Bubble dance - in/out for heals and peeks",
+            "exit_reset": "Bubble → revive → ult to cover escape"
+        }
+    }
+}

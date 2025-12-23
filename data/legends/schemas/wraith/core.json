@@ -1,0 +1,10 @@
+{
+    "legend_id": "wraith",
+    "display_name": "Wraith",
+    "class": "Skirmisher",
+    "primary_role": "Flex / Rotation",
+    "secondary_role": "Team Extraction",
+    "difficulty": "Medium-Hard",
+    "ranked_viability": "High",
+    "identity_summary": "Focuses on safe team rotations and reactionary survivability; uses the void to protect herself and her squad from dangerous transitions."
+}

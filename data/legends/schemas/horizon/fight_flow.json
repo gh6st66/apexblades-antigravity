@@ -1,0 +1,14 @@
+{
+    "legend_id": "horizon",
+    "fight_flow": {
+        "entry_role": "Primary Initiation / Flanker (Vertical)",
+        "mid_fight_role": "High-Impact Disrupter",
+        "exit_role": "Secondary Extraction (Tactical)",
+        "preferred_fight_duration_seconds": 25,
+        "flow": {
+            "start": "Gravity Lift to scout/take height → Black Hole isolated enemies",
+            "mid_fight": "Nade stack Black Hole OR perform lift-flick peeks for quick asymmetric damage",
+            "exit_reset": "Gravity Lift to high ground or Spacewalk into cover"
+        }
+    }
+}

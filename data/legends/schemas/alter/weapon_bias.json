@@ -1,0 +1,16 @@
+{
+    "legend_id": "alter",
+    "weapon_bias": {
+        "primary_range": "Close",
+        "secondary_range": "Mid",
+        "preferred_weapons": [
+            "Alternator",
+            "R-99",
+            "G7 Scout",
+            "Bocek"
+        ],
+        "avoid_weapon_types": [
+            "LMGs"
+        ]
+    }
+}

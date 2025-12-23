@@ -1,0 +1,10 @@
+{
+    "legend_id": "bloodhound",
+    "decision_profile": {
+        "fight_preference": "Aggressive",
+        "rotation_priority": "Medium",
+        "reset_capability": "Fair",
+        "solo_survivability": "Medium",
+        "random_friendly": true
+    }
+}

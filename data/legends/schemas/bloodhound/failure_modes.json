@@ -1,0 +1,10 @@
+{
+    "legend_id": "bloodhound",
+    "common_failures": [
+        "Scanning when not ready to act on info (reveals position for nothing)",
+        "Ult solo without team follow-up",
+        "Ignoring tracks in favor of random rotations",
+        "Not communicating scan results to teammates",
+        "Ulting solo into a 3-stack (RP loss behavior)"
+    ]
+}

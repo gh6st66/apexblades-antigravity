@@ -1,0 +1,10 @@
+{
+    "legend_id": "caustic",
+    "display_name": "Caustic",
+    "class": "Controller",
+    "primary_role": "Anchor / Area Denial",
+    "secondary_role": "Building Lockdown",
+    "difficulty": "Medium",
+    "ranked_viability": "High",
+    "identity_summary": "Dominates interior spaces and endgame circles through area denial and vision advantage in Nox gas."
+}

@@ -1,0 +1,10 @@
+{
+    "legend_id": "fuse",
+    "decision_profile": {
+        "fight_preference": "Aggressive / Poke",
+        "rotation_priority": "Medium",
+        "reset_capability": "Fair",
+        "solo_survivability": "Medium",
+        "random_friendly": true
+    }
+}

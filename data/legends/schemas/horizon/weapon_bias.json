@@ -1,0 +1,17 @@
+{
+    "legend_id": "horizon",
+    "weapon_bias": {
+        "primary_range": "Close-Mid",
+        "secondary_range": "Mid",
+        "preferred_weapons": [
+            "Alternator",
+            "R-99",
+            "Bocek",
+            "G7 Scout"
+        ],
+        "avoid_weapon_types": [
+            "LMGs",
+            "Snipers"
+        ]
+    }
+}

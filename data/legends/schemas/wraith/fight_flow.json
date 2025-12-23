@@ -1,0 +1,14 @@
+{
+    "legend_id": "wraith",
+    "fight_flow": {
+        "entry_role": "Flex / Scout",
+        "mid_fight_role": "Skirmisher",
+        "exit_role": "Primary Extraction",
+        "preferred_fight_duration_seconds": 25,
+        "flow": {
+            "start": "Portal team to a safe advantage point; use phase to scout aggressive angles",
+            "mid_fight": "Hold phase for reactive escape; use cover aggressively to draw fire",
+            "exit_reset": "Phase out → portal team back to safety or a reset point"
+        }
+    }
+}

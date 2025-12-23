@@ -1,0 +1,14 @@
+{
+    "legend_id": "caustic",
+    "fight_flow": {
+        "entry_role": "Anchor",
+        "mid_fight_role": "Space Manager",
+        "exit_role": "Denial",
+        "preferred_fight_duration_seconds": 40,
+        "flow": {
+            "start": "Pre-trap building, wait for enemies",
+            "mid_fight": "Fight in gas, vision + damage advantage; refresh traps",
+            "exit_reset": "Ult to block pursuit, trap escape routes"
+        }
+    }
+}

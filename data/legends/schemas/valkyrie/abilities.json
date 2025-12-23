@@ -1,0 +1,27 @@
+{
+    "legend_id": "valkyrie",
+    "abilities": {
+        "passive": {
+            "name": "VTOL Jets",
+            "intent": "Vertical repositioning and scouting",
+            "leverage_when": "Short repositions, vertical peeks, dodging grenades",
+            "misuse_warning": "Hovering in open air / Extended combat flights"
+        },
+        "tactical": {
+            "name": "Missile Swarm",
+            "intent": "Area denial and displacement / Info gathering",
+            "timing_rule": "Pre-emptive",
+            "misuse_warning": "Wasting mid-chaos for damage instead of suppression"
+        },
+        "ultimate": {
+            "name": "Skyward Dive",
+            "intent": "Macro rotation and reset",
+            "best_use_cases": [
+                "Rotate",
+                "Reset",
+                "Escape"
+            ],
+            "misuse_warning": "Late panic usage / Using to push instead of escape"
+        }
+    }
+}

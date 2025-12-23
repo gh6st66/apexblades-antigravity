@@ -1,0 +1,10 @@
+{
+    "legend_id": "horizon",
+    "decision_profile": {
+        "fight_preference": "Aggressive",
+        "rotation_priority": "Medium-High",
+        "reset_capability": "Excellent",
+        "solo_survivability": "High",
+        "random_friendly": true
+    }
+}

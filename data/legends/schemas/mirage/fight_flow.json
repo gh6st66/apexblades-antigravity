@@ -1,0 +1,14 @@
+{
+    "legend_id": "mirage",
+    "fight_flow": {
+        "entry_role": "Flex / Flanker",
+        "mid_fight_role": "Confusion Specialist",
+        "exit_role": "Stealth Escape",
+        "preferred_fight_duration_seconds": 25,
+        "flow": {
+            "start": "Decoy to draw fire and locate enemy position",
+            "mid_fight": "Ult for confusion, secure 1v1s while enemies are distracted",
+            "exit_reset": "Ult → invisible crawl/revive to stabilize team"
+        }
+    }
+}

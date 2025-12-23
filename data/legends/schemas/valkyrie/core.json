@@ -1,0 +1,10 @@
+{
+    "legend_id": "valkyrie",
+    "display_name": "Valkyrie",
+    "class": "Skirmisher",
+    "primary_role": "Macro / Reset",
+    "secondary_role": "Height Control",
+    "difficulty": "Medium",
+    "ranked_viability": "High",
+    "identity_summary": "Controls rotations and disengagement; prioritizes survival over fight initiation."
+}

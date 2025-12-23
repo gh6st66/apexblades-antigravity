@@ -1,0 +1,10 @@
+{
+    "legend_id": "gibraltar",
+    "decision_profile": {
+        "fight_preference": "Selective / Defensive",
+        "rotation_priority": "Low (Needs Macro support)",
+        "reset_capability": "Excellent",
+        "solo_survivability": "Low (Big hitbox)",
+        "random_friendly": false
+    }
+}

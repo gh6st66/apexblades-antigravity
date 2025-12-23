@@ -1,0 +1,27 @@
+{
+    "legend_id": "wraith",
+    "abilities": {
+        "passive": {
+            "name": "Voices from the Void",
+            "intent": "Pre-emptive threat detection",
+            "leverage_when": "Scouting new areas, rotating through open ground, checking for snipers",
+            "misuse_warning": "Relying on it 100% (triggers can sometimes be delayed)"
+        },
+        "tactical": {
+            "name": "Into the Void",
+            "intent": "Reactive survivability and repositioning",
+            "timing_rule": "Reactionary / Pre-emptive",
+            "misuse_warning": "Phasing only when already one-shot (2.5s wind-up will get you killed)"
+        },
+        "ultimate": {
+            "name": "Dimensional Rift",
+            "intent": "Safe group repositioning and reset",
+            "best_use_cases": [
+                "Rotate",
+                "Reset",
+                "Escape"
+            ],
+            "misuse_warning": "Portaling directly into an enemy stack's lap"
+        }
+    }
+}

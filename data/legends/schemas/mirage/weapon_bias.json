@@ -1,0 +1,17 @@
+{
+    "legend_id": "mirage",
+    "weapon_bias": {
+        "primary_range": "Close-Mid",
+        "secondary_range": "Close",
+        "preferred_weapons": [
+            "R-99",
+            "Alternator",
+            "Wingman",
+            "Peacekeeper"
+        ],
+        "avoid_weapon_types": [
+            "LMGs",
+            "Snipers"
+        ]
+    }
+}

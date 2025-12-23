@@ -1,0 +1,27 @@
+{
+    "legend_id": "caustic",
+    "abilities": {
+        "passive": {
+            "name": "Nox Vision",
+            "intent": "Vision advantage in combat",
+            "leverage_when": "Fighting in your own gas",
+            "misuse_warning": "Does not work in enemy gas"
+        },
+        "tactical": {
+            "name": "Nox Gas Trap",
+            "intent": "Space control and area denial",
+            "timing_rule": "Pre-emptive",
+            "misuse_warning": "Trapping too late when already pushed"
+        },
+        "ultimate": {
+            "name": "Nox Gas Grenade",
+            "intent": "Aggressive area denial and fight reset",
+            "best_use_cases": [
+                "Zone",
+                "Wipe",
+                "Third-party"
+            ],
+            "misuse_warning": "Using in wide open areas (gas dissipates too fast)"
+        }
+    }
+}

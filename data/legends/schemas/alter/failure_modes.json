@@ -1,0 +1,10 @@
+{
+    "legend_id": "alter",
+    "common_failures": [
+        "Void Nexus placed in exposed location (enemies can camp the return)",
+        "Portaling into a full enemy squad without information",
+        "Not communicating portal locations to teammates",
+        "Forgetting to use remote looting passive for critical items",
+        "Teammates not being aware of the Void Nexus recall timer"
+    ]
+}

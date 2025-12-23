@@ -1,0 +1,16 @@
+{
+    "legend_id": "mirage",
+    "positioning": {
+        "preferred_terrain": [
+            "Natural cover",
+            "Indoors",
+            "Segmented terrain"
+        ],
+        "avoid_terrain": [
+            "Flat, open fields",
+            "Open high ground"
+        ],
+        "range_preference": "Close-Mid",
+        "commit_vs_hold": "Commit with ult; hold otherwise"
+    }
+}

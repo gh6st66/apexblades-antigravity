@@ -1,0 +1,16 @@
+{
+    "legend_id": "alter",
+    "positioning": {
+        "preferred_terrain": [
+            "Segmented buildings",
+            "Natural cover",
+            "Verticality"
+        ],
+        "avoid_terrain": [
+            "Wide open fields",
+            "Low ground with no escape surfaces"
+        ],
+        "range_preference": "Close-Mid",
+        "commit_vs_hold": "Commit with portal/Nexus ready; hold if cooldowns are down"
+    }
+}
