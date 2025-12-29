@@ -1,0 +1,32 @@
+{
+    "legend_id": "wattson",
+    "decision_profile": {
+        "early_game": {
+            "priority": "Secure initial loot, then rotate early to ring",
+            "fence_usage": "Minimal - save nodes for mid-game positioning",
+            "rotation_style": "Proactive and early to claim defendable positions"
+        },
+        "mid_game": {
+            "priority": "Establish defensive positions in strong buildings or ring edge",
+            "fence_usage": "Heavy - create layered defenses on all approaches",
+            "pylon_usage": "Deploy when expecting engagement or grenade spam",
+            "hold_vs_rotate": "Hold strong positions unless forced by ring"
+        },
+        "end_game": {
+            "priority": "Dominate final rings through superior defensive setup",
+            "fence_usage": "Maximum - all 12 nodes deployed in tight ring",
+            "pylon_usage": "Always active for grenade defense and shield sustain",
+            "positioning": "Claim high ground or central cover early, force enemies to push through fences"
+        },
+        "fight_initiation": {
+            "preference": "Defensive - let enemies come to you",
+            "when_to_push": "Only when team has numbers advantage or third-party opportunity",
+            "escape_plan": "Fall back to pre-placed fence layers"
+        },
+        "team_fight_role": {
+            "primary": "Hold position and provide sustain",
+            "secondary": "Information gathering via fence triggers",
+            "positioning": "Behind team, near pylon for shield regen"
+        }
+    }
+}

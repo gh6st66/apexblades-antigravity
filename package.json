@@ -1,5 +1,5 @@
 {
-    "name": "apexblades-antigravity",
+    "name": "apexlegends-tech",
     "version": "0.1.0",
     "scripts": {
         "scrape-patch-notes": "node scripts/scrape_patch_notes.js",
@@ -9,14 +9,18 @@
         "validate-schema": "node scripts/validate_schema.js",
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview",
-        "lint": "eslint . --ext .js,.ts,.tsx",
+        "verify:wattson": "LEGEND=Wattson npm run verify:legend",
+        "verify:legend": "node scripts/verify_legend.js",
+        "verify:all-legends": "node scripts/verify_all_legends.js",
+        "verify:crypto": "LEGEND=Crypto npm run verify:legend",
         "refresh-data": "npx ts-node scripts/refresh_all_data.ts",
         "test": "jest"
     },
     "type": "module",
     "dependencies": {
         "dotenv": "^17.2.3",
+        "hls.js": "^1.6.15",
+        "lucide-react": "^0.562.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "vite": "^5.2.0"

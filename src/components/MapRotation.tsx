@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useCountdown } from '../hooks/useCountdown';
 
 interface MapData {
     map: string;
     asset: string;
+    end: number;
     remainingTimer?: string;
     readableDate_start: string;
     readableDate_end: string;
@@ -19,6 +21,16 @@ interface ALSSnapshot {
         ranked: RotationMode;
         ltm: RotationMode & { current: MapData & { eventName?: string } };
     };
+}
+
+function MapTimer({ endTimestamp }: { endTimestamp: number }) {
+    const timeLeft = useCountdown(endTimestamp);
+    const isRotating = timeLeft === 'ROTATING...';
+    return (
+        <div className={`map-card__timer ${isRotating ? 'map-card__timer--rotating' : ''}`}>
+            {timeLeft} {!isRotating && 'remaining'}
+        </div>
+    );
 }
 
 export default function MapRotation() {
@@ -71,9 +83,7 @@ export default function MapRotation() {
                         <div className="map-card__info">
                             <div className="map-card__mode">Current</div>
                             <div className="map-card__name">{battle_royale.current.map}</div>
-                            {battle_royale.current.remainingTimer && (
-                                <div className="map-card__timer">{battle_royale.current.remainingTimer} remaining</div>
-                            )}
+                            <MapTimer endTimestamp={battle_royale.current.end} />
                         </div>
                     </div>
                     <div className="map-card map-card--next map-card--spaced">
@@ -101,9 +111,7 @@ export default function MapRotation() {
                         <div className="map-card__info">
                             <div className="map-card__mode">Current</div>
                             <div className="map-card__name">{ranked.current.map}</div>
-                            {ranked.current.remainingTimer && (
-                                <div className="map-card__timer">{ranked.current.remainingTimer} remaining</div>
-                            )}
+                            <MapTimer endTimestamp={ranked.current.end} />
                         </div>
                     </div>
                 </div>
@@ -121,9 +129,7 @@ export default function MapRotation() {
                             <div className="map-card__info">
                                 <div className="map-card__mode">{ltm.current.eventName}</div>
                                 <div className="map-card__name">{ltm.current.map}</div>
-                                {ltm.current.remainingTimer && (
-                                    <div className="map-card__timer">{ltm.current.remainingTimer} remaining</div>
-                                )}
+                                <MapTimer endTimestamp={ltm.current.end} />
                             </div>
                         </div>
                     </div>

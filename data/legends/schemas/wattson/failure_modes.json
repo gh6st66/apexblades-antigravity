@@ -1,0 +1,45 @@
+{
+    "legend_id": "wattson",
+    "failure_modes": [
+        {
+            "mistake": "Static Play in Dynamic Lobbies",
+            "consequence": "Team gets caught rotating late or holding untenable positions",
+            "fix": "Practice hybrid play - quick fence setups during fights, not just elaborate fortresses"
+        },
+        {
+            "mistake": "Wandering Off Alone",
+            "consequence": "Isolated Wattson is vulnerable with low mobility and damage output",
+            "fix": "Stay near team and defensive setup at all times"
+        },
+        {
+            "mistake": "Obvious Fence Placement",
+            "consequence": "Fences destroyed before providing value, wasting cooldowns",
+            "fix": "Hide nodes behind door frames, corners, and cover - force enemies to search for them"
+        },
+        {
+            "mistake": "Holding Ultimate Too Long",
+            "consequence": "Dying with unused pylon or getting wiped by grenade spam",
+            "fix": "Deploy pylon proactively when fight is anticipated - you can recharge quickly with accelerants"
+        },
+        {
+            "mistake": "Over-fortifying Single Entrance",
+            "consequence": "Enemies flank through undefended angles",
+            "fix": "Spread 12 nodes across multiple entrances for 360-degree coverage"
+        },
+        {
+            "mistake": "Panicking When Fences Breach",
+            "consequence": "Abandoning strong position unnecessarily",
+            "fix": "Trust your setup - enemies pushing through fences are slowed and damaged, easy targets"
+        },
+        {
+            "mistake": "Poor Ultimate Accelerant Management",
+            "consequence": "Limited pylon uptime in critical moments",
+            "fix": "Always carry 1-2 Ultimate Accelerants, use immediately when ult is down"
+        },
+        {
+            "mistake": "Deploying Second Pylon",
+            "consequence": "Destroys first pylon automatically, wasting duration",
+            "fix": "Only deploy new pylon after first expires or is strategically repositioned"
+        }
+    ]
+}

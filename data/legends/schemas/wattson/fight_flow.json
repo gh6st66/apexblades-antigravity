@@ -1,0 +1,52 @@
+{
+    "legend_id": "wattson",
+    "fight_flow": {
+        "pre_fight": {
+            "setup_priority": "Very high",
+            "actions": [
+                "Identify all entry points to position",
+                "Place fences on doors, stairs, and choke points",
+                "Deploy pylon in protected location (behind cover)",
+                "Create layered fence defense (multiple lines)",
+                "Position near pylon for shield regen"
+            ],
+            "timing": "Setup before enemies arrive (early rotation enables this)"
+        },
+        "fight_start": {
+            "positioning": "Behind cover within pylon range",
+            "first_action": "Hold angles on fenced entrances",
+            "information_gathering": "Monitor fence triggers for enemy movement",
+            "communication": "Call out fence breaches to team"
+        },
+        "mid_fight": {
+            "if_holding": [
+                "Maintain position near pylon",
+                "Replace destroyed fences if cooldowns allow",
+                "Take shield regen breaks behind cover",
+                "Focus fire on slowed enemies breaking through fences"
+            ],
+            "if_pushed": [
+                "Fall back to secondary fence layer",
+                "Use opportunistic fences to block pursuers",
+                "Don't panic - slowed enemies are vulnerable",
+                "Coordinate with team to punish breach"
+            ]
+        },
+        "fight_end": {
+            "if_winning": [
+                "Push cautiously only if numbers advantage",
+                "Leave one fence layer intact for third party defense",
+                "Quickly re-setup after fight (nodes respawn on 30s cooldown)"
+            ],
+            "if_losing": [
+                "Retreat through pre-planned fence coverage",
+                "Drop opportunistic fences during escape",
+                "Regroup at next defendable position"
+            ]
+        },
+        "third_party_response": {
+            "defending": "Pylon and fences should block third party grenades and entry - huge advantage",
+            "third_partying": "Low priority - Wattson is not a third party legend, stay in strong position"
+        }
+    }
+}

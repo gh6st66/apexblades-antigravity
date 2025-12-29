@@ -1,0 +1,236 @@
+[
+    {
+        "legend1": "Bangalore",
+        "legend2": "Bloodhound",
+        "synergy_type": "Offensive Scan",
+        "rating": 5,
+        "description": "The classic smoke-and-scan combo. Smoke obscures enemy vision while Bloodhound scans reveal their positions.",
+        "tips": "Bangalore smokes the enemy position, Bloodhound ults or scans to give the team high-fidelity info through the smoke.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Horizon",
+        "legend2": "Fuse",
+        "synergy_type": "Area Denial Wipe",
+        "rating": 5,
+        "description": "Horizon's Black Hole pulls enemies in, making them easy targets for Fuse's Motherlode and clusters.",
+        "tips": "Wait for Newt to settle before launching the Motherlode to center-lock the squad.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Gibraltar",
+        "legend2": "Valkyrie",
+        "synergy_type": "Safe Macro Rotation",
+        "rating": 4,
+        "description": "Using Gibraltar's Bubble to provide cover during the 3s spin-up of Valkyrie's Skyward Dive.",
+        "tips": "Place the bubble, immediately start the dive from the center. Protects vs snipers during launch.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Caustic",
+        "legend2": "Wattson",
+        "synergy_type": "Deep Anchor",
+        "rating": 5,
+        "description": "The ultimate defensive pairing. Wattson handles ordinance and shield regen, while Caustic denies entry with slow and damage.",
+        "tips": "Place fences slightly behind gas traps to catch enemies who push through the blur.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Bangalore",
+        "legend2": "Any Sniper",
+        "synergy_type": "Conditional Anti-Synergy",
+        "rating": 2,
+        "description": "Smoke can hinder high-ground snipers on your own team if placed poorly, though Digital Threat scopes negate this.",
+        "tips": "Communicate smoke usage. Don't smoke enemies your sniper is actively suppressed.",
+        "anti_synergy": true
+    },
+    {
+        "legend1": "Revenant",
+        "legend2": "Octane",
+        "synergy_type": "Revtane Push",
+        "rating": 4,
+        "description": "Using Octane's Jump Pad in shadow form allows for silent, rapid, and vertical aggressive pushes.",
+        "tips": "Pop shadows, take the pad immediately. If sent back, you're safe at the pad origin.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Crypto",
+        "legend2": "Ash",
+        "synergy_type": "Wallhack Breach",
+        "rating": 4,
+        "description": "Crypto EMPs to break traps/shields, then Ash instantly portals the team onto the stunned enemies.",
+        "tips": "Time the portal to open exactly as the EMP detonates.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Seer",
+        "legend2": "Catalyst",
+        "synergy_type": "Scan & Block",
+        "rating": 3,
+        "description": "Catalyst reinforces doors/walls while Seer gathers intel. Stronger in theory than practice due to Seer nerfs.",
+        "tips": "Hold a reinforced door, let Seer scan for exact positioning before opening for a peek.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Mirage",
+        "legend2": "Bangalore",
+        "synergy_type": "Chaos Engine",
+        "rating": 2,
+        "description": "Smoke + Decoys creates immense visual clutter. Highly effective in Pubs, unreliable in high-tier Ranked.",
+        "tips": "Pop ult inside smoke for maximum confusion against uncoordinated teams.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wraith",
+        "legend2": "Pathfinder",
+        "synergy_type": "Macro Mobility Overkill",
+        "rating": 2,
+        "description": "Redundant rotational tools. While not bad, it sacrifices utility for excessive movement.",
+        "tips": "Use Portal for micro-rotations (safe crossing) and Zipline for macro (long distance).",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Mad Maggie",
+        "legend2": "Fuse",
+        "synergy_type": "Bunker Buster",
+        "rating": 4,
+        "description": "The ultimate anti-cover duo. Maggie drills through walls while Fuse clusters the edges.",
+        "tips": "Use Riot Drill to force them out of cover, then Knuckle Cluster where they run.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Newcastle",
+        "legend2": "Wattson",
+        "synergy_type": "The Fortress",
+        "rating": 5,
+        "description": "Newcastle's Castle Wall plus Wattson's Pylon creates an unbreakable position in open ground.",
+        "tips": "Cast Castle Wall first, then drop Pylon behind it to stop grenade spam.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Conduit",
+        "legend2": "Revenant",
+        "synergy_type": "Raid Boss",
+        "rating": 5,
+        "description": "Revenant uses Forged Shadows for 75 HP, Conduit adds temp shields on top. Creates a 300+ HP tank.",
+        "tips": "Conduit should tactical only after Revenant has engaged and taken initial damage/shadow damage.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Caustic",
+        "legend2": "Horizon",
+        "synergy_type": "Suffocation",
+        "rating": 5,
+        "description": "Black Hole pulls enemies to the center; Gas Grenade blankets that exact spot.",
+        "tips": "Horizon initiates. Caustic throws ult 1 second after Black Hole lands.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Vantage",
+        "legend2": "Rampart",
+        "synergy_type": "Amped Marksman",
+        "rating": 4,
+        "description": "Vantage's Sniper's Mark gets boosted by Amped Cover. Massive damage per shot.",
+        "tips": "Setup Amped Cover on high ground. Vantage marks targets for huge team damage bonus.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Ballistic",
+        "legend2": "Mad Maggie",
+        "synergy_type": "Speed Demon",
+        "rating": 4,
+        "description": "Ballistic's Tempest (speed boost) + Maggie's Wrecking Ball pads. Fun 'Speed Demon' playstyle but lacks defense.",
+        "tips": "Pop Tempest and Wrecking Ball simultaneously for maximum rush speed in aggressive pushes.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Gibraltar",
+        "synergy_type": "Defensive Wall",
+        "rating": 5,
+        "description": "Gibraltar's Dome Shield provides instant cover while Wattson sets up fences and pylon for sustained defense.",
+        "tips": "Use Gibraltar's dome to buy time for Wattson to deploy full defensive setup. Dome + Pylon blocks all incoming damage.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Rampart",
+        "synergy_type": "Fortified Defense",
+        "rating": 5,
+        "description": "Rampart's Amped Cover pairs perfectly with Wattson's fences for an impenetrable defensive position.",
+        "tips": "Place Amped Walls facing outward with fences behind them. Pylon protects walls from grenade spam. Sheila + fences = death trap.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Catalyst",
+        "synergy_type": "Entry Denial",
+        "rating": 4,
+        "description": "Catalyst's ferrofluid walls and reinforced doors synergize with Wattson's fences for layered building defense.",
+        "tips": "Reinforce doors with Catalyst, fence behind them. Ferrofluid slows, then fences punish. Double the delay = easy kills.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Bangalore",
+        "synergy_type": "Smoke Cover Setup",
+        "rating": 3,
+        "description": "Bangalore's smoke provides cover for Wattson to setup defenses uncontested in vulnerable positions.",
+        "tips": "Smoke the area before setting up in open zones. Gives Wattson time to build fences without being sniped.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Pathfinder",
+        "synergy_type": "Zipline Fortress",
+        "rating": 4,
+        "description": "Pathfinder's ziplines enable early rotation to high ground, where Wattson can setup dominant defensive positions.",
+        "tips": "Zipline to high ground early, fence all stairs and access points. Pylon on top = unbreakable high ground hold.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Wattson",
+        "legend2": "Valkyrie",
+        "synergy_type": "Sky Rotation Defense",
+        "rating": 4,
+        "description": "Valkyrie enables early rotation to ring before chaos, letting Wattson claim and fortify prime positions first.",
+        "tips": "Skyward Dive into final zones early. Setup complete defense before other teams arrive. First in = best position.",
+        "anti_synergy": false
+    },
+    {
+        "legend1": "Crypto",
+        "legend2": "Wattson",
+        "synergy_type": "Hard Counter",
+        "rating": 1,
+        "description": "Crypto's EMP destroys all Wattson fences and pylon instantly, completely disabling her defensive setup.",
+        "tips": "As Crypto: EMP then push immediately. As Wattson: spread fences wide so drone can't get all at once, or shoot the drone.",
+        "anti_synergy": true
+    },
+    {
+        "legend1": "Fuse",
+        "legend2": "Wattson",
+        "synergy_type": "Counter Relationship",
+        "rating": 2,
+        "description": "Fuse's grenade spam tests Wattson's pylon, but pylon completely negates his ordnance advantage if active.",
+        "tips": "As Fuse: wait for pylon to expire or destroy it first. As Wattson: keep pylon up during Fuse fights, makes him useless.",
+        "anti_synergy": true
+    },
+    {
+        "legend1": "Mad Maggie",
+        "legend2": "Wattson",
+        "synergy_type": "Bunker Breach",
+        "rating": 2,
+        "description": "Mad Maggie's Riot Drill bypasses Wattson's fences by drilling through walls, forcing repositioning.",
+        "tips": "As Maggie: drill corners where Wattson likely holds. As Wattson: maintain multiple fence layers so one drill doesn't collapse defense.",
+        "anti_synergy": true
+    },
+    {
+        "legend1": "Horizon",
+        "legend2": "Wattson",
+        "synergy_type": "Vertical Bypass",
+        "rating": 2,
+        "description": "Horizon's Gravity Lift allows teams to bypass Wattson's ground-level fence defenses with vertical plays.",
+        "tips": "As Horizon: lift over fences to high ground. As Wattson: fence vertical choke points and watch for lifts, communicate to team.",
+        "anti_synergy": true
+    }
+]

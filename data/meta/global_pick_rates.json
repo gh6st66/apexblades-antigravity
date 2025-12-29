@@ -1,0 +1,141 @@
+{
+    "last_updated": "2025-12-27T11:45:38.062Z",
+    "source": "data_dump/win-pick-rates",
+    "data": [
+        {
+            "rank": 1,
+            "legend": "Valkyrie",
+            "pickRate": "10.1%"
+        },
+        {
+            "rank": 2,
+            "legend": "Bangalore",
+            "pickRate": "8.9%"
+        },
+        {
+            "rank": 3,
+            "legend": "Revenant",
+            "pickRate": "8.4%"
+        },
+        {
+            "rank": 4,
+            "legend": "Mad Maggie",
+            "pickRate": "7.2%"
+        },
+        {
+            "rank": 5,
+            "legend": "Lifeline",
+            "pickRate": "6.8%"
+        },
+        {
+            "rank": 6,
+            "legend": "Ash",
+            "pickRate": "6.3%"
+        },
+        {
+            "rank": 7,
+            "legend": "Pathfinder",
+            "pickRate": "6.0%"
+        },
+        {
+            "rank": 8,
+            "legend": "Wraith",
+            "pickRate": "5.9%"
+        },
+        {
+            "rank": 9,
+            "legend": "Horizon",
+            "pickRate": "5.6%"
+        },
+        {
+            "rank": 10,
+            "legend": "Sparrow",
+            "pickRate": "5.5%"
+        },
+        {
+            "rank": 11,
+            "legend": "Alter",
+            "pickRate": "3.6%"
+        },
+        {
+            "rank": 12,
+            "legend": "Mirage",
+            "pickRate": "3.6%"
+        },
+        {
+            "rank": 13,
+            "legend": "Octane",
+            "pickRate": "2.9%"
+        },
+        {
+            "rank": 14,
+            "legend": "Loba",
+            "pickRate": "2.8%"
+        },
+        {
+            "rank": 15,
+            "legend": "Caustic",
+            "pickRate": "2.6%"
+        },
+        {
+            "rank": 16,
+            "legend": "Conduit",
+            "pickRate": "2.2%"
+        },
+        {
+            "rank": 17,
+            "legend": "Wattson",
+            "pickRate": "1.7%"
+        },
+        {
+            "rank": 18,
+            "legend": "Rampart",
+            "pickRate": "1.5%"
+        },
+        {
+            "rank": 19,
+            "legend": "Vantage",
+            "pickRate": "1.3%"
+        },
+        {
+            "rank": 20,
+            "legend": "Newcastle",
+            "pickRate": "1.3%"
+        },
+        {
+            "rank": 21,
+            "legend": "Bloodhound",
+            "pickRate": "1.3%"
+        },
+        {
+            "rank": 22,
+            "legend": "Fuse",
+            "pickRate": "1.2%"
+        },
+        {
+            "rank": 23,
+            "legend": "Ballistic",
+            "pickRate": "1.2%"
+        },
+        {
+            "rank": 24,
+            "legend": "Gibraltar",
+            "pickRate": "0.9%"
+        },
+        {
+            "rank": 25,
+            "legend": "Seer",
+            "pickRate": "0.6%"
+        },
+        {
+            "rank": 26,
+            "legend": "Crypto",
+            "pickRate": "0.6%"
+        },
+        {
+            "rank": 27,
+            "legend": "Catalyst",
+            "pickRate": "0.3%"
+        }
+    ]
+}

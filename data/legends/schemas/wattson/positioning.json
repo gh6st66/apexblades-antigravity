@@ -1,0 +1,25 @@
+{
+    "legend_id": "wattson",
+    "positioning": {
+        "ideal_terrain": [
+            "Multi-story buildings with limited entry points",
+            "High ground with natural cover",
+            "Ring edge positions to reduce angles of attack",
+            "Tight final circles where fences maximize coverage"
+        ],
+        "avoid_terrain": [
+            "Wide open areas with no cover",
+            "Low ground in open fields",
+            "Areas with excessive vertical attack angles"
+        ],
+        "team_position": "Rear support - behind cover near pylon",
+        "ring_relationship": "Rotate early to ring before chaos, claim defensive position first",
+        "high_ground_value": "High - easier to defend with fences on stairways and ziplines",
+        "building_preference": "Strong preference - interior defense is Wattson's specialty",
+        "rotation_timing": {
+            "early_game": "Standard timing",
+            "mid_game": "Early rotation (before ring closes)",
+            "late_game": "Very early - first team in final zone"
+        }
+    }
+}

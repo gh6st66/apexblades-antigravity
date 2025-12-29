@@ -15,10 +15,11 @@ async function runScript(scriptName: string, description: string) {
         if (stdout) console.log(stdout.trim());
         if (stderr) console.error(stderr.trim());
         console.log(`✅ ${scriptName} completed.`);
-    } catch (error: any) {
-        console.error(`❌ ${scriptName} failed:`);
-        console.error(error.message);
-        // Don't kill the whole process, just report it
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(`❌ ${scriptName} failed:`);
+            console.error(error.message);
+        }
     }
 }
 
@@ -29,9 +30,11 @@ async function runTsScript(scriptName: string, description: string) {
         if (stdout) console.log(stdout.trim());
         if (stderr) console.error(stderr.trim());
         console.log(`✅ ${scriptName} completed.`);
-    } catch (error: any) {
-        console.error(`❌ ${scriptName} failed:`);
-        console.error(error.message);
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(`❌ ${scriptName} failed:`);
+            console.error(error.message);
+        }
     }
 }
 

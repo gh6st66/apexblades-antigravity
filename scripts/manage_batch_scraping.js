@@ -39,7 +39,7 @@ if (action === 'get_next') {
 } else if (action === 'save') {
     // Expecting a JSON string as the second argument containing the batch results
     // Usage: node manage_batch_scraping.js save '{"url": ["vid1", "vid2"]}'
-    const inputData = args[1]; // Ideally passed as a file path to avoid shell limits, strictly simplified here
+    // Expected to be passed as a file path or via temp file to avoid shell limits.
     // Actually, passing large JSON via CLI args is risky. 
     // Better to read from a temp file or stdin. Let's read from a fixed temp file "temp_batch_results.json"
 

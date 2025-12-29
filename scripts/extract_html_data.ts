@@ -51,12 +51,13 @@ function extractAceLiteCalculator(filePath: string) {
         const htmlContent = fs.readFileSync(filePath, 'utf-8');
         const $ = cheerio.load(htmlContent);
 
-        const pillars: any[] = [];
-        const wildcardFactors: any[] = [];
+        interface PillarItem { id: string; label: string; description: string; value: number }
+        const pillars: PillarItem[] = [];
+        const wildcardFactors: PillarItem[] = [];
 
         // Extract checkpoints
         $('.checklist-item').each((_, element) => {
-            const id = $(element).find('input').attr('id');
+            const id = $(element).find('input').attr('id') || `checkpoint-${_}`;
             const label = $(element).find('.checklist-label').text().trim();
             const description = $(element).find('.checklist-desc').text().trim();
 
@@ -103,7 +104,12 @@ function extractAceLiteCalculator(filePath: string) {
         fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
         console.log(`Saved ACE Calculator data to ${outputPath}`);
     } catch (error) {
-        console.error(`Error processing ${filePath}:`, error);
+        if (error instanceof Error) {
+            console.error(`❌ extraction failed for ${filePath}:`);
+            console.error(error.message);
+        } else {
+            console.error(`Error processing ${filePath}:`, error);
+        }
     }
 
 }
@@ -119,7 +125,8 @@ function extractPatchNotes(filePath: string) {
         }
 
         const $ = cheerio.load(htmlContent);
-        const articles: any[] = [];
+        interface PatchArticle { title: string; date: string; href: string; img: string }
+        const articles: PatchArticle[] = [];
 
         // Select the main wrapper for news items (Based on observed structure in valid data)
         const newsItems = $('.NewsHub_wrapper__McAtC').children();

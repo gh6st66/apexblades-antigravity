@@ -1,0 +1,10 @@
+{
+    "legend_id": "wattson",
+    "display_name": "Wattson",
+    "class": "Controller",
+    "primary_role": "Static Defender / Area Denial",
+    "secondary_role": "Support / Sustain",
+    "difficulty": "Medium-High",
+    "ranked_viability": "Situational (B-tier, excels in final rings)",
+    "identity_summary": "Controls defensive positions through electric fences and grenade interception, excelling in static defense and end-game scenarios."
+}

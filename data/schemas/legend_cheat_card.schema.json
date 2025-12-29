@@ -360,7 +360,18 @@
                     }
                 }
             },
-            "description": "Optional map/POI-specific adjustments"
+            "description": "Optional map/POI-specific adjustments",
+            "verified": {
+                "type": "boolean",
+                "description": "Indicates whether this cheat card has been manually verified against official sources"
+            },
+            "source": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "description": "List of source URLs or references used for verification"
+            }
         }
     }
 }

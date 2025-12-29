@@ -63,7 +63,7 @@ function updateEnvFile(key) {
 async function main() {
     console.log('\n--- Apex Legends Status (ALS) API Setup ---\n');
     console.log('1. Go to https://api.mozambiquehe.re/getkey');
-    console.log('2. Register your project (e.g., "ApexBlades Agent").');
+    console.log('2. Register your project (e.g., "ApexLegends.tech Agent").');
     console.log('3. Copy the API Key generated.\n');
 
     const key = await askQuestion('Packet/Paste your API Key here: ');

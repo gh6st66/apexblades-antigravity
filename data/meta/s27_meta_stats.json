@@ -1,0 +1,74 @@
+{
+    "season": "S27_Amped",
+    "updated_at": "2025-12-24",
+    "sources": [
+        "ApexLegendsStatus",
+        "Esports Insider",
+        "Pley.gg",
+        "Dexerto"
+    ],
+    "pick_rates": [
+        {
+            "legend": "Alter",
+            "rate": 17.9,
+            "rank": 1
+        },
+        {
+            "legend": "Revenant",
+            "rate": 16.6,
+            "rank": 2
+        },
+        {
+            "legend": "Horizon",
+            "rate": 15.6,
+            "rank": 3
+        },
+        {
+            "legend": "Valkyrie",
+            "rate": 12.0,
+            "rank": 4
+        },
+        {
+            "legend": "Bangalore",
+            "rate": 9.2,
+            "rank": 5
+        }
+    ],
+    "tier_list": {
+        "S_Tier": [
+            "Valkyrie",
+            "Horizon",
+            "Rampart",
+            "Alter"
+        ],
+        "A_Tier": [
+            "Ash",
+            "Lifeline",
+            "Newcastle",
+            "Revenant",
+            "Seer"
+        ],
+        "B_Tier": [
+            "Ballistic",
+            "Bangalore",
+            "Caustic",
+            "Gibraltar",
+            "Mad Maggie",
+            "Mirage",
+            "Pathfinder",
+            "Vantage",
+            "Wraith"
+        ],
+        "C_Tier": [
+            "Fuse",
+            "Wattson",
+            "Crypto",
+            "Conduit"
+        ],
+        "D_Tier": [
+            "Bloodhound",
+            "Octane"
+        ]
+    },
+    "meta_notes": "S27 is defined by Rotation/Macro play (Valkyrie) and Aggressive Entry (Alter/Rev). Traditional scanners (Bloodhound) have fallen out of favor."
+}

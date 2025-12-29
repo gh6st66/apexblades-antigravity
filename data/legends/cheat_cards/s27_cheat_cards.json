@@ -1105,79 +1105,110 @@
     "wattson": {
         "legend": {
             "name": "Wattson",
-            "role_type": "Anchor",
-            "primary_win_condition": "Placement",
+            "role_type": "Controller",
+            "primary_win_condition": "Zone Control",
             "season_version": "S27_Amped"
         },
+        "verified": true,
+        "source": [
+            "https://www.ea.com/games/apex-legends/news",
+            "https://apexmovement.tech/wattson"
+        ],
         "role": {
-            "responsibility": "Building lockdown, nade denial, endgame fortress",
-            "lead_when": "Never - you set up, you don't push",
-            "follow_when": "Team secures position for you to fortify",
-            "disengage_when": "Position compromised, no fences set"
+            "responsibility": "Static defense, grenade interception, shield economy, information gathering via fences",
+            "lead_when": "Setting up end-game position, identifying defensible buildings",
+            "follow_when": "Rotation (mobility legends lead), aggressive pushes",
+            "disengage_when": "Setup is breached and Pylon is down; rotate to next layer"
         },
         "positioning": {
             "preferred_terrain": [
                 "indoors",
-                "zone_center"
+                "choke_points",
+                "height",
+                "ring_edge"
             ],
-            "fight_distance": "mid",
-            "commit_vs_hold": "Hold always; commit only when fences secure retreat"
+            "fight_distance": "close-mid",
+            "commit_vs_hold": "Hold position - force enemies to push YOU. Commit only to punish fence breaches."
         },
         "abilities": {
             "passive": {
                 "name": "Spark of Genius",
-                "leverage_when": "Ultimate Accelerants give full ult",
-                "do_not_rely_on": "Passive shield regen - too slow"
+                "leverage_when": "Carrying Ultimate Accelerants (100% charge), passive shield regen between fights",
+                "do_not_rely_on": "Passive regen during active combat (too slow)"
             },
             "tactical": {
                 "name": "Perimeter Security",
-                "primary_use": "zone",
+                "primary_use": "deny",
                 "timing_rule": "pre-emptive",
-                "notes": "12 nodes max; fence doors, chokes, flanks"
+                "notes": "15 dmg + slow; 30s CD/node; hide nodes behind cover; triangulate doors"
             },
             "ultimate": {
                 "name": "Interception Pylon",
                 "best_use_cases": [
                     "zone",
-                    "reset"
+                    "anti-nade",
+                    "sustain"
                 ],
-                "do_not_use_when": "About to rotate - it doesn't move",
-                "abort_conditions": "Pylon exposed to enemy fire",
+                "do_not_use_when": "Rotating globally (unless emergency cover needed)",
+                "abort_conditions": "Pylon destroyed - fall back immediately",
                 "cooldown_seconds": 180
             }
         },
         "fight_flow": {
-            "start": "Set fences, pylon behind cover",
-            "mid_fight": "Fight from fenced position, pylon blocks nades",
-            "exit_reset": "Fence retreat paths, pylon for reset"
+            "start": "Secure perimeter with hidden fences -> Deploy Pylon if engagement imminent",
+            "mid_fight": "Play near Pylon for shields, repair fences, punish stunned enemies",
+            "exit_reset": "Retreat through pre-fenced path -> Pop Ult Accel immediately"
         },
         "rotations": {
-            "early_game": "Loot ultimate accelerants, find position early",
-            "mid_game": "Rotate early to new position, re-fence",
-            "late_game": "Pylon + fences = nearly unbreakable hold",
-            "bad_rotation": "Running in open with no fences up"
+            "early_game": "Rotate early to center zone or strong edge; loot Ult Accels",
+            "mid_game": "Claim God Spot early; fortify before teams arrive",
+            "late_game": "Total lockdown of final ring; play off Pylon sustainability",
+            "bad_rotation": "Late rotation into open ground without Pylon"
         },
         "weapons": {
             "primary": {
-                "weapon": "R-301 / Flatline",
-                "reason": "Consistent from fenced positions"
+                "weapon": "R-301 / Flatline / Nemesis",
+                "reason": "Mid-range consistency from fortified positions"
             },
             "secondary": {
-                "weapon": "Peacekeeper",
-                "reason": "Punish fence runners"
+                "weapon": "Volt / ROC / PK",
+                "reason": "Close-range shredding for fence-stunned enemies"
             },
             "avoid": [
-                "Shotgun-only"
+                "Sniper-only (too passive)",
+                "Shotgun-only (lack of range)"
             ]
         },
         "common_mistakes": [
-            "Fencing after enemies already inside",
-            "Pylon in the open",
-            "Rotating too late",
-            "Not carrying ultimate accelerants"
+            "Fencing in open sightlines (nodes destroyed instantly)",
+            "Holding Ultimate too long (die with full charge)",
+            "Wandering alone (no escape)",
+            "Over-fortifying one door while ignoring flanks"
         ],
-        "rp_loss_behavior": "Getting pushed before fences are up",
-        "mental_rule": "Your fortress takes time to build. Get there early or don't go at all."
+        "rp_loss_behavior": "Playing static in a dynamic spot / Getting caught rotating late",
+        "mental_rule": "The best offense is an electrified defense. Force them to play your game.",
+        "map_overrides": [
+            {
+                "map": "World's Edge",
+                "poi": "Fragment (Construction/Streamer)",
+                "height_rules": "Zipline control is key; fence elevator outputs",
+                "ult_timing": "Deploy on roof or protected corner during multi-party fights",
+                "danger_zones": [
+                    "Open fields between fragments"
+                ]
+            },
+            {
+                "map": "Storm Point",
+                "poi": "Command Center, Checkpoint",
+                "height_rules": "Hold gravity cannon landing spots",
+                "ult_timing": "Essential for open-area rotations vs Bangalore/Gibby",
+                "danger_zones": [
+                    "Jurrasic Park (Prowlers break fences)"
+                ]
+            }
+        ],
+        "diagrams_ref": "docs/legends/diagrams/wattson_diagrams.md",
+        "cheat_card_md": "data/legends/cheat_cards/wattson.md"
     },
     "crypto": {
         "legend": {

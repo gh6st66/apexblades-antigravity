@@ -1,0 +1,52 @@
+{
+    "legend_id": "wattson",
+    "abilities": {
+        "passive": {
+            "name": "Spark of Genius",
+            "intent": "Ultimate charge acceleration and shield regeneration",
+            "leverage_when": "Near your own pylon or using Ultimate Accelerants",
+            "stats": {
+                "ultimate_accelerant_charge": "100% (instant full charge)",
+                "shield_regen_near_pylon": "Active when within pylon range"
+            },
+            "misuse_warning": "Forgetting to carry Ultimate Accelerants limits your defensive uptime"
+        },
+        "tactical": {
+            "name": "Perimeter Security",
+            "intent": "Area denial through electric fences",
+            "timing_rule": "Pre-emptive (set before enemies arrive)",
+            "stats": {
+                "cooldown": "30 seconds per node",
+                "max_nodes": 12,
+                "max_fences": 4,
+                "damage": "15 damage per tick + slow effect",
+                "fence_connection_range": "Medium distance between nodes"
+            },
+            "best_use_cases": [
+                "Blocking doorways and choke points",
+                "Creating layered defenses around positions",
+                "Information gathering (fence triggers alert to breaches)",
+                "Opportunistic fence placement during active fights"
+            ],
+            "misuse_warning": "Placing nodes in obvious open lines where they're easily destroyed, or over-stacking on one entrance"
+        },
+        "ultimate": {
+            "name": "Interception Pylon",
+            "intent": "Grenade/ordnance defense and shield regeneration",
+            "stats": {
+                "cooldown": "180 seconds (3 minutes)",
+                "ultimate_accelerant_charge": "Instant (100%)",
+                "duration": "90 seconds",
+                "shield_regen_rate": "2 shield per second for nearby allies",
+                "ordnance_interception": "Destroys all incoming grenades, missiles, and airstrikes in range"
+            },
+            "best_use_cases": [
+                "Final ring defense",
+                "Countering bombardment legends (Gibraltar, Bangalore, Fuse)",
+                "Sustaining during prolonged fights",
+                "Blocking doors (creative use)"
+            ],
+            "misuse_warning": "Holding ultimate too long and dying without using it, or placing pylon in obvious sight lines where it's destroyed"
+        }
+    }
+}

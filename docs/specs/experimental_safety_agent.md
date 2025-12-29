@@ -1,6 +1,6 @@
 # Experimental Agent: Safety & Filter (EAF)
 
-This document outlines the specifications for an experimental agent designed to identify and mitigate "unsafe" content within the ApexBlades ecosystem.
+This document outlines the specifications for an experimental agent designed to identify and mitigate "unsafe" content within the ApexLegends.tech ecosystem.
 
 ## Primary Objective
 The **Safety & Filter Agent (EAF)** acts as a real-time gatekeeper to ensure that all generated content, user-provided scripts, and project code adhere to safety standards and game-specific fair-play policies.

@@ -1,0 +1,20 @@
+{
+    "legend_id": "wattson",
+    "weapon_bias": {
+        "primary_preference": "Versatile mid-range weapons",
+        "recommended_weapons": [
+            "R-301 Carbine (easy recoil, consistent damage)",
+            "Volt SMG (hipfire for close defense)",
+            "Flatline (strong damage for holding angles)",
+            "EVA-8 / Peacekeeper (close-range building defense)"
+        ],
+        "avoid_weapons": [
+            "Kraber (too slow for defensive play)",
+            "Wingman (requires aggressive peeks)"
+        ],
+        "loadout_philosophy": "One mid-range AR/SMG + one close-range shotgun/SMG for building holds",
+        "engagement_range": "Close to mid-range (inside or near fenced positions)",
+        "ammo_priority": "Light or Energy ammo paired with Shotgun ammo",
+        "grenade_value": "Low - Wattson rarely pushes aggressively, pylon negates enemy grenades anyway"
+    }
+}
